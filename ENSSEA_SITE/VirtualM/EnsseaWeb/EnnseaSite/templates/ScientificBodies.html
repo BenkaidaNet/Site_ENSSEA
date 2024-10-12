@@ -1,0 +1,77 @@
+{% load static %} {% load tailwind_tags %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+    <title>{% trans 'The Scientific Council' %}</title>
+    <link rel="icon" type="image/x-icon" href="/static/photos/logoENSSEA.ico">
+
+    {% tailwind_css %}
+
+</head>
+
+<body>
+    <header class="sticky top-0 z-50">
+        {% include 'NavbarPrincipal.html' %}
+
+    </header>
+    <section>
+        <div class="sticky -top-10 z-0  w-auto h-60 bg-center   bg-cover bg-[url('/static/photos/ScientificResearch/scientific_publications.jpg')] bg-no-repeat">
+                <div class="relative  text-center top-40 w-full py-2 text-blue-950 font-mono text-3xl bg-blue-400 rounded-md bg-opacity-50 "> {% trans 'Scientific bodies' %}
+                            <!-- <div class="absolute  bg-blue-500 h-1  bottom-0 w-full scale-x-10"></div> -->
+
+
+                </div>
+
+            </div>
+            <!-- <div class="absolute bg-blue-500 h-1 left-0 bottom-0 w-full transform scale-x-0 transition-transform duration-200 origin-center group-hover:scale-x-100"></div> -->
+
+
+            <div class=" w-auto h-auto flex flex-row  ">
+           
+                <div class="text-start w-3/4 md:w-5/6 bg-slate-200">
+                    <div class="m-4" >
+                    <h1 class=" font-mono text-sm md:text-lg">{% trans 'Scientific bodies' %}</h1>
+                    <p class="border-t-2 border-t-white font-mono text-vsm md:text-sm pt-2 " >
+                    {% blocktrans %}
+                        
+                        The Scientific Council is an advisory body which gives its opinion and proposes guidelines for
+                         the scientific and pedagogical affairs of the School; it is chaired by the Director of
+                          the School composed of Deputy Directors, heads of Departments, presidents of scientific committees of
+                           departments, Directors of research laboratories, the Director of the Library, permanent teachers
+                            reporting to other higher education institutions and elected representatives of teachers of the School.<br>
+                            The Scientific Committee of the Department is an advisory structure that issues opinions and recommendations on
+                             scientific and pedagogical affairs submitted to it by the head of department; 
+                            it includes, in addition to the head of Department, elected Representatives of the teachers of the Department.
+                            {% endblocktrans %}
+
+                        </p>
+                    </div>
+
+    
+                 </div>
+                 <div class=" w-1/4 md:w-1/6 h-screen border-l-2">
+                    {% include 'sideNavScientfcR.html' %}
+    
+                 </div>
+            </div>
+    </section>
+    <footer>
+        {% include 'footer.html' %}
+    </footer>
+    {% block js_block %}
+    <script type="text/javascript" src="{% static 'js/jquery-3.6.4.min.js'%}"></script>
+
+    <script type="text/javascript" src="{%static 'js/sideNavScientificRsch.js'%}"></script>
+
+    {% endblock %}
+</body>
+
+</html>

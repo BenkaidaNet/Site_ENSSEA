@@ -1,0 +1,96 @@
+{% load static %} {% load tailwind_tags %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    
+        <title>{% trans 'internship service' %}</title>
+        <link rel="icon" type="image/x-icon" href="/static/photos/logoENSSEA.ico">
+    
+        {% tailwind_css %}
+    </head>
+    <body>
+        <header class="sticky top-0 z-50">
+            {% include 'NavbarPrincipal.html' %}
+    
+        </header>
+        <section>
+            <div class=" w-auto h-auto flex flex-row  ">
+            <div class="flex flex-col   w-3/4">
+                <span id="itemTitle" class="font-mono text-lg w-full text-center mt-4 bg-blue-700 text-white font-bold">{% trans 'internship service' %}</span>
+
+            <div id="itemPrst"  style="direction:ltr" class=" m-2 w-auto h-auto font-mono  bg-slate-200  rounded-sm">
+                
+                    {% for item in stageService  %}
+                    <p  class="mx-2 mb-2  text-vsm md:text-sm whitespace-pre-line border-b-2 border-b-blue-500 ">
+                    {{item.presentation}}
+                     </p>
+                     <div  class="text-blue-700 text-bold   border py-4 mx-2  ">
+                     {% if item.ProgrmSoutenance %}
+                     
+                     <a class="" href="{{ item.ProgrmSoutenance.url }}">{{item.titel }}</a>
+                     {% endif %}
+                    </div>
+                    {% endfor %}
+            </div>
+            <div id="itemF"  style="direction:ltr" class=" m-2   bg-slate-200  rounded-sm">
+                
+                {% for item in file  %}
+                <p class="mx-2  font-arabic text-vsm md:text-sm whitespace-pre-line ">
+                {{item.title}}
+                 </p>
+                 
+                 <a class="text-blue-900" href="{{ item.ProgrmSoutenance.url }}">Click here</a>
+                {% endfor %}
+            </div>
+        </div>
+            <div class=" w-1/4  h-auto border-l-2 ">
+                {% include 'sideNavDeanship.html' %}
+
+            </div>
+        </div>
+        </section>
+        <footer>
+            {% include 'footer.html' %}
+        </footer>
+        <script src="" async defer></script>
+    </body>
+    {% block js_block %}
+    <script type="text/javascript" src="{%static 'js/sideNavDeanship.js'%}"></script>
+    <script>
+        function DetectLanguage(){
+            var selectElement = document.getElementById('selectlist');
+        
+            var selectedIndex = selectElement.selectedIndex;
+        
+            var selectedOption = selectElement.options[selectedIndex];
+        
+            var selectedValue = selectedOption.value;
+        
+            return (selectedValue);
+            
+        }
+        
+        if (DetectLanguage()=='ar'){ 
+            let prsnt=document.getElementById('itemPrst');
+            let f=document.getElementById('itemF');
+
+            prsnt.classList.remove("font-mono");
+            prsnt.classList.add("font-arabic");
+            prsnt.style.direction='rtl';        
+
+
+            f.style.direction='rtl';        
+            f.classList.remove("font-mono");
+            f.classList.add("font-arabic");
+        }
+    </script>
+
+    {% endblock %}
+</html>

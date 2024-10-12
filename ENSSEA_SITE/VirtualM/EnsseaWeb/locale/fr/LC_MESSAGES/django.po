@@ -1,0 +1,1265 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-06 21:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: EnnseaSite/templates/AppliedStatistics.html:13
+msgid "Applied Statistics and Econometrics"
+msgstr "statistiques Appliquées et Économétrie"
+
+#: EnnseaSite/templates/AppliedStatistics.html:27
+msgid " Departement of Applied Statistics and Econometrics"
+msgstr "Departement de  statistiques Appliquées et Économétrie"
+
+#: EnnseaSite/templates/AppliedStatistics.html:41
+#: EnnseaSite/templates/commonTeaching.html:43
+#: EnnseaSite/templates/finance.html:44 EnnseaSite/templates/prepatory.html:42
+#: EnnseaSite/templates/prospectiveEconomic.html:41
+msgid "Head of department:"
+msgstr "Chef department"
+
+#: EnnseaSite/templates/AppliedStatistics.html:44
+#: EnnseaSite/templates/commonTeaching.html:46
+#: EnnseaSite/templates/finance.html:47 EnnseaSite/templates/prepatory.html:45
+#: EnnseaSite/templates/prospectiveEconomic.html:44
+msgid "Email:"
+msgstr "Email:"
+
+#: EnnseaSite/templates/AppliedStatistics.html:50
+#: EnnseaSite/templates/commonTeaching.html:52
+#: EnnseaSite/templates/finance.html:53 EnnseaSite/templates/prepatory.html:51
+#: EnnseaSite/templates/prospectiveEconomic.html:50
+msgid "Phone:"
+msgstr "Phone:"
+
+#: EnnseaSite/templates/AppliedStatistics.html:69
+#: EnnseaSite/templates/finance.html:67
+msgid ""
+"\n"
+"                    The modules studied during the master's cycle are "
+"divided as follows:\n"
+"                    "
+msgstr ""
+"\n"
+"Les modules étudiés durant le cycle master sont répartis comme suit"
+"                    "
+
+#: EnnseaSite/templates/AppliedStatistics.html:77
+#: EnnseaSite/templates/OffersAndFormation.html:86
+#: EnnseaSite/templates/home.html:214
+msgid "Applied Statistics"
+msgstr "statistiques Appliquées"
+
+#: EnnseaSite/templates/AppliedStatistics.html:78
+#: EnnseaSite/templates/OffersAndFormation.html:102
+#: EnnseaSite/templates/home.html:230
+msgid "Statistics and Data Science"
+msgstr "statistiques et Data Science"
+
+#: EnnseaSite/templates/AppliedStatistics.html:79
+#: EnnseaSite/templates/OffersAndFormation.html:107
+#: EnnseaSite/templates/home.html:234
+msgid "Population Science and Social Statistics"
+msgstr "Sciences de la population et Statistiques Sociales"
+
+#: EnnseaSite/templates/Entrepreneurship.html:17
+#: EnnseaSite/templates/Entrepreneurship.html:36
+#: EnnseaSite/templates/Entrepreneurship1.html:19
+#: EnnseaSite/templates/Entrepreneurship1.html:36
+#: EnnseaSite/templates/NavbarPrincipal.html:127
+#: EnnseaSite/templates/sideNavDeanship.html:18
+#: EnnseaSite/templates/sideNavDeanship1.html:18
+msgid "Entrepreneurship development center"
+msgstr "Centre de développement de l'entrepreneuriat"
+
+#: EnnseaSite/templates/Entrepreneurship.html:103
+#: EnnseaSite/templates/Entrepreneurship1.html:99
+#: EnnseaSite/templates/home.html:72
+msgid "Latest News"
+msgstr "Dernières Nouvelles"
+
+#: EnnseaSite/templates/Entrepreneurship.html:127
+#: EnnseaSite/templates/Entrepreneurship1.html:123
+#: EnnseaSite/templates/ExternalRelations.html:101
+#: EnnseaSite/templates/home.html:92
+msgid "Learne More"
+msgstr ""
+
+#: EnnseaSite/templates/Entrepreneurship.html:143
+#: EnnseaSite/templates/Entrepreneurship1.html:138
+msgid "Archive"
+msgstr "Archive"
+
+#: EnnseaSite/templates/ExternalRelations.html:13
+#: EnnseaSite/templates/ExternalRelations.html:26
+msgid "External Relations"
+msgstr "Relations Extérieures"
+
+#: EnnseaSite/templates/ExternalRelations.html:28
+msgid "Presentation :"
+msgstr "Presentation"
+
+#: EnnseaSite/templates/ExternalRelations.html:41
+msgid "National conventions :"
+msgstr "Conventions nationales :"
+
+#: EnnseaSite/templates/ExternalRelations.html:59
+msgid "International conventions :"
+msgstr "Conventions internationales :"
+
+#: EnnseaSite/templates/ExternalRelations.html:81
+msgid "Related news"
+msgstr "Nouvelles connexes"
+
+#: EnnseaSite/templates/ExternalRelations.html:118
+msgid "Head of department"
+msgstr "Chef department"
+
+#: EnnseaSite/templates/ExternalRelations.html:122
+#: EnnseaSite/templates/staffLibrary.html:126
+msgid "Phone :"
+msgstr "Phone:"
+
+#: EnnseaSite/templates/ExternalRelations.html:123
+#: EnnseaSite/templates/staffLibrary.html:121
+msgid "Email :"
+msgstr "Email:"
+
+#: EnnseaSite/templates/Infrastructure.html:14
+#: EnnseaSite/templates/Infrastructure.html:27
+msgid "AREA AND INFRASTRUCTURE"
+msgstr "SUPERFICIE ET INFRASTRUCTURE"
+
+#: EnnseaSite/templates/Infrastructure.html:31
+#, python-format
+msgid ""
+"\n"
+"                    The ENSSEA covers a total area of nine hectares (09 ha), "
+"distributed in : <br>\n"
+"                    Building: 06 Ha (66.67%%)<br>\n"
+"                    Car parks, routes and green areas: 03 Ha (33.33%%)<br>\n"
+"                    the building comprises three (03) blocks with three (03) "
+"floors, and a synthesis of contemporary styles where the decorative "
+"influences of modern architecture are declined, in complete harmony. It is "
+"composed of :<br>\n"
+"                    "
+msgstr ""
+"\n"
+"              L'ENSSEA couvre une superficie totale de neuf hectares (09 ha),"
+"distribué dans: <br> \n"
+"Bâtiment: 06 Ha (66,67%%)<br>\n"
+"Parkings, routes et espaces verts: 03 Ha (33,33%%)<br>\n"
+"le bâtiment comprend trois (03) blocs de trois (03) étages, et une synthèse "
+"de styles contemporains où les influences décoratives de l'architecture "
+"moderne se déclinent, en toute harmonie. Il est composé de: <br> \n"
+"                    "
+
+#: EnnseaSite/templates/Infrastructure.html:45
+msgid "amphitheaters"
+msgstr "amphithéâtre"
+
+#: EnnseaSite/templates/Infrastructure.html:46
+msgid "Conference room"
+msgstr "Salle de conférence"
+
+#: EnnseaSite/templates/Infrastructure.html:47
+msgid "Auditorium"
+msgstr "Auditorium"
+
+#: EnnseaSite/templates/Infrastructure.html:48
+msgid "reading rooms"
+msgstr "salles de lecture"
+
+#: EnnseaSite/templates/Infrastructure.html:69
+msgid "works rooms"
+msgstr "salles de travail"
+
+#: EnnseaSite/templates/Infrastructure.html:70
+msgid "computer rooms"
+msgstr "salles informatiques"
+
+#: EnnseaSite/templates/Infrastructure.html:71
+msgid "teachers offices"
+msgstr "bureaux des enseignants"
+
+#: EnnseaSite/templates/Infrastructure.html:89
+msgid "administrative offices"
+msgstr "bureaux administratifs"
+
+#: EnnseaSite/templates/Infrastructure.html:90
+msgid "meeting room"
+msgstr "salle de réunion"
+
+#: EnnseaSite/templates/Infrastructure.html:91
+msgid "doctor s office"
+msgstr "cabinet du médecin"
+
+#: EnnseaSite/templates/Infrastructure.html:113
+msgid "archive room"
+msgstr "salle des archives"
+
+#: EnnseaSite/templates/Infrastructure.html:114
+msgid "store"
+msgstr "magasin"
+
+#: EnnseaSite/templates/Infrastructure.html:115
+msgid "workshop"
+msgstr "atelier"
+
+#: EnnseaSite/templates/Infrastructure.html:141
+#: EnnseaSite/templates/NavbarPrincipal.html:42
+#: EnnseaSite/templates/history.html:13
+#: EnnseaSite/templates/organizationalChart.html:38
+msgid "History"
+msgstr "Historique"
+
+#: EnnseaSite/templates/Infrastructure.html:145
+#: EnnseaSite/templates/NavbarPrincipal.html:46
+#: EnnseaSite/templates/organizationalChart.html:42
+msgid "Infrastructure"
+msgstr "Infrastructure"
+
+#: EnnseaSite/templates/Infrastructure.html:148
+#: EnnseaSite/templates/NavbarPrincipal.html:49
+#: EnnseaSite/templates/organizationalChart.html:45
+msgid "organizational chart"
+msgstr "organigramme"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:24
+msgid "Home"
+msgstr "Accueil"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:34
+msgid "About"
+msgstr "a propos"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:59
+msgid "Studies"
+msgstr "Études"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:66
+#: EnnseaSite/templates/sidNavStudies.html:31
+#: EnnseaSite/templates/studiesAndScholling.html:13
+#: EnnseaSite/templates/studiesAndScholling.html:38
+msgid "Study and schooling"
+msgstr "Études et scolarité"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:70
+#: EnnseaSite/templates/sidNavStudies.html:35
+msgid "Offers and formation"
+msgstr "Offres et formations"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:78
+#: EnnseaSite/templates/sideNav.html:27
+msgid "Departements"
+msgstr "Départements"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:85
+#: EnnseaSite/templates/home.html:187 EnnseaSite/templates/prepatory.html:13
+#: EnnseaSite/templates/sideNav.html:31
+msgid "Preparatory Classes"
+msgstr "Classes Préparatoires"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:89
+#: EnnseaSite/templates/sideNav.html:35
+msgid "Master Common Teaching"
+msgstr "Master Enseignement commun"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:93
+#: EnnseaSite/templates/sideNav.html:39
+msgid "applied Statistics and Econometrics"
+msgstr "statistiques Appliquées et Économétrie"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:97
+#: EnnseaSite/templates/sideNav.html:43
+msgid "finance and Actuarial"
+msgstr "finance et Actuariat"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:101
+#: EnnseaSite/templates/sideNav.html:47
+msgid "quantitative and prospective economics"
+msgstr "économie quantitative et prospective"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:114
+msgid "Deanship"
+msgstr "Sous Directrions"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:123
+#: EnnseaSite/templates/sideNavDeanship.html:14
+#: EnnseaSite/templates/sideNavDeanship1.html:14
+msgid "Postgraduate training department"
+msgstr "Département de formation postgraduation"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:131
+#: EnnseaSite/templates/sideNavDeanship.html:22
+#: EnnseaSite/templates/sideNavDeanship1.html:22
+msgid "External relations"
+msgstr "Relations extérieures"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:135
+#: EnnseaSite/templates/formationDoctoral.html:13
+#: EnnseaSite/templates/serviceStage.html:13
+#: EnnseaSite/templates/serviceStage.html:26
+#: EnnseaSite/templates/sideNavDeanship.html:26
+#: EnnseaSite/templates/sideNavDeanship1.html:26
+msgid "internship service"
+msgstr "service de stages"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:144
+msgid "Scientific research"
+msgstr "Recherche scientifique"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:151
+#: EnnseaSite/templates/ResearchLaboratories.html:13
+#: EnnseaSite/templates/ResearchLaboratories.html:27
+#: EnnseaSite/templates/sideNavScientfcR.html:31
+msgid "Research laboratories"
+msgstr "Laboratoires de recherche"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:155
+msgid "Scientific Council"
+msgstr "Conseil scientifique"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:159
+#: EnnseaSite/templates/sideNavScientfcR.html:40
+msgid "Scientific activities"
+msgstr "Activités scientifiques"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:168
+msgid "library"
+msgstr "bibliothèque"
+
+#: EnnseaSite/templates/OffersAndFormation.html:13
+msgid "Offers And Formation"
+msgstr "Offres et formations"
+
+#: EnnseaSite/templates/OffersAndFormation.html:30
+msgid "Offers and Formation"
+msgstr "Offres et formations"
+
+#: EnnseaSite/templates/OffersAndFormation.html:45
+msgid ""
+"\n"
+"                        The National Higher School of Statistics and Applied "
+"Economics provides graduation and post-graduation courses, which cover Three "
+"higher education cycles :\n"
+"                        "
+msgstr ""
+"\n"
+"L'École Nationale Supérieure de Statistique et d'Économie Appliquée dispense "
+"des cours de fin d'études et de post-graduation, qui couvrent trois cycles "
+"d'enseignement supérieur :\n"
+"                        "
+
+#: EnnseaSite/templates/OffersAndFormation.html:50
+#: EnnseaSite/templates/home.html:182
+msgid "First cycle: Preparatory Classes"
+msgstr "Premier cycle:Classes Préparatoires"
+
+#: EnnseaSite/templates/OffersAndFormation.html:52
+#: EnnseaSite/templates/OffersAndFormation.html:64
+#: EnnseaSite/templates/OffersAndFormation.html:74
+msgid "CONDITIONS OF ACCESS"
+msgstr "CONDITIONS D'ACCÈS"
+
+#: EnnseaSite/templates/OffersAndFormation.html:54
+msgid ""
+"\n"
+"                            the School annually receives new graduates "
+"oriented towards preparatory classes, according to the orientation "
+"conditions set by the Ministry of higher education and scientific research, "
+"namely :\n"
+"                            The wishes expressed by the new bachelors ;\n"
+"                             The results obtained at the baccalaureate ;\n"
+"                            The reception capacities of higher schools.\n"
+"                            "
+msgstr ""
+"\n"
+"l'École accueille annuellement de nouveaux diplômés orientés vers les "
+"classes préparatoires, selon les conditions d'orientation fixées par le "
+"ministère de l'Enseignement supérieur et de la recherche scientifique, à "
+"savoir :\n"
+"Les souhaits exprimés par les nouveaux bacheliers ;\n"
+"Les résultats obtenus au baccalauréat ;\n"
+"Les capacités d'accueil des écoles supérieures.\n"
+"                            "
+
+#: EnnseaSite/templates/OffersAndFormation.html:62
+msgid "Second cycle: Master's degree "
+msgstr "Deuxième cycle: Master"
+
+#: EnnseaSite/templates/OffersAndFormation.html:66
+msgid ""
+"\n"
+"                            the School receives new students from all "
+"preparatory schools of Economic, Commercial and Management Sciences, at the "
+"end of a national competition for access to higher schools, organized at the "
+"end of the first cycle. This competition is open to students who have been "
+"declared admitted at the end of the second preparatory year.\n"
+"                            Admitted students can pursue three (03) years of "
+"training, i.e. one (01) year of joint education (02 semesters) and two years "
+"of specialty (04 semesters). The last semester is entirely devoted to the "
+"internship and the preparation of the final thesis, which is publicly "
+"defended in front of a jury.\n"
+"                            "
+msgstr ""
+"\n"
+"l'École accueille de nouveaux étudiants issus de toutes les Écoles "
+"préparatoires aux Sciences Économiques, Commerciales et de Gestion, à "
+"l'issue d'un concours national d'accès aux écoles supérieures, organisé en "
+"fin de premier cycle. Ce concours est ouvert aux étudiants qui ont été "
+"déclarés admis à la fin de la deuxième année préparatoire.\n"
+"Les étudiants admis peuvent poursuivre trois (03) années de formation, soit "
+"une (01) année de formation commune (02 semestres) et deux années de "
+"spécialité (04 semestres). Le dernier semestre est entièrement consacré au "
+"stage et à la préparation de la thèse finale, qui est soutenue publiquement "
+"devant un jury.\n"
+"                            "
+
+#: EnnseaSite/templates/OffersAndFormation.html:72
+msgid "Third cycle: Doctorate"
+msgstr "Troisième cycle: Formation doctorale"
+
+#: EnnseaSite/templates/OffersAndFormation.html:76
+msgid ""
+" Registration for the Doctorate is open to students holding a Master's "
+"degree or equivalent (or state engineer) in the field of statistics and "
+"applied economics, according to the conditions set by the various doctoral "
+"training offers of the School. The candidates participate in a national "
+"competition according to the conditions of the School and those, selected at "
+"the end of this competition, will have the choice between several "
+"specialties.\n"
+"                            "
+msgstr ""
+"L'inscription au Doctorat est ouverte aux étudiants titulaires d'un Master "
+"ou équivalent (ou ingénieur d'État) dans le domaine de la statistique et de "
+"l'économie appliquée, selon les conditions fixées par les différentes offres "
+"de formation doctorale de l'École. Les candidats participent à un concours "
+"national selon les conditions de l'École et ceux, sélectionnés à l'issue de "
+"ce concours, auront le choix entre plusieurs spécialités.\n"
+"                            "
+
+#: EnnseaSite/templates/OffersAndFormation.html:82
+msgid "The school provides training in six major specialties"
+msgstr "L'école dispense des formations dans six grandes spécialités"
+
+#: EnnseaSite/templates/OffersAndFormation.html:93
+#: EnnseaSite/templates/finance.html:76 EnnseaSite/templates/home.html:221
+msgid "Finance and Actuarial"
+msgstr "Finance et Actuariat"
+
+#: EnnseaSite/templates/OffersAndFormation.html:97
+#: EnnseaSite/templates/home.html:225
+#: EnnseaSite/templates/prospectiveEconomic.html:75
+msgid "Applied Economics and Prospective"
+msgstr "Économie Appliquée et Prospective"
+
+#: EnnseaSite/templates/OffersAndFormation.html:111
+#: EnnseaSite/templates/home.html:238
+#: EnnseaSite/templates/prospectiveEconomic.html:74
+msgid "Statistics and Economic Prospective"
+msgstr "Statistiques et Prospective Économique"
+
+#: EnnseaSite/templates/ResearchLaboratories.html:52
+msgid "Laboratory team"
+msgstr "Equipe de laboratoire"
+
+#: EnnseaSite/templates/ResearchLaboratories.html:56
+msgid "Name"
+msgstr "Nom"
+
+#: EnnseaSite/templates/ResearchLaboratories.html:57
+msgid "Grade"
+msgstr "Grade"
+
+#: EnnseaSite/templates/ScientificBodies.html:13
+msgid "The Scientific Council"
+msgstr "Le Conseil Scientifique"
+
+#: EnnseaSite/templates/ScientificBodies.html:27
+#: EnnseaSite/templates/ScientificBodies.html:41
+#: EnnseaSite/templates/sideNavScientfcR.html:35
+msgid "Scientific bodies"
+msgstr "Organismes scientifiques"
+
+#: EnnseaSite/templates/ScientificBodies.html:43
+msgid ""
+"\n"
+"                        \n"
+"                        The Scientific Council is an advisory body which "
+"gives its opinion and proposes guidelines for\n"
+"                         the scientific and pedagogical affairs of the "
+"School; it is chaired by the Director of\n"
+"                          the School composed of Deputy Directors, heads of "
+"Departments, presidents of scientific committees of\n"
+"                           departments, Directors of research laboratories, "
+"the Director of the Library, permanent teachers\n"
+"                            reporting to other higher education institutions "
+"and elected representatives of teachers of the School.<br>\n"
+"                            The Scientific Committee of the Department is an "
+"advisory structure that issues opinions and recommendations on\n"
+"                             scientific and pedagogical affairs submitted to "
+"it by the head of department; \n"
+"                            it includes, in addition to the head of "
+"Department, elected Representatives of the teachers of the Department.\n"
+"                            "
+msgstr ""
+"\n"
+"                        \n"
+"Le Conseil scientifique est un organe consultatif qui donne son avis et propose des orientations pour les affaires scientifiques et pédagogiques de l'École ;"
+" il est présidé par le Directeur de l'École et composé des Directeurs adjoints, des chefs de départements,"
+" des présidents des comités scientifiques de départements, des Directeurs des laboratoires de recherche, "
+"du Directeur de la Bibliothèque, des enseignants permanents rattachés à d'autres établissements d'enseignement supérieur et "
+"des représentants élus des enseignants de l'École."
+"Le Comité scientifique du Département est une structure consultative qui émet des avis et des recommandations sur "
+"les affaires scientifiques et pédagogiques qui lui sont soumises par le chef de département ;"
+"il comprend, outre le chef de département, des Représentants élus des enseignants du Département.\n"
+"                            "
+
+#: EnnseaSite/templates/actuality.html:13
+msgid "actuality"
+msgstr "actualité"
+
+#: EnnseaSite/templates/actuality.html:28
+msgid " Latest news"
+msgstr "Dernières Nouvelles"
+
+#: EnnseaSite/templates/commonTeaching.html:13
+msgid "Second cycle Master"
+msgstr " deuxième cycle Master"
+
+#: EnnseaSite/templates/commonTeaching.html:27
+msgid "Common Teaching Department of Master s Cycle"
+msgstr "Département d'enseignement commun cycle Master"
+
+#: EnnseaSite/templates/commonTeaching.html:71
+msgid ""
+"Modules studied during the first year of the common core in the second cycle"
+msgstr ""
+"Modules étudiés au cours de la première année du tronc commun du deuxième "
+"cycle"
+
+#: EnnseaSite/templates/commonTeaching.html:78
+msgid " first year of the common trunk"
+msgstr "première année du tronc commun"
+
+#: EnnseaSite/templates/dataScience.html:14
+msgid "Data Science"
+msgstr "Data Science"
+
+#: EnnseaSite/templates/finance.html:18 EnnseaSite/templates/finance.html:33
+msgid "Departement of Finance and Acturial"
+msgstr "Departement de finance et Actuariat"
+
+#: EnnseaSite/templates/footer.html:42
+msgid "Useful links"
+msgstr "Liens utiles"
+
+#: EnnseaSite/templates/footer.html:44
+msgid "Ministry of Higher Education and Scientific Research"
+msgstr "Ministère de l'Enseignement Supérieur et de la Recherche Scientifique"
+
+#: EnnseaSite/templates/footer.html:45
+msgid "Regional Conference of Center Universities"
+msgstr "Conférence Régionale des Universités de Centre"
+
+#: EnnseaSite/templates/footer.html:46
+msgid "Entrepreneurship development centers"
+msgstr "Centres de développement de l'entrepreneuriat"
+
+#: EnnseaSite/templates/footer.html:47
+msgid "Thematic Research Agency in Social and Human Sciences"
+msgstr "Agence de Recherche Thématique en Sciences Sociales et Humaines"
+
+#: EnnseaSite/templates/footer.html:48
+msgid "Center for research in Applied Economics for development"
+msgstr "Centre de recherche en Économie Appliquée pour le développement"
+
+#: EnnseaSite/templates/footer.html:57
+msgid "contact"
+msgstr "contact"
+
+#: EnnseaSite/templates/footer.html:63
+msgid "Kolea W.Tipaza,Algeria"
+msgstr "Kolea W.Tipaza,Algerie"
+
+#: EnnseaSite/templates/footer.html:78
+msgid "position"
+msgstr "position"
+
+#: EnnseaSite/templates/footer.html:93
+msgid "National Higher School of Statistics and Applied Economics"
+msgstr "Ecole Nationale Supérieure de Statistique et d'Économie Appliquée"
+
+#: EnnseaSite/templates/formationDoctoral.html:29
+msgid ""
+"\n"
+"Registration for the Doctorate is open to students holding a Master's degree "
+"or equivalent (or state engineer) in the field of statistics and applied "
+"economics, according to the conditions set by the various doctoral training "
+"offers of the School. The candidates participate in a national competition "
+"according to the conditions of the School and those, selected at the end of "
+"this competition, will have the choice between several specialties.\n"
+msgstr ""
+"\n"
+"L'inscription au Doctorat est ouverte aux étudiants titulaires d'un Master "
+"ou équivalent (ou ingénieur d'État) dans le domaine de la statistique et de "
+"l'économie appliquée, selon les conditions fixées par les différentes offres "
+"de formation doctorale de l'École. Les candidats participent à un concours "
+"national selon les conditions de l'École et ceux, sélectionnés à l'issue de "
+"ce concours, auront le choix entre plusieurs spécialités.\n"
+
+#: EnnseaSite/templates/history.html:31
+msgid "HISTORY"
+msgstr "Histoire"
+
+#: EnnseaSite/templates/history.html:33
+msgid ""
+"\n"
+"                As part of the Ordinance 69-106 of 12/26/1969 on the "
+"creation of institutes of Technology and in application of Decree 70-109 of "
+"07/20/1970, it was created in 1970, in Algiers, an \"Institute of Planning "
+"and Statistics Technology\" (ITPS) and placed under the supervision of the "
+"Ministry of Finance and Planning;\n"
+"                 the Institute's mission was to train senior application "
+"managers necessary to meet the needs defined by the national development "
+"plan, in the field of planning techniques and statistics and also to ensure "
+"the training and improvement of agents working in this sector.<br> In 1972, "
+"and in execution of Decree 72-133 of 07/06/1972, the name of the Institute "
+"became \"Institute of Planning Techniques and Applied Economics\" (ITPEA). \n"
+"                <br>In 1983, in application of Decree 83-692 of 11/26/1983, "
+"the ITPEA is erected\n"
+"                in the \"National Institute of Planning and "
+"Statistics\" (INPS) and placed under the supervision of the Ministry of "
+"Planning and Spatial Planning, the INPS had the mission: To train senior "
+"technicians, state engineers and magisterium.\n"
+"               To ensure, in the field of planning, statistics and "
+"quantitative techniques applied to the economy, the retraining, "
+"specialization and improvement of senior technicians, engineers and holders "
+"of diplomas or equivalent titles.<br> To carry out research work related to "
+"planning, statistics and quantitative techniques applied to the economy and "
+"to\n"
+"                  ensure the dissemination, in accordance with the "
+"regulations, the modalities and procedures in force. The supervision of the "
+"INPS is conferred on the Ministry of Higher Education by Decree 87-271 of "
+"12/15/1987.<br>\n"
+"                   Since 2008, the INPS has become an out-of-university "
+"School, by virtue of Executive Decree 08-222 of 07/14/2008, and takes the "
+"name of \"National Higher School of Statistics and Applied "
+"Economics\" (ENSSEA). During the year 2014, in application of Executive "
+"Decree 13-370 of 09/11/2013, the ENNSEA is transferred from the city of "
+"Algiers to its new headquarters located in the town of Kolea, Wilaya of "
+"Tipaza.                \n"
+"               "
+msgstr ""
+"\n"
+"  Dans le cadre de l’Ordonnance 69-106 du 26/12/1969 portant création des "
+"instituts de Technologie et en application du décret 70-109 du 20/07/1970, "
+"il a été créé en 1970, à Alger un « Institut de Technologie de la "
+"Planification et des Statistiques » (ITPS ) et placé sous la tutelle du "
+"Ministère des Finances et du Plan; l’Institut avait pour mission de former "
+"des cadres supérieurs d’application nécessaires à la satisfaction des "
+"besoins définis par le plan national de développement, dans le domaine des "
+"techniques de planification et des statistiques et d’assurer également la "
+"formation et le perfectionnement des agents en activités dans ce secteur.\n"
+"  En 1972, et en exécution du décret 72-133 du 07/06/1972, la dénomination "
+"de l’Institut est devenue «  Institut des Techniques de Planification et "
+"d’Economie Appliquée » ( ITPEA) .\n"
+"En 1983, en application du décret 83-692 du 26/11/1983, l’ITPEA est érigé en "
+"« Institut National de la Planification et de la Statistique » (INPS) et "
+"placé sous la tutelle du Ministère de la Planification et de l’Aménagement "
+"du Territoire, l’INPS avait pour mission:\n"
+"De former des techniciens supérieurs, des ingénieurs d’état et des "
+"magistères.\n"
+" D’assurer, dans le domaine de la planification, des statistiques et des "
+"techniques quantitatives appliquées à l’économie, le recyclage, la "
+"spécialisation et le perfectionnement des techniciens supérieurs, des "
+"ingénieurs et des titulaires des diplômes ou titres équivalents.\n"
+"De réaliser des travaux de recherche en rapport avec la planification, les "
+"statistiques et les techniques quantitatives appliquées à l’économie et d’en "
+"assurer la diffusion, conformément à la règlementation, aux modalités et "
+"procédures en vigueur.\n"
+"La tutelle de l’INPS  est conférée au Ministère de l’Enseignement Supérieur "
+"par le décret 87-271 du 15/12/1987.\n"
+" Depuis 2008, l’INPS est devenu une Ecole hors-université, en vertu du "
+"décret exécutif 08-222 du 14/07/2008, et prend le nom d’ « Ecole Nationale "
+"Supérieure de Statistique et d’Economie Appliquée » (ENSSEA). Durant l’année "
+"2014, en application du décret exécutif 13-370 du 09/11/2013, l’ENNSEA est "
+"transférée de la ville d’Alger vers son nouveau siège situé dans la ville "
+"Koléa, Wilaya de Tipaza.\n"
+"                    "
+
+#: EnnseaSite/templates/history.html:46
+msgid "The old headquarters of ENSSEA - Algiers-"
+msgstr "L'ancien siège de l'ENSSEA - Alger-"
+
+#: EnnseaSite/templates/history.html:50
+msgid "The old headquarters of INPS - Algiers-"
+msgstr "L'ancien siège de l'INPS - Alger-"
+
+#: EnnseaSite/templates/history.html:54
+msgid "MISSION "
+msgstr "MISSION"
+
+#: EnnseaSite/templates/history.html:57
+msgid ""
+"\n"
+"\n"
+"                The ENSSEA's mission is to ensure higher education, "
+"scientific research and technological development in the various fields "
+"related to statistics and applied economics.\n"
+"                "
+msgstr ""
+"\n"
+"\n"
+" L’ENSSEA a pour mission d’assurer la formation supérieure, la recherche "
+"scientifique et le développement technologique dans les différents domaines "
+"liés à la statistiques et à l’économie appliquée.\n"
+"                "
+
+#: EnnseaSite/templates/home.html:112
+msgid "ENSSEA in numbres"
+msgstr "ENSSEA en chiffres"
+
+#: EnnseaSite/templates/home.html:120
+msgid "proffessors"
+msgstr "Enseignants"
+
+#: EnnseaSite/templates/home.html:133
+msgid "preparatory students"
+msgstr "Etudiants preparatoire"
+
+#: EnnseaSite/templates/home.html:145
+msgid "Master students"
+msgstr "Etudiants Master"
+
+#: EnnseaSite/templates/home.html:160
+msgid "doctoral students"
+msgstr "doctorants"
+
+#: EnnseaSite/templates/home.html:174
+msgid "DEPARTEMENTS"
+msgstr "DEPARTEMENTS"
+
+#: EnnseaSite/templates/home.html:175
+msgid "FORMATIONS"
+msgstr "FORMATIONS"
+
+#: EnnseaSite/templates/home.html:194
+msgid "Second cycle:master’s degree"
+msgstr "Deuxième cycle: Master"
+
+#: EnnseaSite/templates/home.html:199
+msgid "Common teaching"
+msgstr "Enseignement commun"
+
+#: EnnseaSite/templates/home.html:247
+msgid "Third cycle:  Doctoral training"
+msgstr "Troisième cycle: Formation doctorale"
+
+#: EnnseaSite/templates/home.html:250
+msgid ""
+"\n"
+"                        For more than a decade, National Higher School of "
+"Statistics and Applied Economics has been training doctoral students to meet "
+"the needs of higher education training and to implement national research "
+"plan focused on human competence. The school’s doctoral training is adapting "
+"with the various legal reforms endorsed by the Minister of Higher Education "
+"and Scientific Research.\n"
+"                        "
+msgstr ""
+"\n"
+"Depuis plus d'une décennie, l'École nationale supérieure de statistique et d'économie appliquée forme des doctorants pour répondre aux besoins de formation de l'enseignement supérieur et "
+" pour mettre en œuvre le plan national de recherche axé sur la compétence humaine. La formation doctorale de l'école s'adapte aux différentes réformes juridiques entérinées par le ministre de l'Enseignement supérieur et de la Recherche scientifique.\n"
+"                        "
+
+#: EnnseaSite/templates/home.html:267
+msgid "DIGITAL PLATEFORMS"
+msgstr "PLATEFORMES NUMÉRIQUES"
+
+#: EnnseaSite/templates/library.html:10
+#: EnnseaSite/templates/staffLibrary.html:10
+msgid "ENSSEA Library"
+msgstr " bibliothèque de ENSSEA"
+
+#: EnnseaSite/templates/library.html:37
+#: EnnseaSite/templates/staffLibrary.html:34
+msgid "Library"
+msgstr "bibliothèque"
+
+#: EnnseaSite/templates/library.html:77
+msgid ""
+"\n"
+"                                The university library is considered the "
+"main and an essential pillar of scientific research, as it is based on the "
+"service of teaching staff, students and staff. The school has a rich library "
+"with various scientific references, as it contains :<br>\n"
+"                                "
+msgstr ""
+"\n"
+"La bibliothèque universitaire est considérée comme le pilier principal et "
+"essentiel de la recherche scientifique, car elle est basée sur le service du "
+"personnel enseignant, des étudiants et du personnel. L'école dispose d'une "
+"riche bibliothèque avec diverses références scientifiques, elle contient: \n"
+"                                "
+
+#: EnnseaSite/templates/library.html:83
+msgid "Type of document"
+msgstr "Type de document"
+
+#: EnnseaSite/templates/library.html:84
+msgid "Number of titles and copies"
+msgstr "Nombre de titres et d'exemplaires"
+
+#: EnnseaSite/templates/library.html:87
+msgid "Books"
+msgstr "Livres"
+
+#: EnnseaSite/templates/library.html:88
+msgid "12846 titles and 25419 trilingual version"
+msgstr "12846 titres et 25419 versions trilingues"
+
+#: EnnseaSite/templates/library.html:91
+msgid "The Magazines"
+msgstr "Les Magazines"
+
+#: EnnseaSite/templates/library.html:92
+msgid "More than 400 titles"
+msgstr "Plus de 400 titres"
+
+#: EnnseaSite/templates/library.html:96
+msgid "State Engineer's Dissertations "
+msgstr "Mémoires d'Ingénieur d'État"
+
+#: EnnseaSite/templates/library.html:97
+msgid "5989 dissertations"
+msgstr "5989 mémoires"
+
+#: EnnseaSite/templates/library.html:101
+msgid "Magister Dissertations"
+msgstr "Mémoires de Magister"
+
+#: EnnseaSite/templates/library.html:102
+msgid "353 dissertation"
+msgstr "353 mémoire"
+
+#: EnnseaSite/templates/library.html:106
+msgid "Senior Technician Dissertations"
+msgstr "Mémoires de Technicien Supérieur"
+
+#: EnnseaSite/templates/library.html:107
+msgid "1800 dissertation"
+msgstr "1800 mémoire"
+
+#: EnnseaSite/templates/library.html:111
+msgid "Master's Theses "
+msgstr "Etudiants Master"
+
+#: EnnseaSite/templates/library.html:112
+msgid "1557 dissertation"
+msgstr "1557 mémoire"
+
+#: EnnseaSite/templates/library.html:116
+msgid "Doctoral Theses"
+msgstr "Thèses de Doctorat"
+
+#: EnnseaSite/templates/library.html:117
+msgid "250 doctoral theses"
+msgstr "250 thèses de doctorat"
+
+#: EnnseaSite/templates/library.html:124
+msgid ""
+"\n"
+"                              It also contains two reading rooms and a "
+"bibliographic research room equipped with computers programmed with a "
+"special search system, in addition to a digital library that holds the "
+"entire documentary collection of the library of the National School of "
+"Statistics and Applied Economics, including books and theses, accessible to "
+"each researcher via the school's official website.\n"
+"                              The library director, with the help of the "
+"heads of its departments, manages the library and provides services to "
+"users, while also enriching and developing the collection through various "
+"forms of acquisition, the most important of which are purchases, gifts, and "
+"deposits.<br>\n"
+"                              Based on the above and the services provided "
+"by the Library of the National School of Statistics and Applied Economics, "
+"the importance of the library is evident in advancing scientific research.\n"
+"                              "
+msgstr ""
+"\n"
+"Il contient également deux salles de lecture et une salle de recherche "
+"bibliographique équipée d'ordinateurs programmés avec un système de "
+"recherche spécial, en plus d'une bibliothèque numérique qui détient "
+"l'intégralité de la collection documentaire de la bibliothèque de l'École "
+"Nationale de Statistique et d'Économie Appliquée, y compris les livres et "
+"thèses, accessibles à chaque chercheur via le site officiel de l'école.\n"
+"Le directeur de la bibliothèque, avec l'aide des responsables de ses "
+"départements, gère la bibliothèque et fournit des services aux usagers, tout "
+"en enrichissant et en développant la collection par diverses formes "
+"d'acquisition, dont les plus importantes sont les achats, les dons et les "
+"dépôts.<br > \n"
+"Sur la base de ce qui précède et des services fournis par la Bibliothèque de "
+"l'École Nationale de Statistique et d'Économie appliquée, l'importance de la "
+"bibliothèque est évidente pour faire progresser la recherche scientifique.\n"
+"                              "
+
+#: EnnseaSite/templates/organizationalChart.html:15
+msgid "Organizational chart"
+msgstr "organigramme"
+
+#: EnnseaSite/templates/pagination.html:7
+#: EnnseaSite/templates/pagination.html:11
+msgid "Previous"
+msgstr "Précédent"
+
+#: EnnseaSite/templates/pagination.html:24
+#: EnnseaSite/templates/pagination.html:29
+msgid "Next"
+msgstr "Suivant"
+
+#: EnnseaSite/templates/prepatory.html:27
+msgid "Departement of Preparatory Classes"
+msgstr "Departement de Classes Préparatoires"
+
+#: EnnseaSite/templates/prepatory.html:69
+msgid " The modules studied during the preparatory cycle"
+msgstr "Les modules étudiés au cours du cycle préparatoire"
+
+#: EnnseaSite/templates/prepatory.html:75
+msgid "preparatory classe First year "
+msgstr "classes préparatoires Première année"
+
+#: EnnseaSite/templates/prepatory.html:76
+msgid "preparatory classe Second year "
+msgstr "classes préparatoires Deuxième année"
+
+#: EnnseaSite/templates/prospectiveEconomic.html:13
+#: EnnseaSite/templates/prospectiveEconomic.html:26
+msgid "Departement of quantitative and prospective economics"
+msgstr "Departement d'Economie quantitative et prospective"
+
+#: EnnseaSite/templates/prospectiveEconomic.html:68
+msgid "Modules that are studied for each specialty"
+msgstr "Modules étudiés pour chaque spécialité"
+
+#: EnnseaSite/templates/scintficActvt.html:13
+#: EnnseaSite/templates/scintficActvt.html:27
+msgid "Scientific Activities"
+msgstr "Activités scientifiques"
+
+#: EnnseaSite/templates/sideNavLibrary.html:31
+msgid "Presentation"
+msgstr "Presentation"
+
+#: EnnseaSite/templates/sideNavLibrary.html:36
+msgid "Staff of library"
+msgstr "Personnel de la bibliothèque"
+
+#: EnnseaSite/templates/sideNavLibrary.html:41
+msgid "Internal Regulations"
+msgstr "Règlement Intérieur"
+
+#: EnnseaSite/templates/staffLibrary.html:41
+msgid "Staff of Library"
+msgstr "Personnel de la bibliothèque"
+
+#: EnnseaSite/templates/staffLibrary.html:54
+msgid ""
+"\n"
+"                              The library is composed of a director and 3 "
+"heads of departments:<br>\n"
+"                              "
+msgstr ""
+"\n"
+"La bibliothèque est composée d'un directeur et de 3 chefs de services: < "
+"br>\n"
+"                              "
+
+#: EnnseaSite/templates/staffLibrary.html:60
+msgid "acquisition and processing"
+msgstr "acquisition et traitement"
+
+#: EnnseaSite/templates/staffLibrary.html:61
+msgid "bibliographic research"
+msgstr "recherche bibliographique"
+
+#: EnnseaSite/templates/staffLibrary.html:62
+msgid "reception and orientation"
+msgstr "accueil et orientation"
+
+#: EnnseaSite/templates/staffLibrary.html:71
+msgid "Missions of the Library services"
+msgstr "Missions des services de la Bibliothèque"
+
+#: EnnseaSite/templates/staffLibrary.html:73
+msgid "Reception and orientation service"
+msgstr "Service d'accueil et d'orientation"
+
+#: EnnseaSite/templates/staffLibrary.html:75
+msgid "Access to references"
+msgstr "Accès aux références"
+
+#: EnnseaSite/templates/staffLibrary.html:76
+msgid "Internal and external lending"
+msgstr "Prêts internes et externes"
+
+#: EnnseaSite/templates/staffLibrary.html:77
+#: EnnseaSite/templates/staffLibrary.html:89
+msgid "Registration in the library"
+msgstr "Inscription à la bibliothèque"
+
+#: EnnseaSite/templates/staffLibrary.html:78
+msgid "Access to databases"
+msgstr "Accès aux bases de données"
+
+#: EnnseaSite/templates/staffLibrary.html:79
+#: EnnseaSite/templates/staffLibrary.html:91
+msgid " Take care of the library's holdings and update inventory lists"
+msgstr ""
+"S'occuper des fonds de la bibliothèque et mettre à jour les listes "
+"d'inventaire"
+
+#: EnnseaSite/templates/staffLibrary.html:80
+msgid "signature of the QUITUS form"
+msgstr "signature du formulaire de QUITUS"
+
+#: EnnseaSite/templates/staffLibrary.html:85
+msgid "Bibliographic research department"
+msgstr "Service de recherche bibliographique"
+
+#: EnnseaSite/templates/staffLibrary.html:87
+msgid ""
+"To ensure the promotion of bibliographic research among the beneficiaries "
+"and to accompany them in the realization of their scientific research "
+"through: "
+msgstr ""
+"Assurer la promotion de la recherche bibliographique auprès des "
+"bénéficiaires et les accompagner dans la réalisation de leurs recherches "
+"scientifiques à travers: "
+
+#: EnnseaSite/templates/staffLibrary.html:88
+msgid ""
+"Manage the library's website and provide the institution's website with "
+"information about the library "
+msgstr ""
+"Gérer le site Web de la bibliothèque et fournir sur le site Web de "
+"l'institution des informations sur la bibliothèque "
+
+#: EnnseaSite/templates/staffLibrary.html:90
+msgid "Manage SNDL accounts and provide a private account for each student  "
+msgstr "Gérer les comptes SNDL et fournir un compte privé pour chaque étudiant"
+
+#: EnnseaSite/templates/staffLibrary.html:92
+msgid ""
+"Manage SCHOLARVOX accounts and provide a private account for each student"
+msgstr ""
+"Gérez les comptes SCHOLARVOX et fournissez un compte privé à chaque étudiant"
+
+#: EnnseaSite/templates/staffLibrary.html:98
+msgid "Acquisition and processing service"
+msgstr "Service d'acquisition et de traitement"
+
+#: EnnseaSite/templates/staffLibrary.html:100
+msgid "Responsible for the documentary series"
+msgstr "Responsable de la série documentaire"
+
+#: EnnseaSite/templates/staffLibrary.html:101
+msgid "Collect the needs of the library according to the teaching programs"
+msgstr ""
+"Recueillir les besoins de la bibliothèque en fonction des programmes "
+"d'enseignement"
+
+#: EnnseaSite/templates/staffLibrary.html:102
+msgid "Analysis of requests and preparation of the list of acquisitions "
+msgstr "Analyse des demandes et préparation de la liste des acquisitions"
+
+#: EnnseaSite/templates/staffLibrary.html:103
+msgid ""
+"Use of the standardized SYNGEB system (standardized library management "
+"system) for the processing of books and theses"
+msgstr ""
+"Utilisation du système SYNGE standardisé (système de gestion de bibliothèque "
+"standardisé) pour le traitement des livres et des thèses"
+
+#: EnnseaSite/templates/staffLibrary.html:104
+msgid ""
+" The receipt of the order with an acknowledgment of receipt, then "
+"registration in a special register where the documents are acquired via the "
+"publishers' indexes "
+msgstr ""
+"La réception de la commande avec accusé de réception, puis inscription dans "
+"un registre spécial où les documents sont acquis via les index des éditeurs "
+
+#: EnnseaSite/templates/staffLibrary.html:105
+msgid ""
+"Cataloguing of the documentary fund according to the accepted standards of "
+"bibliographic description"
+msgstr ""
+"Catalogage du fonds documentaire selon les normes acceptées de description "
+"bibliographique"
+
+#: EnnseaSite/templates/staffLibrary.html:117
+msgid "library director :"
+msgstr "directeur de bibliothèque :"
+
+#: EnnseaSite/templates/studiesAndScholling.html:53
+msgid ""
+"\n"
+"                        The higher education and teaching at the level of "
+"the National Higher School of Statistics and Applied Economics lasts five "
+"years and is divided into three periods:"
+msgstr ""
+"\n"
+"L'enseignement supérieur et l'enseignement au niveau de l'École Nationale "
+"Supérieure de Statistique et d'Économie Appliquée durent cinq ans et sont "
+"répartis en trois périodes:"
+
+#: EnnseaSite/templates/studiesAndScholling.html:56
+msgid "TWO YEARS OF PREPARATORY CLASSES"
+msgstr "DEUX ANNÉES DE CLASSES PRÉPARATOIRES"
+
+#: EnnseaSite/templates/studiesAndScholling.html:58
+msgid ""
+" Two years during which the basic knowledge is taught for mastery by the "
+"student before moving on to the second cycle."
+msgstr ""
+"Deux années pendant lesquelles les connaissances de base sont enseignées "
+"pour la maîtrise par l'étudiant avant de passer au deuxième cycle."
+
+#: EnnseaSite/templates/studiesAndScholling.html:60
+msgid "A YEAR OF COMMON CORE IN THE SECOND CYCLE"
+msgstr "UNE ANNÉE DE TRONC COMMUN AU DEUXIÈME CYCLE"
+
+#: EnnseaSite/templates/studiesAndScholling.html:62
+msgid ""
+" Students who pass the contest enter the first year of the second cycle."
+msgstr ""
+"Les étudiants qui réussissent le concours entrent en première année du "
+"deuxième cycle."
+
+#: EnnseaSite/templates/studiesAndScholling.html:64
+msgid "TWO YEARS OF SPECIALTY (4TH + 5TH YEAR)"
+msgstr "DEUX ANS DE SPÉCIALITÉ (4ÈME + 5ÈME ANNÉE)"
+
+#: EnnseaSite/templates/studiesAndScholling.html:66
+msgid ""
+"The School offers its students six specialties which are taught for the "
+"engineering cycle (Statistics and Data Science, Applied Statistics, Applied "
+"Economics and Prospective, Statistics and Economic Prospective, Finance and "
+"Actuarial Science, Population Sciences and Statistics Social).\n"
+"                        The choice is made at the end of the 1st year of the "
+"second cycle on the basis of the grades obtained during the first year of "
+"the second cycle and the places open by specialty.\n"
+"                        "
+msgstr ""
+"L'École propose à ses étudiants six spécialités qui sont enseignées pour le "
+"cycle ingénieur (Statistiques et Science des Données, Statistiques "
+"Appliquées, Économie Appliquée et Prospective, Statistiques et Prospective "
+"Économique, Finance et Actuariat, Sciences de la Population et Statistiques "
+"Sociales).\n"
+"Le choix se fait à la fin de la 1ère année du deuxième cycle sur la base des "
+"notes obtenues lors de la première année du deuxième cycle et des places "
+"ouvertes par spécialité.\n"
+"                        "
+
+#~ msgid "Scientific Publications"
+#~ msgstr "Publications scientifiques"
+
+#~ msgid "Coopration"
+#~ msgstr "Coopération"
+
+#~ msgid "School life"
+#~ msgstr "Vie scolaire"
+
+#~ msgid "Events"
+#~ msgstr "Événements"
+
+#~ msgid "ENSSEA Clubs"
+#~ msgstr "ENSSEA Clubs"
+
+#~ msgid "Sport"
+#~ msgstr "Sport"
+
+#~ msgid "Réglementation"
+#~ msgstr "Réglementation"
+
+#~ msgid "Quantitative and prospective Economic"
+#~ msgstr "Economie quantitative et prospective"
+
+#~ msgid "Cooperation agreement"
+#~ msgstr "Accord de coopération"
+
+#~ msgid ""
+#~ "The ENSSEA has a very rich library consisting of a fund of more than Nine "
+#~ "thousand (11,200) scientific works and periodicals in several languages, "
+#~ "and in several disciplines related to its vocation.The integrality of the "
+#~ "end-of-studies dissertations and the records of the documentary fund is "
+#~ "accessible online; remote consultation of the summaries is a very useful "
+#~ "service for researchers.The new acquisitions of the library are made "
+#~ "every year by the purchase of new titles, especially those requested by "
+#~ "students or proposed by teachers.the library has a computer room "
+#~ "facilitating documentary research for students, a large work room and a "
+#~ "reading room."
+#~ msgstr ""
+#~ "L'ENSSEA dispose d'une bibliothèque très riche composée d'un fonds de "
+#~ "plus de neuf mille (11 200) ouvrages scientifiques et périodiques en "
+#~ "plusieurs langues, et dans plusieurs disciplines liées à sa vocation."
+#~ "L'intégrité de la fin de-les mémoires d'études et les dossiers du fonds "
+#~ "documentaire sont accessibles en ligne; la consultation à distance des "
+#~ "résumés est un service très utile pour chercheurs.Les nouvelles "
+#~ "acquisitions de la bibliothèque sont effectuées chaque année par le achat "
+#~ "de nouveaux titres, notamment ceux demandés par les étudiants ou proposés "
+#~ "par les enseignants.la bibliothèque dispose d'une salle informatique "
+#~ "facilitant le documentaire recherche pour les étudiants, une grande salle "
+#~ "de travail et une salle de lecture."
+
+#~ msgid "Presentation of the training:"
+#~ msgstr "Présentation de la formation:"
+
+#~ msgid ""
+#~ "The Departement of quantitative and prospective economics provides "
+#~ "training in two specialities that are both distinct and highly "
+#~ "complementary namely marketing and logistics These two courses represent "
+#~ "essential functions within companies which inevitably enable them to be "
+#~ "more efficient and competitive Training in one of the above-mentioned "
+#~ "specialities at ENSSEA Kolea enables students to acquire the necessary "
+#~ "theoretical knowledge but also to develop their skills through empirical "
+#~ "activities and internships in companies thus making it easier for them to "
+#~ "take the plunge into the professional world as employees or company "
+#~ "directors"
+#~ msgstr ""
+#~ "Le Département d'économie quantitative et prospective dispense des "
+#~ "formations dans deux spécialités à la fois distinctes et hautement "
+#~ "complémentaires à savoir marketing et logistique Ces deux formations "
+#~ "représentent des fonctions essentielles au sein des entreprises qui leur "
+#~ "permettent inévitablement d'être plus efficaces et Formation compétitive "
+#~ "dans l'une des spécialités susmentionnées à l'ENSSEA Kolea permet aux "
+#~ "étudiants d'acquérir les connaissances théoriques nécessaires mais aussi "
+#~ "pour développer leurs compétences à travers des activités empiriques et "
+#~ "des stages en les entreprises leur permettent ainsi de se lancer plus "
+#~ "facilement dans le monde professionnel en tant que salariés ou dirigeants "
+#~ "d'entreprise"
+
+#~ msgid "Dirctor of library"
+#~ msgstr "Directeur de la bibliothèque"
+
+#~ msgid "Important statistics"
+#~ msgstr "Statistiques importantes"
+
+#~ msgid "Conclusion of a cooperation agreement"
+#~ msgstr "Conclusion d'un accord de coopération"

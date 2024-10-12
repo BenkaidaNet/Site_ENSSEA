@@ -1,0 +1,30 @@
+{% load static %}{% load tailwind_tags %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+
+{% block js_block %}
+<script type="text/javascript" src="{% static 'js/splide.min.js'%}"></script>
+
+{% endblock %}
+    
+    
+</head>
+<body>
+    <section class="splide" aria-label="Basic Structure Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">Slide 01</li>
+            <li class="splide__slide">Slide 02</li>
+            <li class="splide__slide">Slide 03</li>
+          </ul>
+        </div>
+      </section>
+</body>

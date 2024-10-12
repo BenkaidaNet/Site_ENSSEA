@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  
+  /* Apply the font to a class */
+ 
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        /* يبدأ بشفافية كاملة (غير مرئي) */
+    }
+    to {
+        opacity: 1;
+        /* ينتهي بشفافية كاملة (مرئي) */
+    }
+}
+
+
+/* تطبيق الأنميشن على العنوان */
+
+.fade-in {
+    animation: fade-in 5s ease-out;
+    /* الانميشن يستغرق 1.5 ثانية ويتحرك بشكل تدريجي */
+}
+
+.subnav:hover .subnav-content {
+    display: flex;
+}
+
+
+#announcement:hover #card-front1 {
+    transform: translateX(-100%);
+}
+
+#announcement:hover #card-back1 {
+    transform: translateX(0);
+}
+
+#announcement :hover {
+    background-color: darkgray;
+}
+
+
+
+}

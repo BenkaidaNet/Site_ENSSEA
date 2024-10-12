@@ -1,0 +1,250 @@
+{% load static %}{% load tailwind_tags %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static '/css/splide.min.css' %}" rel="stylesheet"> 
+
+    <title>{% trans 'AREA AND INFRASTRUCTURE' %}</title>
+    <link rel="icon" type="image/x-icon" href="/static/photos/logoENSSEA.ico">
+   
+    {% tailwind_css %}
+</head>
+
+<body>
+    <header>
+        {% include 'NavbarPrincipal.html'%}
+    </header>
+
+    <section class="mt-8 w-full h-auto">
+        <div class=" ">
+        <div class="font-bold mx-10 mt-5 text-center"> <h1 class="underline"> {% trans 'AREA AND INFRASTRUCTURE' %}</h1></div>
+        <div class=" flex flex-row">
+            <div class="w-3/4 h-auto border-r my-0 mx-0  ">
+                    <p id="prgph1" style="direction:ltr;" class="text-vsm md:text-sm mt-4 mx-6">
+                    {% blocktrans %}
+                    The ENSSEA covers a total area of nine hectares (09 ha), distributed in : <br>
+                    Building: 06 Ha (66.67%)<br>
+                    Car parks, routes and green areas: 03 Ha (33.33%)<br>
+                    the building comprises three (03) blocks with three (03) floors, and a synthesis of contemporary styles where the decorative influences of modern architecture are declined, in complete harmony. It is composed of :<br>
+                    {% endblocktrans %}
+
+                    </p>
+
+                <div class="flex flex-col md:flex-row justify-around my-4">
+
+                <table class="w-auto bg-white rounded-md shadow-sm">
+                    <thead class="bg-gray-200 text-vsm ">
+                        <tr>
+                            <th class="py-2 px-1 border-b">{% trans 'amphitheaters' %} </th>
+                            <th class="py-2 px-1 border-b">{% trans 'Conference room' %} </th>
+                            <th class="py-2 px-1 border-b">{% trans 'Auditorium' %} </th>
+                            <th class="py-2 px-1 border-b">{% trans 'reading rooms' %} </th>
+                         
+                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-100 ">
+                            <td class="py-2 px-1 border-b">5</td>
+                            <td class="py-2 px-1 border-b">01</td>
+                            <td class="py-2 px-1 border-b">01</td>
+                            <td class="py-2 px-1 border-b">02</td>
+                            
+                            
+
+
+                        </tr>
+                  
+                    </tbody>
+                    <thead class="bg-gray-200 text-vsm ">
+                        <tr>
+                          
+                            <th class="py-2 px-1 border-b">{% trans 'works rooms' %}</th>
+                            <th class="py-2 px-1 border-b">{% trans 'computer rooms' %}</th>
+                            <th class="py-2 px-1 border-b">{% trans 'teachers offices' %}</th>
+                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-100 ">
+                           
+                            <td class="py-2 px-1 border-b">34</td>
+                            <td class="py-2 px-1 border-b">06</td>
+                            <td class="py-2 px-1 border-b">70</td>
+                            
+
+
+                        </tr>
+                  
+                    </tbody>
+                    <thead class="bg-gray-200 text-vsm ">
+                        <tr> 
+                            <th class="py-2 px-1 border-b">{% trans 'administrative offices' %}</th>
+                            <th class="py-2 px-1 border-b">{% trans 'meeting room' %}</th>
+                            <th class="py-2 px-1 border-b">{% trans 'doctor s office' %}</th>
+                            
+                            
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-100">
+                            <td class="py-2 px-1 border-b">69</td>
+                            <td class="py-2 px-1 border-b">01</td>
+                            <td class="py-2 px-1 border-b">01</td>
+                            
+                          
+
+
+                        </tr>
+                    </tbody>
+
+                    <thead class="bg-gray-200 text-vsm ">
+                        <tr> 
+                           
+                            <th class="py-2 px-1 border-b">{% trans 'archive room' %}</th>
+                            <th class="py-2 px-1 border-b">{% trans 'store' %}</th>
+                            <th class="py-2 px-1 border-b">{% trans 'workshop' %}</th>
+                            
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-100">
+                          
+                            <td class="py-2 px-1 border-b">01</td>
+                            <td class="py-2 px-1 border-b">01</td>
+                            <td class="py-2 px-1 border-b">01</td>
+                          
+
+
+                        </tr>
+                    </tbody>
+                </table>
+                <image class=" h-auto md:h-96 w-auto " src="/static/photos/paneuEntr.jpg"></image>
+
+            </div>
+                    
+            </div>
+            <div class="w-1/4 h-auto flex flex-col">
+                    <ul  class=" bg-white text-center h-auto  px-0  text-blue-950  text-vsm md:text-sm  ">
+                        <li class="border-b-2">
+                            <a id="idHistory" href="{% url 'history' %}" class="block  py-2  hover:bg-blue-600 hover:text-white active:bg-blue-600 ">{% trans 'History' %} </a>
+                        </li>
+                        
+                        <li class="border-b-2">
+                            <a id="idInfra" href="{% url 'infrastructure' %}" class="block  py-2  hover:bg-blue-600 hover:text-white ">{% trans 'Infrastructure' %} </a>
+                        </li>
+                        <li class="border-b-2">
+                            <a id="idOrganis" href="{% url 'organizationalChart' %}" class="block py-2   hover:bg-blue-600 hover:text-white">{% trans 'organizational chart' %} </a>
+                        </li>
+                    </ul>
+
+            </div>
+      </div>
+    </div >
+    <div class=" flex   w-auto h-auto mx-4 ">
+     <div class="splide  w-full h-auto" aria-label="Slide Container  ">
+        <div class="splide__track bg-transparent ">
+            <ul class="splide__list space-x-2">
+
+                <li class="splide__slide px-0 w-1/3">
+                    <div style="background-image: url('/static/photos/infrastructure/sallInfo.png'); background-repeat: no-repeat; background-size: cover;" class="splide__slide__container h-full w-full bg-blue-700 " >
+                    
+                    </div>
+                </li>
+
+                <li class="splide__slide px-0 w-1/3">
+                    <div style="background-image: url('/static/photos/infrastructure/enssea1.jpeg'); background-repeat: no-repeat; background-size: cover;" class="splide__slide__container h-full w-full bg-blue-700 " >
+                    
+                    </div>
+                </li>
+                <li class="splide__slide px-0 h-auto w-1/3">
+                    <div style="background-image: url('/static/photos/infrastructure/enssea2.jpeg'); background-repeat: no-repeat; background-size: cover;" class="splide__slide__container  ">
+    
+                    </div>
+                </li>
+                <li class="splide__slide px-0 w-1/3 h-auto">
+                    <div style="background-image: url('/static/photos/infrastructure/ensseaAmphi.jpg'); background-repeat: no-repeat; background-size: cover;" class="splide__slide__container    ">
+
+                    </div>
+
+                </li>
+                <li class="splide__slide px-0  w-1/3 h-auto">
+                    <div style="background-image: url('/static/photos/infrastructure/sallBiblio3.jpg'); background-repeat: no-repeat; background-size: cover;" class="splide__slide__container    ">
+
+                    </div>
+
+                </li>
+
+                <li class="splide__slide px-0 w-1/3">
+
+                    <div style="background-image: url('/static/photos/infrastructure/ensseaIn.jpg'); background-repeat: no-repeat; background-size: cover;" class="splide__slide__container w-full h-full  ">
+                    </div>
+                </li>
+                <li class="splide__slide px-0 w-1/2">
+
+                    <div style="background-image: url('/static/photos/infrastructure/enssea_inner.jpg'); background-repeat: no-repeat; background-size: cover;" class="splide__slide__container w-full">
+
+                   </div>
+ 
+                </li>
+
+            </ul>
+        </div>
+        <div class="splide__progress w-full mt-1 ">
+            <div class="splide__progress__bar h-2 rounded-r-md bg-indigo-900">
+               
+            </div>
+        </div>
+    </div> 
+</div>
+ 
+</section>
+  
+
+    <footer >
+        {% include 'footer.html' %}
+    </footer>
+
+    {% block js_block %}
+    <script type="text/javascript" src="{% static 'js/splide.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/infrastructure.js'%}">
+    </script>
+    <script type="text/javascript" src="{% static 'js/sidNavAbout.js'%}"></script>
+
+    <script>
+        function DetectLanguage(){
+            var selectElement = document.getElementById('selectlist');
+        
+            var selectedIndex = selectElement.selectedIndex;
+        
+            var selectedOption = selectElement.options[selectedIndex];
+        
+            var selectedValue = selectedOption.value;
+        
+            return (selectedValue);
+            
+        }
+        
+        if (DetectLanguage()=='ar'){ 
+            let prgph=document.getElementById('prgph1');
+            prgph.style.direction='rtl';        
+        
+        }
+    </script>
+
+
+    {% endblock %} 
+</body>
+
+</html>

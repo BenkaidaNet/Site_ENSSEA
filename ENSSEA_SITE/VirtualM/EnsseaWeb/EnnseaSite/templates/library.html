@@ -1,0 +1,165 @@
+{% load static %} {% load tailwind_tags %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>{% trans 'ENSSEA Library' %}</title>
+    <link rel="icon" type="image/x-icon" href="/static/photos/logoENSSEA.ico">
+    <link href="{% static '/css/splide.min.css' %}" rel="stylesheet"> 
+
+
+    {% tailwind_css %}
+
+</head>
+
+<body>
+
+    <header class="sticky top-0 z-30 ">
+
+
+        {% include 'NavbarPrincipal.html' %}
+
+
+
+    </header>
+    
+    <section class="font-arabic">
+
+        <div id="loading" class="fixed top-0 left-0 w-full h-full z-50 flex justify-center items-center bg-white">
+            <image src="/static/photos/icons8-dot-bricks.gif"></image>
+
+        </div>
+        <!-- <div class="sticky -top-10 z-20  w-auto h-32 bg-cover bg-center bg-[url('/static/photos/library/biblio.jpg')] bg-no-repeat">
+            <div class="relative group left-0 ml-0 top-20 w-full py-3 text-white font-bold text-2xl  bg-blue-800 bg-opacity-50 text-center"> {% trans 'Library' %}
+
+
+            </div>
+
+        </div> -->
+     <!-- <div class="absolute bg-blue-500 h-1 left-0 bottom-0 w-full transform scale-x-0 transition-transform duration-200 origin-center group-hover:scale-x-100"></div> -->
+     <div class="splide z-0 my-2 w-auto " aria-label="Slide Container Example ">
+        <div  class="splide__track  w-auto mt-4 mx-2" >
+          <ul class="splide__list ">
+            {% for item in photoBiblio %}
+            <li class="splide__slide mx-1  w-auto h-auto">
+              <div  class="splide__slide__container  w-auto h-auto" >
+                <img class="w-full h-full rounded-md" src="{{item.photo.url}} " alt="{{ item.caption }}">
+                
+              </div>         
+         
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="splide__progress w-full mt-0 ">
+          <div id="porgessBar" class="splide__progress__bar h-1 md:h-2 rounded-md bg-blue-600">
+          </div>
+        </div>
+      </div>
+     <div class=" w-3/4 h-auto border-l  flex flex-col  ">
+
+    </div>
+        <div class=" w-auto h-auto flex flex-col font-arabic">
+            <div class=" w-full h-full  bg-yellow-300">
+                {% include 'sideNavLibrary.html' %}
+
+            </div>
+   
+             <div class="text-start flex  justify-around w-full bg-slate-200">
+                <div class="flex flex-col md:flex-row    w-full ">
+                    <div class="h-auto w-full flex flex-col ">
+                        <div class=" justify-center m-6 borber border-collapse">
+                            <p id="pragraphLibrry1" class="text-vsm md:text-sm" style="direction:ltr ">
+                                {% blocktrans %}
+                                The university library is considered the main and an essential pillar of scientific research, as it is based on the service of teaching staff, students and staff. The school has a rich library with various scientific references, as it contains :<br>
+                                {% endblocktrans %}
+                            </p>
+                            <table id="tableLibrry" style="direction:ltr " class=" rounded-md w-full h-auto bg-blue-500 mt-2 text-vsm md:text-sm">
+                                <tr class="border text-center">
+                                <th class="border">{% trans 'Type of document' %}</th>
+                                <th>{% trans 'Number of titles and copies' %}</th>
+                                </tr>
+                                <tr class="border text-center">
+                                <td class="border">{% trans 'Books' %}</td>
+                                <td >{% trans '12846 titles and 25419 trilingual version' %}</td>
+                                </tr>
+                                <tr class="border text-center">
+                                <td class="border">{% trans 'The Magazines' %}</td>
+                                <td>{% trans 'More than 400 titles' %}</td>
+                            
+                                </tr>
+                                <tr class="border text-center">
+                                    <td class="border">{% blocktrans %}State Engineer's Dissertations {% endblocktrans %}</td>
+                                    <td>{% trans '5989 dissertations' %}</td>
+                                
+                                </tr>
+                                <tr class="border text-center">
+                                    <td class="border">{% trans 'Magister Dissertations' %}</td>
+                                    <td>{% trans '353 dissertation' %}</td>
+                                
+                                </tr>
+                                <tr class="border text-center">
+                                    <td class="border">{% trans 'Senior Technician Dissertations' %}</td>
+                                    <td>{% trans '1800 dissertation' %}</td>
+                                
+                                </tr>
+                                <tr class="border text-center">
+                                    <td class="border">{% blocktrans %}Master's Theses {% endblocktrans %}</td>
+                                    <td> {% trans '1557 dissertation' %}</td>
+                                
+                                </tr>
+                                <tr  class="border text-center">
+                                    <td class="border">{% trans 'Doctoral Theses'  %}</td>
+                                    <td >{% trans '250 doctoral theses' %}</td>
+                                
+                                </tr>
+                            </table>
+                        </div>
+                        <div class=" mx-6 mb-6">
+                            <p id="pragraphLibrry" class="text-vsm md:text-sm" style="direction:ltr ">
+                              {% blocktrans %}
+                              It also contains two reading rooms and a bibliographic research room equipped with computers programmed with a special search system, in addition to a digital library that holds the entire documentary collection of the library of the National School of Statistics and Applied Economics, including books and theses, accessible to each researcher via the school's official website.
+                              The library director, with the help of the heads of its departments, manages the library and provides services to users, while also enriching and developing the collection through various forms of acquisition, the most important of which are purchases, gifts, and deposits.<br>
+                              Based on the above and the services provided by the Library of the National School of Statistics and Applied Economics, the importance of the library is evident in advancing scientific research.
+                              {% endblocktrans %}
+                             </p>
+                         </div>
+                  </div>  
+                    <image class="mt-4 ml-6 md:ml-0 md:mr-2  h-44 w-2/3  md:h-72" src="/static/photos/library/biblio.jpg"></image>
+                  
+
+                </div>
+                
+            
+
+            </div>
+         
+                
+        </div>
+
+        
+        
+    </section>
+
+    <footer class="relative">
+        {% include 'footer.html' %}
+
+    </footer>
+    {% block js_block %}
+
+    <script type="text/javascript" src="{% static 'js/jquery-3.6.4.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/laoding.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/library.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/splide.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/splideLibrary.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/detectLangLibrary.js'%}"></script>
+
+
+    {% endblock %}
+</body>
+
+</html>

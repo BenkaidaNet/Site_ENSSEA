@@ -1,0 +1,157 @@
+{% load static %} {% load tailwind_tags %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>{% trans 'ENSSEA Library' %}</title>
+    <link rel="icon" type="image/x-icon" href="/static/photos/logoENSSEA.ico">
+    <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+    <link href="{% static '/css/splide.min.css' %}" rel="stylesheet"> 
+    {% tailwind_css %}
+
+</head>
+
+<body>
+
+    <header class="sticky top-0 z-30 ">
+
+
+        {% include 'NavbarPrincipal.html' %}
+
+
+
+    </header>
+    
+    <section >
+
+
+        <div class="sticky -top-10 z-20  w-auto h-44 bg-cover bg-center bg-[url('/static/photos/library/biblio.jpg')] bg-no-repeat">
+            <div id="Title" class="relative group left-0 ml-0 top-32 w-full py-2 font-arabic text-white font-bold text-2xl  bg-blue-800 bg-opacity-50 text-center"> {% trans 'Library' %}
+
+
+            </div>
+
+        </div> 
+     <!-- <div class=" z-0 my-2 w-full h-auto text-center bg-gray-300 " >
+        <h>{% trans 'Staff of Library' %}</h>
+        
+      </div> -->
+      <div class=" w-full h-full  bg-yellow-300">
+        {% include 'sideNavLibrary.html' %}
+
+      </div>
+     <div class="flex flex-row">
+        <div class=" w-3/4 h-auto  flex flex-col">
+                    <div class="flex flex-col mt-2 h-auto w-full   bg-slate-200 ">
+                        
+                        <div class=" ml-6 mb-6">
+                            <p id="paragraph1" class="text-vsm md:text-sm mt-2 mx-6" style="direction:ltr; ">
+                              {% blocktrans %}
+                              The library is composed of a director and 3 heads of departments:<br>
+                              {% endblocktrans %}
+
+                              </p>
+                              <ul id="ulServices" class="list-disc list-inside text-vsm md:text-sm font-light ml-6"  style="direction:ltr; " >
+                                <li>{% trans 'acquisition and processing' %}</li>
+                                <li>{% trans 'bibliographic research' %}</li>
+                                <li>{% trans 'reception and orientation' %}</li>
+                              </ul>
+                             
+                        </div>
+                  </div>  
+                
+
+              <div class="h-auto w-full flex flex-col my-2 bg-slate-200 ">
+               <div class="border-white border-b py-1 flex justify-center"> 
+                <span class="text-center  text-vsm md:text-lg font-semibold">{% trans 'Missions of the Library services' %} </span>
+               </div>
+                <span class="text-center underline text-vsm md:text-lg">{% trans 'Reception and orientation service' %} </span>
+                <ul id="ulRcpOrtionSrvc" class="list-disc list-inside text-vsm md:text-sm font-light ml-12" style="direction:ltr; ">
+                    <li>{% trans 'Access to references' %}</li>
+                    <li>{% trans 'Internal and external lending' %}</li>
+                    <li>{% trans 'Registration in the library' %}</li>
+                    <li>{% trans 'Access to databases' %}</li>
+                    <li>{% blocktrans %} Take care of the library's holdings and update inventory lists{% endblocktrans %}</li>
+                    <li>{% trans 'signature of the QUITUS form' %}</li>
+
+
+                  </ul>
+
+                  <span class="text-center underline text-vsm md:text-lg">{% trans 'Bibliographic research department' %} </span>
+                <ul id="ulBiblioGrphSrchServc" class="list-disc list-inside text-vsm md:text-sm font-light ml-12" style="direction:ltr; ">
+                    <li>{% trans 'To ensure the promotion of bibliographic research among the beneficiaries and to accompany them in the realization of their scientific research through: ' %}</li>
+                    <li>{% blocktrans %}Manage the library's website and provide the institution's website with information about the library {% endblocktrans %}</li>
+                    <li>{% trans 'Registration in the library' %}</li>
+                    <li>{% trans 'Manage SNDL accounts and provide a private account for each student  ' %}</li>
+                    <li>{% blocktrans %} Take care of the library's holdings and update inventory lists{% endblocktrans %}</li>
+                    <li>{% trans 'Manage SCHOLARVOX accounts and provide a private account for each student' %}</li>
+
+
+                  </ul>
+
+
+                  <span class="text-center underline text-vsm md:text-lg">{% trans 'Acquisition and processing service' %} </span>
+                  <ul id="ulAquisProcessServc" class="list-disc list-inside text-vsm md:text-sm font-light ml-12" style="direction:ltr; ">
+                      <li>{% trans 'Responsible for the documentary series' %}</li>
+                      <li>{% trans 'Collect the needs of the library according to the teaching programs' %}</li>
+                      <li>{% trans 'Analysis of requests and preparation of the list of acquisitions ' %}</li>
+                      <li>{% blocktrans %}Use of the standardized SYNGEB system (standardized library management system) for the processing of books and theses{% endblocktrans %}</li>
+                      <li>{% blocktrans %} The receipt of the order with an acknowledgment of receipt, then registration in a special register where the documents are acquired via the publishers' indexes {% endblocktrans %}</li>
+                      <li>{% trans 'Cataloguing of the documentary fund according to the accepted standards of bibliographic description' %}</li>
+  
+  
+                    </ul>
+              </div>
+        </div>
+
+
+        <div class=" w-1/4 h-auto ">
+            <div class=" mx-2 mt-2 mb-6 flex flex-col text-vsm md:text-sm bg-slate-200 h-full">
+                       
+                <div id="directrLibrry" class=" mt-12  " style="direction:ltr ">
+                    <span ><i class="fas fa-user-tie mx-2"></i>{% trans 'library director :' %} {{directeur}}</span>   
+                   
+                  </div>
+                  <div id="emailLibrry" class=" mt-2  " style="direction:ltr ">
+                    <span ><i class="fas fa-envelope mx-2"></i> {% trans 'Email :' %}        {{email}}              </span>
+                  </span>
+
+                 </div>
+                 <div id="phonelibrry" class=" mt-2 " style="direction:ltr ">
+                  <span ><i class="fas fa-phone-square-alt mx-2"></i>{% trans 'Phone :' %}            {{phone}}            </span>
+
+                  </div>    
+
+                   
+              </div>
+
+        </div>
+        
+    </div>
+    </section>
+
+    <footer class="relative">
+        {% include 'footer.html' %}
+
+    </footer>
+    {% block js_block %}
+
+    <script type="text/javascript" src="{% static 'js/jquery-3.6.4.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/library.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/splide.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/splideLibrary.js'%}"></script>
+    <!-- <script type="text/javascript" src="{% static 'js/detectLanguageNavBr.js'%}"></script> -->
+    <script type="text/javascript" src="{% static 'js/detectLangLibrary.js'%}"></script>
+
+
+
+
+    {% endblock %}
+</body>
+
+</html>

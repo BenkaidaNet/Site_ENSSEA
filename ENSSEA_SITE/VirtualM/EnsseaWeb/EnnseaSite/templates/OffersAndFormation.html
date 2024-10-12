@@ -1,0 +1,143 @@
+{% load static %} {% load tailwind_tags %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+    <title>{% trans 'Offers And Formation' %}</title>
+    <link rel="icon" type="image/x-icon" href="/static/photos/logoENSSEA.ico">
+
+    {% tailwind_css %}
+  
+
+</head>
+
+<body>
+    <header class="sticky top-0 z-50">
+        {% include 'NavbarPrincipal.html' %}
+
+    </header>
+    <section class="h-auto w-auto">
+
+               
+        <div class="sticky -top-10 z-20  w-auto h-56 bg-right     bg-cover bg-[url('/static/photos/ensseaboard.png')] bg-no-repeat">
+            <div class="relative group left-0 ml-0 top-40 w-full py-2 text-white font-bold font-arabic text-2xl  bg-blue-700 bg-opacity-50 text-center"> {% trans 'Offers and Formation' %}
+                <!-- <div class="absolute  bg-blue-500 h-1  bottom-0 w-full scale-x-10"></div> -->
+
+
+            </div>
+
+        </div>
+        
+            <!-- <div class="absolute bg-blue-500 h-1 left-0 bottom-0 w-full transform scale-x-0 transition-transform duration-200 origin-center group-hover:scale-x-100"></div> -->
+
+            
+             <div class=" w-auto h-auto flex flex-row  ">
+           
+                <div class="flex flex-col w-3/4 md:w-5/6 h-full ">
+                    <p id="paragraph1" style="direction:ltr " class="whitespace-pre-wrap  m-3 text-vsm md:text-sm font-semibold">
+                        {% blocktrans %}
+                        The National Higher School of Statistics and Applied Economics provides graduation and post-graduation courses, which cover Three higher education cycles :
+                        {% endblocktrans %}
+                    </p>
+                    <div class="flex flex-col items-center mt-2 w-full h-auto space-y-0 text-vsm md:text-lg">
+                        <div id="div1"  class="border rounded-md text-center font-arabic shadow-md w-full py-2 px-4 cursor-pointer hover:bg-yellow-300 "><i class="fa-solid fa-plus mx-2"></i>{% trans 'First cycle: Preparatory Classes' %}</div>
+                        <div style="direction:ltr "  id="div1_1" class="hidden w-full border-2">
+                            <span class="underline ">{% trans 'CONDITIONS OF ACCESS' %}</span>
+                            <p class="text-vsm md:text:sm whitespace-pre-wrap"> 
+                            {% blocktrans %}
+                            the School annually receives new graduates oriented towards preparatory classes, according to the orientation conditions set by the Ministry of higher education and scientific research, namely :
+                            The wishes expressed by the new bachelors ;
+                             The results obtained at the baccalaureate ;
+                            The reception capacities of higher schools.
+                            {% endblocktrans %}
+                            </p>
+                       </div>
+                        <div id="div2" class="border rounded-md text-center font-arabic shadow-md w-full py-2 px-4 cursor-pointer hover:bg-yellow-300"><i class="fa-solid fa-plus mx-2"></i>{% blocktrans %}Second cycle: Master's degree {% endblocktrans %} </div>
+                        <div id="div2_1" style="direction:ltr " class="hidden w-full border-2">
+                            <span class="underline ">{% trans 'CONDITIONS OF ACCESS' %}</span>
+                            <p   class="text-vsm md:text:sm whitespace-pre-wrap"> 
+                            {% blocktrans %}
+                            the School receives new students from all preparatory schools of Economic, Commercial and Management Sciences, at the end of a national competition for access to higher schools, organized at the end of the first cycle. This competition is open to students who have been declared admitted at the end of the second preparatory year.
+                            Admitted students can pursue three (03) years of training, i.e. one (01) year of joint education (02 semesters) and two years of specialty (04 semesters). The last semester is entirely devoted to the internship and the preparation of the final thesis, which is publicly defended in front of a jury.
+                            {% endblocktrans %}
+                            </p>
+                       </div>
+                        <div id="div3" class="border rounded-md shadow-md text-center font-arabic w-full py-2 px-4 cursor-pointer hover:bg-yellow-300"><i class="fa-solid fa-plus mx-2"></i>{% trans 'Third cycle: Doctorate' %} </div>
+                        <div id="div3_1" style="direction:ltr " class="hidden w-full border-2">
+                            <span class="underline ">{% trans 'CONDITIONS OF ACCESS' %}</span>
+                            <p   class="text-vsm md:text-lg whitespace-pre-wrap"> 
+                                {% blocktrans %} Registration for the Doctorate is open to students holding a Master's degree or equivalent (or state engineer) in the field of statistics and applied economics, according to the conditions set by the various doctoral training offers of the School. The candidates participate in a national competition according to the conditions of the School and those, selected at the end of this competition, will have the choice between several specialties.
+                            {% endblocktrans %}
+                            </p>
+                       </div>
+                    </div>  
+                    <div class="container bg-slate-100 mt-4 w-full h-[100vh] md:h-[150vh] text-center">
+                        <p class="w-full bg-slate-400 font-semibold">{% trans 'The school provides training in six major specialties' %}</p>
+                        <div class="relative py-60 md:py-72 mt-6 grid grid-rows-3 grid-cols-2 ">
+
+                            <div id="gridg_1" class=" group cursor-pointer w-28 h-28 md:w-52 md:h-48 mdl:w-64 mdl:h-56 rounded-md absolute  top-5 right-1 bg-cover bg-[url('/static/photos/picture8.jpg')] hover:shadow-[0_7px_8px_4px_#3b71ca] hover:duration-500">
+                                <h2 class="rounded-t-md text-sm mdl:text-lg text-white  bg-blue-600  text-center">{% trans 'Applied Statistics' %}</h2>
+                                <a href="{% url 'AppliedStatistics' %}"  class="block h-28 md:h-44 w-full "></a>
+                               
+            
+                            </div>
+            
+                            <div id="gridg_2" class=" group cursor-pointer w-28 h-28 md:w-52 md:h-48 mdl:w-64 mdl:h-56 rounded-md  absolute top-40 md:top-60 mdl:top-72  right-1 bg-cover bg-[url('/static/photos/picture3.jpg')] hover:shadow-[0_7px_8px_4px_#3b71ca] hover:duration-500">
+                                <h1 class=" rounded-t-md text-sm mdl:text-xl text-white   bg-blue-600 text-center ">{% trans 'Finance and Actuarial' %}</h4>
+                                    <a href="{% url 'Finance_actuariat' %}" class="block h-28 md:h-44 w-full "></a>
+                                </div>
+                            <div id="gridg_3" class="group cursor-pointer w-28 h-28 md:w-52 md:h-48 mdl:w-64 mdl:h-56 rounded-md bg-blue-300 absolute  top-5 bg-cover bg-[url('/static/photos/picture2.jpg')] hover:shadow-[0_7px_8px_4px_#3b71ca] hover:duration-500">
+                                <h2 class="rounded-t-md  text-sm mdl:text-lg  text-white  bg-blue-600 text-center">{% trans 'Applied Economics and Prospective' %}</h2>
+                                <a href="{% url 'prospectiveEconomic' %}" class="block h-28 md:h-44 w-full "></a>
+                            </div>
+            
+                            <div id="gridg_4" class="group cursor-pointer w-28 h-28 md:w-52 md:h-48 mdl:w-64 mdl:h-56 rounded-md absolute top-40 md:top-60 mdl:top-72  bg-cover bg-[url('/static/photos/picture7.jpg')] bg-no-repeat hover:shadow-[0_7px_8px_4px_#3b71ca] hover:duration-500">
+                                <h1 class="rounded-t-md text-sm mdl:text-xl text-white   bg-blue-600 text-center">{% trans 'Statistics and Data Science' %}</h4>
+                                    <a href="{% url 'AppliedStatistics' %}" class="block h-28 md:h-44 w-full "></a>
+                                    <!-- <button class=" rounded-md w-full mt-44 bg-opacity-50  py-2 font-serif text-md  bg-blue-500 text-md   hover:bg-blue-500 ">Show More</button> -->
+                            </div>
+                            <div id="gridg_5" class="group cursor-pointer w-28 h-28 md:w-52 md:h-48 mdl:w-64 mdl:h-56 rounded-md absolute top-80 md:top-96 mdl:top-100 bg-cover bg-center bg-[url('/static/photos/formations/population.jpg')] bg-no-repeat hover:shadow-[0_7px_8px_4px_#3b71ca] hover:duration-500">
+                                <h1 class="rounded-t-md text-sm mdl:text-xl text-white   bg-blue-600 text-center">{% trans 'Population Science and Social Statistics' %}</h4>
+                                    <a href="{% url 'AppliedStatistics' %}" class="block h-28 md:h-44 w-full "></a>
+                            </div>
+                            <div id="gridg_6" class="group cursor-pointer w-28 h-28 md:w-52 md:h-48 mdl:w-64 mdl:h-56  rounded-md absolute   top-80 md:top-96 mdl:top-100 right-1 bg-cover bg-[url('/static/photos/formations/economiepros.webp')] bg-no-repeat hover:shadow-[0_7px_8px_4px_#3b71ca] hover:duration-500">
+                                <h1 class="rounded-t-md text-sm mdl:text-xl text-white   bg-blue-600 text-center">{% trans 'Statistics and Economic Prospective' %}</h4>
+                                    <a href="{% url 'prospectiveEconomic' %}" class="block h-28 md:h-44 w-full "></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+    
+                 </div>
+                 <div class=" w-1/4 md:w-1/6 h-auto border-l-2">
+                    {% include 'sidNavStudies.html' %}
+    
+                 </div>
+            </div>
+    </section>
+    <footer class="relative">
+        {% include 'footer.html' %}
+    </footer>
+
+    {% block js_block %}
+    <script type="text/javascript" src="{% static 'js/jquery-3.6.4.min.js'%}"></script>
+    
+    <script type="text/javascript" src="{%static 'js/studies.js'%}"></script>
+    <script type="text/javascript" src="{%static 'js/offresFormation.js'%}"></script>
+    <script type="text/javascript" src="{%static 'js/offresFormationSpecialite.js'%}"></script>
+    <script type="text/javascript" src="{%static 'js/OfrFomtChangDirctText.js'%}"></script>
+
+
+
+    {% endblock %}
+ 
+</body>
+
+</html>

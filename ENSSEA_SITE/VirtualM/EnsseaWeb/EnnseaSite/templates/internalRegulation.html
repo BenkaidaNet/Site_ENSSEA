@@ -1,0 +1,93 @@
+{% load static %} {% load tailwind_tags %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>{% trans 'ENSSEA Library' %}</title>
+    <link rel="icon" type="image/x-icon" href="/static/photos/logoENSSEA.ico">
+    <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+    <link href="{% static '/css/splide.min.css' %}" rel="stylesheet"> 
+    {% tailwind_css %}
+
+</head>
+
+<body>
+
+    <header class="sticky top-0 z-30 ">
+
+
+        {% include 'NavbarPrincipal.html' %}
+
+
+
+    </header>
+    
+    <section >
+
+
+        <div class="sticky -top-10 z-20  w-auto h-44 bg-cover bg-center bg-[url('/static/photos/library/biblio.jpg')] bg-no-repeat">
+            <div id="Title" class="relative group left-0 ml-0 top-32 w-full py-2 font-arabic text-white font-bold text-2xl  bg-blue-800 bg-opacity-50 text-center"> {% trans 'Library' %}
+
+
+            </div>
+
+        </div> 
+     <!-- <div class=" z-0 my-2 w-full h-auto text-center bg-gray-300 " >
+        <h>{% trans 'Staff of Library' %}</h>
+        
+      </div> -->
+      <div class=" w-full h-full  bg-yellow-300">
+        {% include 'sideNavLibrary.html' %}
+
+      </div>
+     <div class="flex flex-row">
+        <div class=" w-3/4 h-auto  flex flex-col">
+                    
+                
+
+
+             
+
+
+             
+        </div>
+
+
+        <div class=" w-1/4 h-auto ">
+            <div class=" mx-2 mt-2 mb-6 flex flex-col text-vsm md:text-sm bg-slate-200 h-full">
+                       
+                <div id="directrLibrry" class=" mt-12  " style="direction:ltr ">
+                    <span ><i class="fas fa-user-tie mx-2"></i>{% trans 'library director :' %} {{directeur}}</span>   
+                   
+                  </div>
+                  <div id="emailLibrry" class=" mt-2  " style="direction:ltr ">
+                    <span ><i class="fas fa-envelope mx-2"></i> {% trans 'Email :' %}        {{email}}              </span>
+                  </span>
+
+                 </div>
+                 <div id="phonelibrry" class=" mt-2 " style="direction:ltr ">
+                  <span ><i class="fas fa-phone-square-alt mx-2"></i>{% trans 'Phone :' %}            {{phone}}            </span>
+
+                  </div>    
+
+                   
+              </div>
+
+        </div>
+        
+    </div>
+    </section>
+
+    <footer class="relative">
+        {% include 'footer.html' %}
+
+    </footer>
+   
+</body>
+
+</html>

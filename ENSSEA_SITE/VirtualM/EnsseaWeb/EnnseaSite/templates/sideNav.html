@@ -1,0 +1,72 @@
+{% load static %} {% load tailwind_tags %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+    <link href="{% static '/css/splide.min.css' %}" rel="stylesheet"> {% tailwind_css %}
+
+
+
+
+</head>
+
+<nav id="navbar" class=" h-full w-full    ">
+
+
+        <div id="sideNav" class="grid grid-cols-1  mt-2 text-center font-arabic text-sm ">
+            <!-- Left links -->
+          <span class="w-full bg-slate-400">{% trans 'Departements' %}</span>
+            <ul class="capitalize text-vsm md:text-sm ">
+
+                        <li  class="border-b py-0 my-3">
+                            <a id="prepa" href="{% url 'preparatory' %}" class=" block  hover:bg-blue-600 hover:text-white">{% trans 'Preparatory Classes' %} </a>
+
+                        </li>
+                        <li class="border-b py-0 my-3">
+                            <a id="commonTch" href="{% url 'commonTeaching' %} " class="block   hover:bg-blue-600 hover:text-white ">{% trans 'Master Common Teaching' %}</a>
+
+                        </li>
+                        <li class="border-b py-0 my-3">
+                            <a id="stat" href="{% url 'AppliedStatistics' %}"  class="block   hover:bg-blue-600 hover:text-white ">{% trans 'applied Statistics and Econometrics' %}</a>
+
+                        </li>
+                        <li class="border-b py-0 my-3">
+                            <a id="finance" href="{% url 'Finance_actuariat' %}" class="block   hover:bg-blue-600 hover:text-white ">{% trans 'finance and Actuarial' %}</a>
+
+                        </li>
+                        <li class="border-b py-0 my-3">
+                            <a id="economi" href="{% url 'prospectiveEconomic' %}" class="block    hover:bg-blue-600 hover:text-white ">{% trans 'quantitative and prospective economics' %}</a>
+
+                        </li>
+                       
+
+                    
+            </ul>
+
+           
+        </div>
+       
+        
+        
+    
+
+
+    
+
+
+
+</nav>
+
+{% block js_block %}
+
+
+{% endblock %}

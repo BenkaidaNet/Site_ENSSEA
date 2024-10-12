@@ -1,0 +1,80 @@
+{% load static %} {% load tailwind_tags %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+    <title>{% trans 'History' %}</title>
+    <link rel="icon" type="image/x-icon" href="/static/photos/logoENSSEA.ico">
+
+    {% tailwind_css %}
+
+</head>
+
+<body>
+
+    </div>
+    <header class="sticky top-0 z-50">
+        {% include 'NavbarPrincipal.html' %}
+
+
+
+    </header>
+    <section class="bg-fixed h-[250vh] md:h-[180vh] pt-10 bg-cover bg-[url('/static/photos/EnsseaFull.jpeg')] bg-no-repeat my-0 ">
+        <div class="flex flex-col h-ful w-full items-center pt-10  bg-opacity-50 bg-white">
+            <h class="fade-in underline font-bold font-arabic">{% trans 'HISTORY' %}</h>
+            <p id="history" style="direction: ltr;" class=" fade-in mt-1 md:mt-4 px-4 text-sm md:text-lg text-black font-arabic  mx-2 ">
+                {% blocktrans %}
+                As part of the Ordinance 69-106 of 12/26/1969 on the creation of institutes of Technology and in application of Decree 70-109 of 07/20/1970, it was created in 1970, in Algiers, an "Institute of Planning and Statistics Technology" (ITPS) and placed under the supervision of the Ministry of Finance and Planning;
+                 the Institute's mission was to train senior application managers necessary to meet the needs defined by the national development plan, in the field of planning techniques and statistics and also to ensure the training and improvement of agents working in this sector.<br> In 1972, and in execution of Decree 72-133 of 07/06/1972, the name of the Institute became "Institute of Planning Techniques and Applied Economics" (ITPEA). 
+                <br>In 1983, in application of Decree 83-692 of 11/26/1983, the ITPEA is erected
+                in the "National Institute of Planning and Statistics" (INPS) and placed under the supervision of the Ministry of Planning and Spatial Planning, the INPS had the mission: To train senior technicians, state engineers and magisterium.
+               To ensure, in the field of planning, statistics and quantitative techniques applied to the economy, the retraining, specialization and improvement of senior technicians, engineers and holders of diplomas or equivalent titles.<br> To carry out research work related to planning, statistics and quantitative techniques applied to the economy and to
+                  ensure the dissemination, in accordance with the regulations, the modalities and procedures in force. The supervision of the INPS is conferred on the Ministry of Higher Education by Decree 87-271 of 12/15/1987.<br>
+                   Since 2008, the INPS has become an out-of-university School, by virtue of Executive Decree 08-222 of 07/14/2008, and takes the name of "National Higher School of Statistics and Applied Economics" (ENSSEA). During the year 2014, in application of Executive Decree 13-370 of 09/11/2013, the ENNSEA is transferred from the city of Algiers to its new headquarters located in the town of Kolea, Wilaya of Tipaza.                
+               {% endblocktrans %}
+                </p>
+            <div class=" fade-in flex flex-col  mt-4  md:flex-row md:content-center md:justify-around md:space-x-1 ">
+                <div class="flex flex-col  h-full w-56 md:w-1/3">
+                    <image class="" src="/static/photos/PhotosENSSEA/ensseaOld1.png" alt="enssea_benknoun"></image>
+                    <span id="historyPht1" style="direction: ltr;" class=" text-vsm md:text-sm">{% trans 'The old headquarters of ENSSEA - Algiers-' %}</span>
+                </div>
+                <div class="flex flex-col  h-full w-56 md:w-1/3">
+                    <image class=" " src="/static/photos/PhotosENSSEA/ensseaOld.png" alt="INPS_benknoun"></image>
+                    <span id="historyPht2" style="direction: ltr;" class=" text-vsm md:text-sm">{% trans 'The old headquarters of INPS - Algiers-' %}</span>
+                </div> 
+
+                </div>
+            <span class="fade-in mt-8 underline font-bold font-arabic">{% trans 'MISSION ' %}</span>
+
+            <p id="mission" style="direction: ltr;" class="fade-in my-2 px-4 text-md md:text-lg  text-black font-arabic">
+                {% blocktrans %}
+
+                The ENSSEA's mission is to ensure higher education, scientific research and technological development in the various fields related to statistics and applied economics.
+                {% endblocktrans %}
+
+            </p>
+        </div>
+
+    </section>
+    <footer class="relative">
+        {% include 'footer.html' %}
+    </footer>
+    {% block js_block %}
+    <script type="text/javascript" src="{% static 'js/jquery-3.6.4.min.js'%}"></script>
+   
+    <script type="text/javascript" src="{% static 'js/detctLanggeHistory.js'%}"></script>
+
+
+ 
+
+    {% endblock %}
+</body>
+
+</html>

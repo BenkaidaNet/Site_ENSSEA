@@ -1,0 +1,216 @@
+{% load static %} {% load tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+    <link href="{% static '/css/splide.min.css' %}" rel="stylesheet"> {% tailwind_css %}
+
+
+
+
+</head>
+
+<nav id="navbar" class="sticky top-0  w-full   bg-white h-auto shadow-xl flex  md:items-center mx-auto ">
+
+    <img class="h-20 w-20  " src="/static/photos/logo.jpeg " alt="logo " />
+    <div class="container  py-5  pl-2 pt-0 flex md:justify-center lg:justify-between flex-wrap  ">
+
+        <div class="MenuList  hidden  md:flex text-center  md:w-auto w-full  md:min-h-fit rounded-xl  md:items-start  ">
+            <!-- Left links -->
+            <ul class="absolute md:relative right-0   text-blue-950 top-8 z-50 py-0 space-x-1 flex-col h-auto my-0 md:w-auto  md:flex  rounded-xl md:flex-row bg-white md:bg-transparent md:items-start font-mono  gap-x-0  capitalize">
+                <li class="dropmenu1  group relative w-auto flex items-center text-sm sm:text-vsm lg:text-sm">
+                    <svg class="flex md:hidden w-4 h-4 ml-2 text-black" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <a id="idHome" href="{% url 'home' %}" class=" text-blue-950  rounded-md   justify-center  font-extralight  "><i class="fas fa-home-lg-alt fa-sm"></i>Home</a>
+
+                    <svg class="hidden md:flex w-4 h-4 ml-2 text-black" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div id="itemHome" class="absolute bg-blue-500 h-1  left-0 bottom-0 w-full  scale-x-0  duration-300 origin-center group-hover:scale-x-100    "></div>
+
+
+                    <ul class=" drop_down1 hidden  px-1 w-max absolute z-[1000]  bg-white text-sm sm:text-vsm lg:text-sm text-blue-950  shadow-[0_4px_9px_-4px_#3b71ca]   py-2 rounded-md h-auto border-2 ">
+                        <li>
+                            <a href="{% url 'history' %}" class="block  py-2  hover:bg-blue-600 hover:text-white active:bg-blue-600 ">History</a>
+                        </li>
+                        
+                        <li>
+                            <a href="{% url 'infrastructure' %}" class="block  py-2  hover:bg-blue-600 hover:text-white">Infrastructure</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2   hover:bg-blue-600 hover:text-white">organizational chart</a>
+                        </li>
+                    </ul>
+
+
+                </li>
+
+
+                <li class="dropmenu2 group relative flex items-center md:px-2 lg:px-4 text-sm sm:text-vsm lg:text-sm">
+                    <svg class="flex md:hidden w-4 h-4 ml-2 text-black" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <a href="#" class="text-blue-950 py-2 md:py-0 font-extralight">Studies</a>
+                    <svg class="hidden md:flex w-4 h-4 ml-2 text-black" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div class="absolute bg-blue-500 h-1 left-0 bottom-0 w-full transform scale-x-0 transition-transform duration-200 origin-center group-hover:scale-x-100"></div>
+
+                    <ul class="drop_down2  absolute px-1 w-max z-[1000] shadow-[0_4px_9px_-4px_#3b71ca] hidden md:py-2 text-sm sm:text-vsm lg:text-sm rounded text-blue-950 bg-white    ">
+                        <li>
+                            <a href="# " class="  block py-2  hover:bg-blue-600 hover:text-white">Study and schooling</a>
+
+                        </li>
+                        <li>
+                            <a href="# " class="block py-2  hover:bg-blue-600 hover:text-white ">Offers and formation</a>
+
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropmenu3 group relative flex items-center lg:px-4 text-sm sm:text-vsm lg:text-sm ">
+                    <svg class="flex md:hidden w-4 h-4 ml-2 text-black" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <a href="#" class="text-blue-950  py-2 md:py-0 font-extralight  "> Departements</a>
+                    <svg class="hidden md:flex w-4 h-4 ml-2 text-black" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div id="itemDepartmt" class="absolute bg-blue-500 h-1 left-0 bottom-0 w-full transform scale-x-0 transition-transform duration-200 origin-left group-hover:scale-x-100"></div>
+
+                    <ul class="drop_down3 absolute z-[1000] px-1 w-max shadow-[0_4px_9px_-4px_#3b71ca] hidden py-2 text-sm sm:text-vsm lg:text-sm rounded text-blue-950 bg-white">
+
+                        <li>
+                            <a href="{% url 'preparatory' %}" class=" block  py-2   hover:bg-blue-600 hover:text-white">Preparatory Classes</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'commonTeaching' %} " class="block   py-2 hover:bg-blue-600 hover:text-white ">Master Common Teaching</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'AppliedStatistics' %}"  class="block  py-2 hover:bg-blue-600 hover:text-white ">applied Statistics and Econometrics</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'Finance_actuariat' %}" class="block  py-2 hover:bg-blue-600 hover:text-white ">finance and Actuarial</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'prospectiveEconomic' %}" class="block  py-2  hover:bg-blue-600 hover:text-white ">quantitative and prospective economics</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'DataScience' %}" class="block  py-2   hover:bg-blue-600 hover:text-white ">Data Science</a>
+
+                        </li>
+
+                    </ul>
+
+
+                </li>
+
+                <li class="dropmenu4 group relative flex items-center lg:px-4 text-sm sm:text-vsm lg:text-sm ">
+                    <svg class="flex md:hidden w-4 h-4 ml-2 text-black" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <a href="#" class="text-blue-950  py-2 md:py-0 font-extralight ">Scientific research  </a>
+                    <svg class="hidden md:flex w-4 h-4 ml-2 text-black " aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div id="itemScintfRsch" class="absolute bg-blue-500 h-1 left-0 bottom-0 w-full transform scale-x-0 transition-transform duration-200 origin-center group-hover:scale-x-100"></div>
+
+                    <ul class="drop_down4 absolute z-[1000] px-1 w-max  shadow-[0_4px_9px_-4px_#3b71ca] hidden py-2 text-sm sm:text-vsm lg:text-sm rounded text-blue-950 bg-white">
+                        <li >
+                            <a  href="{% url 'ResearchLaboratories' %}" class=" block  py-2  hover:bg-blue-600 hover:text-white">Research laboratories</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'ScientificPublications' %}" class="block py-2  hover:bg-blue-600 hover:text-white ">Scientific publications</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'ScientificActivities' %}" class="block  py-2  hover:bg-blue-600 hover:text-white ">Scientific activities</a>
+
+                        </li>
+                    </ul>
+                </li>
+                <li class=" group relative flex lg:px-4 text-sm sm:text-vsm lg:text-sm">
+                    <a href="#" class="text-blue-950 ml-2 md:ml-0 py-2 md:py-0 font-extralight">Coopration  </a>
+                    <div class="absolute bg-blue-500 h-1 left-0 bottom-0 w-full transform scale-x-0 transition-transform duration-200 origin-center group-hover:scale-x-100"></div>
+
+                </li>
+                <li class="dropmenu6 group relative flex items-center lg:px-4 text-sm sm:text-vsm lg:text-sm">
+                    <svg class="flex md:hidden w-4 h-4 ml-2 text-black" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <a href="#" class="text-blue-950  py-2 md:py-0 font-extralight">School life </a>
+                    <svg class="hidden md:flex w-4 h-4 ml-2 text-black" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div class="absolute bg-blue-500 h-1 left-0 bottom-0 w-full transform scale-x-0 transition-transform duration-200 origin-center group-hover:scale-x-100"></div>
+
+
+                    <ul class="drop_down6 absolute z-[1000] px-1 py-2 w-max shadow-[0_4px_9px_-4px_#3b71ca] hidden transform transition-transform duration-1000 text-sm sm:text-vsm lg:text-sm rounded text-blue-950 bg-white">
+                        <li>
+                            <a href="# " class=" block py-2  hover:bg-blue-600 hover:text-white">Events</a>
+
+                        </li>
+                        <li>
+                            <a href="# " class="block  py-2   hover:bg-blue-600 hover:text-white ">ENSSEA Clubs</a>
+
+                        </li>
+                        <li>
+                            <a href="# " class="block  py-2   hover:bg-blue-600 hover:text-white ">Entrepreneurship House</a>
+
+                        </li>
+                        <li>
+                            <a href="# " class="block  py-2  hover:bg-blue-600 hover:text-white ">Sport</a>
+
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class=" group relative flex lg:px-4 text-sm sm:text-vsm lg:text-sm">
+
+                    <a href="{% url 'library' %} " class="text-blue-950 ml-2 md:ml-0  py-2 md:py-0 font-extralight">library </a>
+                    <div id="itemLibrary" class="absolute bg-blue-500 h-1 left-0 bottom-0 w-full transform scale-x-0 transition-transform duration-200 origin-center group-hover:scale-x-100"></div>
+
+                </li>
+                
+             
+            </ul>
+
+           
+        </div>
+        <div class=" mt-0 md:mt-8 text-sm sm:text-vsm lg:text-sm">
+            <label><i class="fas fa-globe"></i></label>
+    
+            <select class=" w-auto text-start h-7 py-0  text-sm sm:text-vsm lg:text-sm rounded-md text-blue-950  bg-white">
+                
+                <option  >العربية</option>
+                <option >English</option>
+                <option  >français</option>
+              </select>
+        </div>
+        
+        
+    </div>
+
+
+    <div class="px-4 py-2 top-2 text-blue-700">
+        <button class="Button11 md:hidden " type="botton"><i class="fas fa-bars fa-lg"></i></button>
+    </div>
+
+    
+
+</nav>
+
+{% block js_block %}
+<script src="{% static '/js/splide.min.js' %}"></script>
+
+
+
+    
+<script type="text/javascript" src="{%static 'js/navbar.js'%}"></script>
+
+{% endblock %}

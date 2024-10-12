@@ -1,0 +1,92 @@
+{% load static %} {% load tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <script src="{% static '/js/splide.min.js' %}"></script>
+
+    <link href="{% static '/css/splide.min.css' %}" rel="stylesheet">
+
+
+    <title>Document</title>
+    {% tailwind_css %}
+
+    <!-- <script src="https:// dn.tailwindcss.com"></script> -->
+    <!-- <link rel="stylesheet" href="css/dist/style.css"> -->
+    <!-- <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script> -->
+    <!-- <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" /> -->
+    <!-- <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet"> -->
+    <!-- <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script> -->
+    <!-- <link rel="stylesheet" src="/static/splide-4.1.3/dist/js/splide.min.js"> -->
+    <!-- <script src="/static/splide.min.js"></script> -->
+
+
+</head>
+
+<body>
+    <header>
+        {% include 'navbar.html' %}
+
+
+
+    </header>
+
+    <section class=" pt-0 flex  ">
+        <div class="splide" aria-label="Slide Container Example ">
+            <div class="splide__track bg-blue-400 ">
+                <ul class="splide__list ">
+                    <li class="splide__slide ">
+                        <div class="splide__slide__container ">
+                            <a href="# "><img class="h-full" src="/static/photos/stud.jpg " /></a>
+
+                        </div>
+                    </li>
+                    <li class="splide__slide ">
+                        <div class="splide__slide__container ">
+                            <a href="# "><img class="h-full" src="/static/photos/book.jpeg " /></a>
+
+                        </div>
+                    </li>
+                    <li class="splide__slide  ">
+                        <div class="splide__slide__container   ">
+                            <a href="# "> <img class="" src="/static/photos/pano.jpg " /></a>
+                        </div>
+                    </li>
+
+
+
+                    <li class="splide__slide">
+                        <div class="splide__slide__container  h-full ">
+                            <img class="" src="/static/photos/Enssea4.jpeg " />
+
+                        </div>
+                    </li>
+
+
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    {% block js_block %}
+    <script type="text/javascript" src="{%static 'js/main.js'%}"></script>
+    <script type="text/javascript" src="{%static 'js/navbar.js'%}"></script>
+
+
+    {% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,1122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-06 20:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: EnnseaSite/templates/AppliedStatistics.html:13
+msgid "Applied Statistics and Econometrics"
+msgstr "الإحصاء التطبيقي والاقتصاد القياسي"
+
+#: EnnseaSite/templates/AppliedStatistics.html:27
+msgid " Departement of Applied Statistics and Econometrics"
+msgstr "قسم الإحصاء التطبيقي والاقتصاد القياسي"
+
+#: EnnseaSite/templates/AppliedStatistics.html:41
+#: EnnseaSite/templates/commonTeaching.html:43
+#: EnnseaSite/templates/finance.html:44 EnnseaSite/templates/prepatory.html:42
+#: EnnseaSite/templates/prospectiveEconomic.html:41
+msgid "Head of department:"
+msgstr "رئيس القسم:"
+
+#: EnnseaSite/templates/AppliedStatistics.html:44
+#: EnnseaSite/templates/commonTeaching.html:46
+#: EnnseaSite/templates/finance.html:47 EnnseaSite/templates/prepatory.html:45
+#: EnnseaSite/templates/prospectiveEconomic.html:44
+msgid "Email:"
+msgstr "البريد الالكتروني"
+
+#: EnnseaSite/templates/AppliedStatistics.html:50
+#: EnnseaSite/templates/commonTeaching.html:52
+#: EnnseaSite/templates/finance.html:53 EnnseaSite/templates/prepatory.html:51
+#: EnnseaSite/templates/prospectiveEconomic.html:50
+msgid "Phone:"
+msgstr "الهاتف"
+
+#: EnnseaSite/templates/AppliedStatistics.html:69
+#: EnnseaSite/templates/finance.html:67
+msgid ""
+"\n"
+"                    The modules studied during the master's cycle are "
+"divided as follows:\n"
+"                    "
+msgstr ""
+"\n"
+"                       الوحدات التي يتم دراستها خلال طور ماستر   مقسمة على "
+"النحو التالي                              "
+
+#: EnnseaSite/templates/AppliedStatistics.html:77
+#: EnnseaSite/templates/OffersAndFormation.html:86
+#: EnnseaSite/templates/home.html:214
+msgid "Applied Statistics"
+msgstr "الإحصاء التطبيقي "
+
+#: EnnseaSite/templates/AppliedStatistics.html:78
+#: EnnseaSite/templates/OffersAndFormation.html:102
+#: EnnseaSite/templates/home.html:230
+msgid "Statistics and Data Science"
+msgstr " الاحصاء و علم البيانات "
+
+#: EnnseaSite/templates/AppliedStatistics.html:79
+#: EnnseaSite/templates/OffersAndFormation.html:107
+#: EnnseaSite/templates/home.html:234
+msgid "Population Science and Social Statistics"
+msgstr "علم السكان و الاحصاء الاجتماعي"
+
+#: EnnseaSite/templates/Entrepreneurship.html:17
+#: EnnseaSite/templates/Entrepreneurship.html:36
+#: EnnseaSite/templates/Entrepreneurship1.html:19
+#: EnnseaSite/templates/Entrepreneurship1.html:36
+#: EnnseaSite/templates/NavbarPrincipal.html:127
+#: EnnseaSite/templates/sideNavDeanship.html:18
+#: EnnseaSite/templates/sideNavDeanship1.html:18
+msgid "Entrepreneurship development center"
+msgstr "مركز تطوير المقاولاتية"
+
+#: EnnseaSite/templates/Entrepreneurship.html:103
+#: EnnseaSite/templates/Entrepreneurship1.html:99
+#: EnnseaSite/templates/home.html:72
+msgid "Latest News"
+msgstr "آخر الأخبار"
+
+#: EnnseaSite/templates/Entrepreneurship.html:127
+#: EnnseaSite/templates/Entrepreneurship1.html:123
+#: EnnseaSite/templates/ExternalRelations.html:101
+#: EnnseaSite/templates/home.html:92
+msgid "Learne More"
+msgstr " اقرأ المزيد "
+
+#: EnnseaSite/templates/Entrepreneurship.html:143
+#: EnnseaSite/templates/Entrepreneurship1.html:138
+msgid "Archive"
+msgstr "أرشيف"
+
+#: EnnseaSite/templates/ExternalRelations.html:13
+#: EnnseaSite/templates/ExternalRelations.html:26
+msgid "External Relations"
+msgstr "العلاقات الخارجية"
+
+#: EnnseaSite/templates/ExternalRelations.html:28
+#, fuzzy
+#| msgid "Presentation"
+msgid "Presentation :"
+msgstr "تقديم"
+
+#: EnnseaSite/templates/ExternalRelations.html:41
+msgid "National conventions :"
+msgstr "الاتفاقيات الوطنية"
+
+#: EnnseaSite/templates/ExternalRelations.html:59
+msgid "International conventions :"
+msgstr "الاتفاقيات الدولية"
+
+#: EnnseaSite/templates/ExternalRelations.html:81
+msgid "Related news"
+msgstr "أخبار ذات صلة"
+
+#: EnnseaSite/templates/ExternalRelations.html:118
+msgid "Head of department"
+msgstr "رئيس القسم:"
+
+#: EnnseaSite/templates/ExternalRelations.html:122
+#: EnnseaSite/templates/staffLibrary.html:126
+msgid "Phone :"
+msgstr "الهاتف"
+
+#: EnnseaSite/templates/ExternalRelations.html:123
+#: EnnseaSite/templates/staffLibrary.html:121
+msgid "Email :"
+msgstr "البريد الالكتروني"
+
+#: EnnseaSite/templates/Infrastructure.html:14
+#: EnnseaSite/templates/Infrastructure.html:27
+msgid "AREA AND INFRASTRUCTURE"
+msgstr "المساحة والبنية التحتية"
+
+#: EnnseaSite/templates/Infrastructure.html:31
+#, python-format
+msgid ""
+"\n"
+"                    The ENSSEA covers a total area of nine hectares (09 ha), "
+"distributed in : <br>\n"
+"                    Building: 06 Ha (66.67%%)<br>\n"
+"                    Car parks, routes and green areas: 03 Ha (33.33%%)<br>\n"
+"                    the building comprises three (03) blocks with three (03) "
+"floors, and a synthesis of contemporary styles where the decorative "
+"influences of modern architecture are declined, in complete harmony. It is "
+"composed of :<br>\n"
+"                    "
+msgstr ""
+"\n"
+"تغطي المدرسة مساحة إجمالية قدرها تسعة هكتارات (09 هكتارا)، موزعة كمايلي "
+"<br>\n"
+"المبنى: 06 هكتار (66.67٪)<br>\n"
+" مواقف السيارات والطرق والمساحات الخضراء: 03 هكتار (33.33٪) <br>\n"
+" يتكون المبنى من ثلاثة (03) كتل مع ثلاثة (03)  الطوابق ، وتوليفة من الأساليب "
+"المعاصرة حيث الديكور  ياخذ الطابع المعماري المعاصر في كامل المبنى  ويتكون "
+"من  "
+
+#: EnnseaSite/templates/Infrastructure.html:45
+msgid "amphitheaters"
+msgstr "المدرجات"
+
+#: EnnseaSite/templates/Infrastructure.html:46
+msgid "Conference room"
+msgstr "قاعة المحاضرات"
+
+#: EnnseaSite/templates/Infrastructure.html:47
+msgid "Auditorium"
+msgstr "قاعة العرض"
+
+#: EnnseaSite/templates/Infrastructure.html:48
+msgid "reading rooms"
+msgstr "قاعات المطالعة"
+
+#: EnnseaSite/templates/Infrastructure.html:69
+msgid "works rooms"
+msgstr "قاعات الاعمال الموجهة"
+
+#: EnnseaSite/templates/Infrastructure.html:70
+msgid "computer rooms"
+msgstr "قاعة الاعلام الالي"
+
+#: EnnseaSite/templates/Infrastructure.html:71
+msgid "teachers offices"
+msgstr "مكاتب الاساتذة"
+
+#: EnnseaSite/templates/Infrastructure.html:89
+msgid "administrative offices"
+msgstr " مكاتب الادارة"
+
+#: EnnseaSite/templates/Infrastructure.html:90
+msgid "meeting room"
+msgstr "قاعة الاجتماع"
+
+#: EnnseaSite/templates/Infrastructure.html:91
+msgid "doctor s office"
+msgstr "مكتب الطبيب "
+
+#: EnnseaSite/templates/Infrastructure.html:113
+msgid "archive room"
+msgstr " قاعة الارشيف "
+
+#: EnnseaSite/templates/Infrastructure.html:114
+msgid "store"
+msgstr "مخزن"
+
+#: EnnseaSite/templates/Infrastructure.html:115
+msgid "workshop"
+msgstr "ورشة"
+
+#: EnnseaSite/templates/Infrastructure.html:141
+#: EnnseaSite/templates/NavbarPrincipal.html:42
+#: EnnseaSite/templates/history.html:13
+#: EnnseaSite/templates/organizationalChart.html:38
+msgid "History"
+msgstr "نبذة تاريخية"
+
+#: EnnseaSite/templates/Infrastructure.html:145
+#: EnnseaSite/templates/NavbarPrincipal.html:46
+#: EnnseaSite/templates/organizationalChart.html:42
+msgid "Infrastructure"
+msgstr "البنية التحتية"
+
+#: EnnseaSite/templates/Infrastructure.html:148
+#: EnnseaSite/templates/NavbarPrincipal.html:49
+#: EnnseaSite/templates/organizationalChart.html:45
+msgid "organizational chart"
+msgstr "الهيكل التنظيمي"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:24
+msgid "Home"
+msgstr "الرئيسية"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:34
+msgid "About"
+msgstr "حول المدرسة"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:59
+msgid "Studies"
+msgstr "الدراسة"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:66
+#: EnnseaSite/templates/sidNavStudies.html:31
+#: EnnseaSite/templates/studiesAndScholling.html:13
+#: EnnseaSite/templates/studiesAndScholling.html:38
+msgid "Study and schooling"
+msgstr "الدراسة والتعليم"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:70
+#: EnnseaSite/templates/sidNavStudies.html:35
+msgid "Offers and formation"
+msgstr "العروض والتكوين"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:78
+#: EnnseaSite/templates/sideNav.html:27
+msgid "Departements"
+msgstr "ألأقسام"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:85
+#: EnnseaSite/templates/home.html:187 EnnseaSite/templates/prepatory.html:13
+#: EnnseaSite/templates/sideNav.html:31
+msgid "Preparatory Classes"
+msgstr " ألأقسام التحضيرية"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:89
+#: EnnseaSite/templates/sideNav.html:35
+msgid "Master Common Teaching"
+msgstr "ماستر تعليم مشترك"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:93
+#: EnnseaSite/templates/sideNav.html:39
+msgid "applied Statistics and Econometrics"
+msgstr "الإحصاء التطبيقي والاقتصاد القياسي"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:97
+#: EnnseaSite/templates/sideNav.html:43
+msgid "finance and Actuarial"
+msgstr "مالية وحساب المخاطرة"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:101
+#: EnnseaSite/templates/sideNav.html:47
+msgid "quantitative and prospective economics"
+msgstr "الاقتصاد الكمي والاستشراف الاقتصادي"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:114
+msgid "Deanship"
+msgstr "نيابة المديريات"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:123
+#: EnnseaSite/templates/sideNavDeanship.html:14
+#: EnnseaSite/templates/sideNavDeanship1.html:14
+msgid "Postgraduate training department"
+msgstr "قسم التكوين في الدراسات العليا  "
+
+#: EnnseaSite/templates/NavbarPrincipal.html:131
+#: EnnseaSite/templates/sideNavDeanship.html:22
+#: EnnseaSite/templates/sideNavDeanship1.html:22
+msgid "External relations"
+msgstr " العلاقات الخارجية "
+
+#: EnnseaSite/templates/NavbarPrincipal.html:135
+#: EnnseaSite/templates/formationDoctoral.html:13
+#: EnnseaSite/templates/serviceStage.html:13
+#: EnnseaSite/templates/serviceStage.html:26
+#: EnnseaSite/templates/sideNavDeanship.html:26
+#: EnnseaSite/templates/sideNavDeanship1.html:26
+msgid "internship service"
+msgstr " مصلحة التربصات "
+
+#: EnnseaSite/templates/NavbarPrincipal.html:144
+msgid "Scientific research"
+msgstr "البحث العلمي"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:151
+#: EnnseaSite/templates/ResearchLaboratories.html:13
+#: EnnseaSite/templates/ResearchLaboratories.html:27
+#: EnnseaSite/templates/sideNavScientfcR.html:31
+msgid "Research laboratories"
+msgstr "مخابر البحث"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:155
+msgid "Scientific Council"
+msgstr "المجلس العلمي"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:159
+#: EnnseaSite/templates/sideNavScientfcR.html:40
+msgid "Scientific activities"
+msgstr "الأنشطة العلمية"
+
+#: EnnseaSite/templates/NavbarPrincipal.html:168
+msgid "library"
+msgstr "المكتبة"
+
+#: EnnseaSite/templates/OffersAndFormation.html:13
+msgid "Offers And Formation"
+msgstr "العروض والتكوين"
+
+#: EnnseaSite/templates/OffersAndFormation.html:30
+msgid "Offers and Formation"
+msgstr "العروض والتكوين"
+
+#: EnnseaSite/templates/OffersAndFormation.html:45
+msgid ""
+"\n"
+"                        The National Higher School of Statistics and Applied "
+"Economics provides graduation and post-graduation courses, which cover Three "
+"higher education cycles :\n"
+"                        "
+msgstr ""
+"\n"
+" تقدم المدرسة الوطنية العليا للإحصاء والاقتصاد التطبيقي التكوين في مرحلة "
+"التدرج وما بعد التدرج، والتي تغطي ثلاث أطوار للتعليم "
+"العالي :                         "
+
+#: EnnseaSite/templates/OffersAndFormation.html:50
+#: EnnseaSite/templates/home.html:182
+msgid "First cycle: Preparatory Classes"
+msgstr "الطور الأول: الاقسام التحضيرية"
+
+#: EnnseaSite/templates/OffersAndFormation.html:52
+#: EnnseaSite/templates/OffersAndFormation.html:64
+#: EnnseaSite/templates/OffersAndFormation.html:74
+msgid "CONDITIONS OF ACCESS"
+msgstr " شروط الالتحاق "
+
+#: EnnseaSite/templates/OffersAndFormation.html:54
+msgid ""
+"\n"
+"                            the School annually receives new graduates "
+"oriented towards preparatory classes, according to the orientation "
+"conditions set by the Ministry of higher education and scientific research, "
+"namely :\n"
+"                            The wishes expressed by the new bachelors ;\n"
+"                             The results obtained at the baccalaureate ;\n"
+"                            The reception capacities of higher schools.\n"
+"                            "
+msgstr ""
+"\n"
+" تستقبل المدرسة سنويا خريجين جدد موجهين نحو الفصول التحضيرية ، وفقا لشروط "
+"التوجيه التي وضعتها وزارة التعليم العالي والبحث العلمي ، وهي:    \n"
+"\n"
+"الرغبات التي عبر عنها الناجحون الجدد في شهادة البكالوريا؛\n"
+"النتائج التي تم الحصول عليها في البكالوريا؛\n"
+"قدرات الاستقبال للمدارس العليا."
+
+#: EnnseaSite/templates/OffersAndFormation.html:62
+msgid "Second cycle: Master's degree "
+msgstr "الطور الثاني:مرحلة الماستر"
+
+#: EnnseaSite/templates/OffersAndFormation.html:66
+msgid ""
+"\n"
+"                            the School receives new students from all "
+"preparatory schools of Economic, Commercial and Management Sciences, at the "
+"end of a national competition for access to higher schools, organized at the "
+"end of the first cycle. This competition is open to students who have been "
+"declared admitted at the end of the second preparatory year.\n"
+"                            Admitted students can pursue three (03) years of "
+"training, i.e. one (01) year of joint education (02 semesters) and two years "
+"of specialty (04 semesters). The last semester is entirely devoted to the "
+"internship and the preparation of the final thesis, which is publicly "
+"defended in front of a jury.\n"
+"                            "
+msgstr ""
+"\n"
+" تستقبل المدرسة الطلاب الجدد من جميع المدارس التحضيرية  للعلوم الاقتصادية "
+"والتجارية والإدارية ، يتم اجراء مسابقة وطنية للدخول إلى المدارس العليا . هذه "
+"المسابقة مفتوحة للطلاب الذين تم الإعلان عن قبولهم في نهاية السنة التحضيرية "
+"الثانية\n"
+"يمكن للطلاب المقبولين متابعة ثلاث (03) سنوات من التكوين ، أي سنة واحدة (01) "
+"من التعليم المشترك  وسنتين من التخصص . الفصل الدراسي الأخير مخصص بالكامل "
+"للتكوين الداخلي وإعداد المذكرة النهائية ، والتي يتم مناقشتها علنا أمام هيئة "
+"المناقشة                        "
+
+#: EnnseaSite/templates/OffersAndFormation.html:72
+msgid "Third cycle: Doctorate"
+msgstr "الطور الثالث :  الدكتوراه"
+
+#: EnnseaSite/templates/OffersAndFormation.html:76
+msgid ""
+" Registration for the Doctorate is open to students holding a Master's "
+"degree or equivalent (or state engineer) in the field of statistics and "
+"applied economics, according to the conditions set by the various doctoral "
+"training offers of the School. The candidates participate in a national "
+"competition according to the conditions of the School and those, selected at "
+"the end of this competition, will have the choice between several "
+"specialties.\n"
+"                            "
+msgstr ""
+"التسجيل للدكتوراه مفتوح للطلاب الحاصلين على شهادة ماستر  أو ما يعادلها (أو "
+"مهندس الدولة) في مجال الإحصاء و الاقتصاد التطبيقي ، وفقا للشروط التي وضعتها "
+"المدرسة  يشارك المرشحون في  مسابقة وطنية  حسب ظروف المدرسة والناجحون في "
+"نهاية هذه المسابقة ، سيكون لهم الاختيار بين عدة \n"
+"تخصصات."
+
+#: EnnseaSite/templates/OffersAndFormation.html:82
+msgid "The school provides training in six major specialties"
+msgstr "توفر المدرسة التكوين في ستة تخصصات رئيسية"
+
+#: EnnseaSite/templates/OffersAndFormation.html:93
+#: EnnseaSite/templates/finance.html:76 EnnseaSite/templates/home.html:221
+msgid "Finance and Actuarial"
+msgstr "مالية وحساب المخاطرة"
+
+#: EnnseaSite/templates/OffersAndFormation.html:97
+#: EnnseaSite/templates/home.html:225
+#: EnnseaSite/templates/prospectiveEconomic.html:75
+msgid "Applied Economics and Prospective"
+msgstr " الاقتصاد التطبيقي و الاستشراف "
+
+#: EnnseaSite/templates/OffersAndFormation.html:111
+#: EnnseaSite/templates/home.html:238
+#: EnnseaSite/templates/prospectiveEconomic.html:74
+msgid "Statistics and Economic Prospective"
+msgstr " الإحصاء والاستشراف الاقتصادي"
+
+#: EnnseaSite/templates/ResearchLaboratories.html:52
+msgid "Laboratory team"
+msgstr "فريق المخبر"
+
+#: EnnseaSite/templates/ResearchLaboratories.html:56
+msgid "Name"
+msgstr "الاسم"
+
+#: EnnseaSite/templates/ResearchLaboratories.html:57
+msgid "Grade"
+msgstr "الرتبة"
+
+#: EnnseaSite/templates/ScientificBodies.html:13
+msgid "The Scientific Council"
+msgstr "المجلس العلمي"
+
+#: EnnseaSite/templates/ScientificBodies.html:27
+#: EnnseaSite/templates/ScientificBodies.html:41
+#: EnnseaSite/templates/sideNavScientfcR.html:35
+msgid "Scientific bodies"
+msgstr "الهيئات العلمية"
+
+#: EnnseaSite/templates/ScientificBodies.html:43
+msgid ""
+"\n"
+"                        \n"
+"                        The Scientific Council is an advisory body which "
+"gives its opinion and proposes guidelines for\n"
+"                         the scientific and pedagogical affairs of the "
+"School; it is chaired by the Director of\n"
+"                          the School composed of Deputy Directors, heads of "
+"Departments, presidents of scientific committees of\n"
+"                           departments, Directors of research laboratories, "
+"the Director of the Library, permanent teachers\n"
+"                            reporting to other higher education institutions "
+"and elected representatives of teachers of the School.<br>\n"
+"                            The Scientific Committee of the Department is an "
+"advisory structure that issues opinions and recommendations on\n"
+"                             scientific and pedagogical affairs submitted to "
+"it by the head of department; \n"
+"                            it includes, in addition to the head of "
+"Department, elected Representatives of the teachers of the Department.\n"
+"                            "
+msgstr ""
+
+#: EnnseaSite/templates/actuality.html:13
+msgid "actuality"
+msgstr "احداث"
+
+#: EnnseaSite/templates/actuality.html:28
+msgid " Latest news"
+msgstr "آخر الأخبار"
+
+#: EnnseaSite/templates/commonTeaching.html:13
+msgid "Second cycle Master"
+msgstr "الطور الثاني:مرحلة الماستر"
+
+#: EnnseaSite/templates/commonTeaching.html:27
+msgid "Common Teaching Department of Master s Cycle"
+msgstr "قسم التعليم المشترك  لطور  ماستر"
+
+#: EnnseaSite/templates/commonTeaching.html:71
+msgid ""
+"Modules studied during the first year of the common core in the second cycle"
+msgstr ""
+" الوحدات التي يتم تدريسها خلال السنة الأولى  جذع مشترك في الطور الثاني "
+
+#: EnnseaSite/templates/commonTeaching.html:78
+msgid " first year of the common trunk"
+msgstr "السنة الأولى من الجذع المشترك"
+
+#: EnnseaSite/templates/dataScience.html:14
+msgid "Data Science"
+msgstr "علوم البيانات"
+
+#: EnnseaSite/templates/finance.html:18 EnnseaSite/templates/finance.html:33
+msgid "Departement of Finance and Acturial"
+msgstr "قسم مالية وحساب المخاطرة"
+
+#: EnnseaSite/templates/footer.html:42
+msgid "Useful links"
+msgstr "روابط مهمة"
+
+#: EnnseaSite/templates/footer.html:44
+msgid "Ministry of Higher Education and Scientific Research"
+msgstr "وزارة التعليم العالي والبحث العلمي"
+
+#: EnnseaSite/templates/footer.html:45
+msgid "Regional Conference of Center Universities"
+msgstr "الندوة الجهوية لجامعات الوسط"
+
+#: EnnseaSite/templates/footer.html:46
+msgid "Entrepreneurship development centers"
+msgstr "مركز تطوير المقاولاتية"
+
+#: EnnseaSite/templates/footer.html:47
+msgid "Thematic Research Agency in Social and Human Sciences"
+msgstr "وكالة البحوث المواضيعية في العلوم الاجتماعية والإنسانية"
+
+#: EnnseaSite/templates/footer.html:48
+msgid "Center for research in Applied Economics for development"
+msgstr "مركز البحث في الإعلام العلمي و التقني"
+
+#: EnnseaSite/templates/footer.html:57
+msgid "contact"
+msgstr "اتصل بنا"
+
+#: EnnseaSite/templates/footer.html:63
+msgid "Kolea W.Tipaza,Algeria"
+msgstr "القليعة ولاية تيبازة.الجزائر"
+
+#: EnnseaSite/templates/footer.html:78
+msgid "position"
+msgstr "الموقع"
+
+#: EnnseaSite/templates/footer.html:93
+msgid "National Higher School of Statistics and Applied Economics"
+msgstr "المدرسة الوطنية العليا للإحصاء والاقتصاد التطبيقي "
+
+#: EnnseaSite/templates/formationDoctoral.html:29
+msgid ""
+"\n"
+"Registration for the Doctorate is open to students holding a Master's degree "
+"or equivalent (or state engineer) in the field of statistics and applied "
+"economics, according to the conditions set by the various doctoral training "
+"offers of the School. The candidates participate in a national competition "
+"according to the conditions of the School and those, selected at the end of "
+"this competition, will have the choice between several specialties.\n"
+msgstr ""
+"\n"
+"التسجيل للحصول على الدكتوراه مفتوح للطلاب الحاصلين على درجة الماجستير أو ما "
+"يعادلها (أو مهندس الدولة) في مجال الإحصاء والاقتصاد التطبيقي ، وفقا للشروط "
+"التي تحددها عروض تكوين الدكتوراه المختلفة للمدرسة. يشارك المرشحون في مسابقة "
+"وطنية وفقا لظروف المدرسة ، وسيكون للمرشحين الذين يتم اختيارهم في نهاية هذه "
+"المسابقة الاختيار بين عدة تخصصات    \n"
+
+#: EnnseaSite/templates/history.html:31
+msgid "HISTORY"
+msgstr "تاريخ المدرسة"
+
+#: EnnseaSite/templates/history.html:33
+msgid ""
+"\n"
+"                As part of the Ordinance 69-106 of 12/26/1969 on the "
+"creation of institutes of Technology and in application of Decree 70-109 of "
+"07/20/1970, it was created in 1970, in Algiers, an \"Institute of Planning "
+"and Statistics Technology\" (ITPS) and placed under the supervision of the "
+"Ministry of Finance and Planning;\n"
+"                 the Institute's mission was to train senior application "
+"managers necessary to meet the needs defined by the national development "
+"plan, in the field of planning techniques and statistics and also to ensure "
+"the training and improvement of agents working in this sector.<br> In 1972, "
+"and in execution of Decree 72-133 of 07/06/1972, the name of the Institute "
+"became \"Institute of Planning Techniques and Applied Economics\" (ITPEA). \n"
+"                <br>In 1983, in application of Decree 83-692 of 11/26/1983, "
+"the ITPEA is erected\n"
+"                in the \"National Institute of Planning and "
+"Statistics\" (INPS) and placed under the supervision of the Ministry of "
+"Planning and Spatial Planning, the INPS had the mission: To train senior "
+"technicians, state engineers and magisterium.\n"
+"               To ensure, in the field of planning, statistics and "
+"quantitative techniques applied to the economy, the retraining, "
+"specialization and improvement of senior technicians, engineers and holders "
+"of diplomas or equivalent titles.<br> To carry out research work related to "
+"planning, statistics and quantitative techniques applied to the economy and "
+"to\n"
+"                  ensure the dissemination, in accordance with the "
+"regulations, the modalities and procedures in force. The supervision of the "
+"INPS is conferred on the Ministry of Higher Education by Decree 87-271 of "
+"12/15/1987.<br>\n"
+"                   Since 2008, the INPS has become an out-of-university "
+"School, by virtue of Executive Decree 08-222 of 07/14/2008, and takes the "
+"name of \"National Higher School of Statistics and Applied "
+"Economics\" (ENSSEA). During the year 2014, in application of Executive "
+"Decree 13-370 of 09/11/2013, the ENNSEA is transferred from the city of "
+"Algiers to its new headquarters located in the town of Kolea, Wilaya of "
+"Tipaza.                \n"
+"               "
+msgstr ""
+"\n"
+"في اطار المرسوم 69-106 المؤرخ 12/26/1969 بشأن إنشاء معاهد التكنولوجيا "
+"وتطبيقا للمرسوم 70-109 المؤرخ 07/20/1970 ، تم إنشاؤه في عام 1970 ، في "
+"الجزائر العاصمة   معهد التكنولوجيا للتخطيط والإحصاء و وضع تحت إشراف وزارة "
+"المالية والتخطيط; كانت مهمة المعهد هي تكوين الاطارات العليا  للتطبيق "
+"اللازمين لتلبية الاحتياجات المحددة في خطة التنمية الوطنية ، في مجال تقنيات "
+"التخطيط والإحصاء ، وكذلك ضمان تدريب وتحسين الأعوان  الناشطين في هذا القطاع."
+"في عام 1972 ، وتنفيذا للمرسوم 72-133 من 07/06/1972 ، أصبح اسم المعهد معهد "
+"تقنيات التخطيط والاقتصاد التطبيقي                <br>في عام 1983 ، تنفيذا "
+"للمرسوم 83-692 المؤرخ 11/26/1983 ، تم إنشاء المعهد « باسم  المعهد الوطني "
+"للتخطيط والإحصاء »  وتم وضعه تحت إشراف وزارة التخطيط وتهيئة الاقليم ، وكانت "
+"مهمة المعهد الوطني للتخطيط والإحصاء :تكوين التقنيون السامون ومهندسو الدولة "
+"والماجيستر                <br>ضمان في مجال التخطيط والإحصاء والتقنيات الكمية "
+"المطبقة على الاقتصاد  إعادة تكوين، والتخصص وتحسين كفاءة التقنيين السامين "
+"والمهندسين وحاملي الشهادات أوالشهاداتالمعادلة               <br>القيام "
+"بأعمال البحث المتعلقة بالتخطيط والإحصاء والتقنيات الكمية المطبقة على "
+"الاقتصاد وضمان نشرها ، وفقا للأنظمة والطرائق والإجراءات المعمول "
+"به              <br>منح الإشراف على المعهد الوطني للإحصاء لوزارة التعليم "
+"العالي بموجب المرسوم 87-271 المؤرخ 12/15/1987.               \n"
+"منذ عام 2008 ، أصبح المعهد الوطني للإحصاء مدرسة خارج الجامعة ، بموجب المرسوم "
+"التنفيذي 08-222 المؤرخ 07/14/2008 ، ويأخذ اسم المدرسة الوطنية العليا للإحصاء "
+"والاقتصاد التطبيقي و خلال عام 2014 ، تطبيقا للمرسوم التنفيذي 13-370 المؤرخ "
+"09/11/2013  تم نقل المدرسة من مدينة الجزائر إلى مقرها الجديد في مدينة "
+"القليعة بولاية تيبازة               \n"
+"               "
+
+#: EnnseaSite/templates/history.html:46
+msgid "The old headquarters of ENSSEA - Algiers-"
+msgstr "المقر القديم للمدرسة -الجزائر العاصمة-"
+
+#: EnnseaSite/templates/history.html:50
+msgid "The old headquarters of INPS - Algiers-"
+msgstr "المقر القديم للمعهد الوطني للإحصاء - الجزائر العاصمة-"
+
+#: EnnseaSite/templates/history.html:54
+msgid "MISSION "
+msgstr "مهمة المدرسة"
+
+#: EnnseaSite/templates/history.html:57
+msgid ""
+"\n"
+"\n"
+"                The ENSSEA's mission is to ensure higher education, "
+"scientific research and technological development in the various fields "
+"related to statistics and applied economics.\n"
+"                "
+msgstr ""
+"\n"
+"\n"
+"تتمثل مهمة المدرسة في ضمان التعليم العالي والبحث العلمي والتطوير التكنولوجي "
+"في مختلف المجالات المتعلقة بالإحصاءات والاقتصاد التطبيقي.                "
+
+#: EnnseaSite/templates/home.html:112
+msgid "ENSSEA in numbres"
+msgstr "المدرسة في ارقام"
+
+#: EnnseaSite/templates/home.html:120
+msgid "proffessors"
+msgstr "أساتذة"
+
+#: EnnseaSite/templates/home.html:133
+msgid "preparatory students"
+msgstr "طلبة تحضيري"
+
+#: EnnseaSite/templates/home.html:145
+msgid "Master students"
+msgstr "طلبة ماستر"
+
+#: EnnseaSite/templates/home.html:160
+msgid "doctoral students"
+msgstr "طلبة دكتوراه"
+
+#: EnnseaSite/templates/home.html:174
+msgid "DEPARTEMENTS"
+msgstr "أقسام"
+
+#: EnnseaSite/templates/home.html:175
+msgid "FORMATIONS"
+msgstr "تكوينات"
+
+#: EnnseaSite/templates/home.html:194
+msgid "Second cycle:master’s degree"
+msgstr "الطور الثاني:مرحلة الماستر"
+
+#: EnnseaSite/templates/home.html:199
+msgid "Common teaching"
+msgstr "ماستر تعليم مشترك"
+
+#: EnnseaSite/templates/home.html:247
+msgid "Third cycle:  Doctoral training"
+msgstr "الطور الثالث : تحضير الدكتوراه"
+
+#: EnnseaSite/templates/home.html:250
+msgid ""
+"\n"
+"                        For more than a decade, National Higher School of "
+"Statistics and Applied Economics has been training doctoral students to meet "
+"the needs of higher education training and to implement national research "
+"plan focused on human competence. The school’s doctoral training is adapting "
+"with the various legal reforms endorsed by the Minister of Higher Education "
+"and Scientific Research.\n"
+"                        "
+msgstr ""
+"\n"
+"      منذ أكثر من عقد من الزمان، تعمل المدرسة الوطنية العليا للإحصاء والاقتصاد التطبيقي على تكوين طلاب الدكتوراه لتلبية احتياجات التكوين في التعليم العالي وتنفيذ خطة بحثية وطنية تركز على الكفاءة البشرية. ويتكيف تكوين الدكتوراه في المدرسة مع الإصلاحات القانونية المختلفة التي أقرها وزير التعليم العالي والبحث العلمي         "
+"                        "
+
+
+#: EnnseaSite/templates/home.html:267
+msgid "DIGITAL PLATEFORMS"
+msgstr "المنصات الرقمية"
+
+#: EnnseaSite/templates/library.html:10
+#: EnnseaSite/templates/staffLibrary.html:10
+msgid "ENSSEA Library"
+msgstr "المكتبة"
+
+#: EnnseaSite/templates/library.html:37
+#: EnnseaSite/templates/staffLibrary.html:34
+msgid "Library"
+msgstr "المكتبة"
+
+#: EnnseaSite/templates/library.html:77
+msgid ""
+"\n"
+"                                The university library is considered the "
+"main and an essential pillar of scientific research, as it is based on the "
+"service of teaching staff, students and staff. The school has a rich library "
+"with various scientific references, as it contains :<br>\n"
+"                                "
+msgstr ""
+"\n"
+"تعتبر مكتبة الجامعة ركيزة أساسية وأساسية للبحث العلمي ، حيث أنها تقوم على "
+"خدمة أعضاء هيئة التدريس والطلاب والموظفين. المدرسة لديها مكتبة غنية مع مختلف "
+"المراجع العلمية ، كما أنه تحتوي على <br>"
+
+#: EnnseaSite/templates/library.html:83
+msgid "Type of document"
+msgstr "نوع المستند"
+
+#: EnnseaSite/templates/library.html:84
+msgid "Number of titles and copies"
+msgstr "عدد العناوين والنسخ"
+
+#: EnnseaSite/templates/library.html:87
+msgid "Books"
+msgstr "الكتب"
+
+#: EnnseaSite/templates/library.html:88
+msgid "12846 titles and 25419 trilingual version"
+msgstr "  12846  عنوان و 25419 نسخة بثلاث لغات  "
+
+#: EnnseaSite/templates/library.html:91
+msgid "The Magazines"
+msgstr "المجلات"
+
+#: EnnseaSite/templates/library.html:92
+msgid "More than 400 titles"
+msgstr "أكثر من 400 عنوان"
+
+#: EnnseaSite/templates/library.html:96
+msgid "State Engineer's Dissertations "
+msgstr "أطروحات مهندس الدولة"
+
+#: EnnseaSite/templates/library.html:97
+msgid "5989 dissertations"
+msgstr " 5989  أطروحة"
+
+#: EnnseaSite/templates/library.html:101
+msgid "Magister Dissertations"
+msgstr "رسائل الماجستير"
+
+#: EnnseaSite/templates/library.html:102
+msgid "353 dissertation"
+msgstr " 353 أطروحة"
+
+#: EnnseaSite/templates/library.html:106
+msgid "Senior Technician Dissertations"
+msgstr "مذكرات التقنيون السامون "
+
+#: EnnseaSite/templates/library.html:107
+msgid "1800 dissertation"
+msgstr " 1800 مذكرة"
+
+#: EnnseaSite/templates/library.html:111
+msgid "Master's Theses "
+msgstr "مذكرات الماستر"
+
+#: EnnseaSite/templates/library.html:112
+msgid "1557 dissertation"
+msgstr " 1557 مذكرة"
+
+#: EnnseaSite/templates/library.html:116
+msgid "Doctoral Theses"
+msgstr "رسائل الدكتوراه"
+
+#: EnnseaSite/templates/library.html:117
+msgid "250 doctoral theses"
+msgstr "  250 رسالة دكتوراه"
+
+#: EnnseaSite/templates/library.html:124
+msgid ""
+"\n"
+"                              It also contains two reading rooms and a "
+"bibliographic research room equipped with computers programmed with a "
+"special search system, in addition to a digital library that holds the "
+"entire documentary collection of the library of the National School of "
+"Statistics and Applied Economics, including books and theses, accessible to "
+"each researcher via the school's official website.\n"
+"                              The library director, with the help of the "
+"heads of its departments, manages the library and provides services to "
+"users, while also enriching and developing the collection through various "
+"forms of acquisition, the most important of which are purchases, gifts, and "
+"deposits.<br>\n"
+"                              Based on the above and the services provided "
+"by the Library of the National School of Statistics and Applied Economics, "
+"the importance of the library is evident in advancing scientific research.\n"
+"                              "
+msgstr ""
+"\n"
+"كما تحتوي على غرفتي قراءة وغرفة أبحاث ببليوغرافية مجهزة بأجهزة كمبيوتر "
+"مبرمجة بنظام بحثي خاص ، بالإضافة إلى مكتبة رقمية تحتوي على المجموعة "
+"الوثائقية الكاملة لمكتبة المدرسة الوطنية للإحصاء والاقتصاد التطبيقي ، بما في "
+"ذلك الكتب والأطروحات ، ويمكن لكل باحث الوصول إليها عبر الموقع الرسمي "
+"للمدرسة.    وتتولى مديرة المكتبة ، بمساعدة رؤساء أقسامها ، إدارة المكتبة "
+"وتقديم خدماتها للمستخدمين ، فضلا عن إثراء الصندوق وتطويره في مختلف أشكال "
+"التوريد ، وأهمها المشتريات والهدايا والودائع                              "
+
+#: EnnseaSite/templates/organizationalChart.html:15
+msgid "Organizational chart"
+msgstr "الهيكل التنظيمي"
+
+#: EnnseaSite/templates/pagination.html:7
+#: EnnseaSite/templates/pagination.html:11
+msgid "Previous"
+msgstr "السابق"
+
+#: EnnseaSite/templates/pagination.html:24
+#: EnnseaSite/templates/pagination.html:29
+msgid "Next"
+msgstr "التالي"
+
+#: EnnseaSite/templates/prepatory.html:27
+msgid "Departement of Preparatory Classes"
+msgstr " قسم الطور التحضيري"
+
+#: EnnseaSite/templates/prepatory.html:69
+msgid " The modules studied during the preparatory cycle"
+msgstr " الوحدات التي يتم دراستها  خلال الطور التحضيري "
+
+#: EnnseaSite/templates/prepatory.html:75
+msgid "preparatory classe First year "
+msgstr " الأقسام التحضيرية السنة الأولى"
+
+#: EnnseaSite/templates/prepatory.html:76
+msgid "preparatory classe Second year "
+msgstr " الأقسام التحضيرية السنة الثانية"
+
+#: EnnseaSite/templates/prospectiveEconomic.html:13
+#: EnnseaSite/templates/prospectiveEconomic.html:26
+msgid "Departement of quantitative and prospective economics"
+msgstr "قسم الاقتصاد الكمي والاستشراف الاقتصادي"
+
+#: EnnseaSite/templates/prospectiveEconomic.html:68
+msgid "Modules that are studied for each specialty"
+msgstr "الوحدات التي يتم دراستها لكل تخصص"
+
+#: EnnseaSite/templates/scintficActvt.html:13
+#: EnnseaSite/templates/scintficActvt.html:27
+msgid "Scientific Activities"
+msgstr "الأنشطة العلمية"
+
+#: EnnseaSite/templates/sideNavLibrary.html:31
+msgid "Presentation"
+msgstr "تقديم"
+
+#: EnnseaSite/templates/sideNavLibrary.html:36
+msgid "Staff of library"
+msgstr "موظفو المكتبة"
+
+#: EnnseaSite/templates/sideNavLibrary.html:41
+msgid "Internal Regulations"
+msgstr "اللائحة الداخلية"
+
+#: EnnseaSite/templates/staffLibrary.html:41
+msgid "Staff of Library"
+msgstr "موظفو المكتبة"
+
+#: EnnseaSite/templates/staffLibrary.html:54
+msgid ""
+"\n"
+"                              The library is composed of a director and 3 "
+"heads of departments:<br>\n"
+"                              "
+msgstr ""
+"\n"
+"<br>\n"
+"تتكون المكتبة من مدير و 3 رؤساء مصالح:                              "
+
+#: EnnseaSite/templates/staffLibrary.html:60
+msgid "acquisition and processing"
+msgstr "الاستلام والمعالجة"
+
+#: EnnseaSite/templates/staffLibrary.html:61
+msgid "bibliographic research"
+msgstr "البحث الببليوغرافي"
+
+#: EnnseaSite/templates/staffLibrary.html:62
+msgid "reception and orientation"
+msgstr " الاستقبال و التوجيه "
+
+#: EnnseaSite/templates/staffLibrary.html:71
+msgid "Missions of the Library services"
+msgstr " مهام مصالح المكتبة "
+
+#: EnnseaSite/templates/staffLibrary.html:73
+msgid "Reception and orientation service"
+msgstr " مصلحة الاستقبال و التوجيه "
+
+#: EnnseaSite/templates/staffLibrary.html:75
+msgid "Access to references"
+msgstr "الوصول إلى المراجع"
+
+#: EnnseaSite/templates/staffLibrary.html:76
+msgid "Internal and external lending"
+msgstr "الإعارة الداخلية والخارجية"
+
+#: EnnseaSite/templates/staffLibrary.html:77
+#: EnnseaSite/templates/staffLibrary.html:89
+msgid "Registration in the library"
+msgstr " التسجيل في المكتبة "
+
+#: EnnseaSite/templates/staffLibrary.html:78
+msgid "Access to databases"
+msgstr "الوصول إلى قواعد البيانات"
+
+#: EnnseaSite/templates/staffLibrary.html:79
+#: EnnseaSite/templates/staffLibrary.html:91
+msgid " Take care of the library's holdings and update inventory lists"
+msgstr "رعاية مقتنيات المكتبة وتحديث قوائم الجرد"
+
+#: EnnseaSite/templates/staffLibrary.html:80
+msgid "signature of the QUITUS form"
+msgstr "توقيع نموذج الخروج"
+
+#: EnnseaSite/templates/staffLibrary.html:85
+msgid "Bibliographic research department"
+msgstr "قسم البحوث الببليوغرافية"
+
+#: EnnseaSite/templates/staffLibrary.html:87
+msgid ""
+"To ensure the promotion of bibliographic research among the beneficiaries "
+"and to accompany them in the realization of their scientific research "
+"through: "
+msgstr ""
+"ضمان تعزيز البحث الببليوغرافي بين المستفيدين ومرافقتهم في تحقيق بحثهم العلمي "
+"من خلال: "
+
+#: EnnseaSite/templates/staffLibrary.html:88
+msgid ""
+"Manage the library's website and provide the institution's website with "
+"information about the library "
+msgstr "إدارة موقع المكتبة وتزويد موقع المؤسسة بـ معلومات عن المكتبة "
+
+#: EnnseaSite/templates/staffLibrary.html:90
+msgid "Manage SNDL accounts and provide a private account for each student  "
+msgstr " إدارة حسابات SNDL وتوفير حساب خاص لكل طالب "
+
+#: EnnseaSite/templates/staffLibrary.html:92
+msgid ""
+"Manage SCHOLARVOX accounts and provide a private account for each student"
+msgstr " إدارة حسابات سكلارفوكس وتوفير حساب خاص لكل طالب "
+
+#: EnnseaSite/templates/staffLibrary.html:98
+msgid "Acquisition and processing service"
+msgstr "مصلحة الاستلام والمعالجة"
+
+#: EnnseaSite/templates/staffLibrary.html:100
+msgid "Responsible for the documentary series"
+msgstr "مسؤول عن السلسلة الوثائقية"
+
+#: EnnseaSite/templates/staffLibrary.html:101
+msgid "Collect the needs of the library according to the teaching programs"
+msgstr "جمع احتياجات المكتبة حسب البرامج التعليمية"
+
+#: EnnseaSite/templates/staffLibrary.html:102
+msgid "Analysis of requests and preparation of the list of acquisitions "
+msgstr "تحليل الطلبات وإعداد قائمة المقتنيات"
+
+#: EnnseaSite/templates/staffLibrary.html:103
+msgid ""
+"Use of the standardized SYNGEB system (standardized library management "
+"system) for the processing of books and theses"
+msgstr ""
+"استخدام نظام سنجاب (النظام الموحد لإدارة المكتبات) لتجهيز الكتب والرسائل "
+"العلمية"
+
+#: EnnseaSite/templates/staffLibrary.html:104
+msgid ""
+" The receipt of the order with an acknowledgment of receipt, then "
+"registration in a special register where the documents are acquired via the "
+"publishers' indexes "
+msgstr ""
+"استلام الطلب مع إقرار الاستلام ، ثم التسجيل في سجل خاص حيث يتم الحصول على "
+"المستندات عبر فهارس الناشرين "
+
+#: EnnseaSite/templates/staffLibrary.html:105
+msgid ""
+"Cataloguing of the documentary fund according to the accepted standards of "
+"bibliographic description"
+msgstr "فهرسة الصندوق الوثائقي وفقا للمعايير المقبولة للوصف الببليوغرافي"
+
+#: EnnseaSite/templates/staffLibrary.html:117
+msgid "library director :"
+msgstr "مدير المكتبة :"
+
+#: EnnseaSite/templates/studiesAndScholling.html:53
+msgid ""
+"\n"
+"                        The higher education and teaching at the level of "
+"the National Higher School of Statistics and Applied Economics lasts five "
+"years and is divided into three periods:"
+msgstr ""
+"\n"
+"تستمر الدراسة والتعليم العالي على مستوى المدرسة الوطنية العليا للإحصاء والاقتصاد التطبيقي لمدة خمس سنوات وتنقسم إلى ثلاث فترات:"
+
+#: EnnseaSite/templates/studiesAndScholling.html:56
+msgid "TWO YEARS OF PREPARATORY CLASSES"
+msgstr "سنتان من الأقسام التحضيرية"
+
+#: EnnseaSite/templates/studiesAndScholling.html:58
+msgid ""
+" Two years during which the basic knowledge is taught for mastery by the "
+"student before moving on to the second cycle."
+msgstr ""
+"سنتان يتم خلالها تدريس المعرفة الأساسية لإتقانها من قبل"
+"الطالب قبل الانتقال إلى الطور الثاني"
+
+#: EnnseaSite/templates/studiesAndScholling.html:60
+msgid "A YEAR OF COMMON CORE IN THE SECOND CYCLE"
+msgstr "عام من التعليم المشترك في الطور الثاني"
+
+#: EnnseaSite/templates/studiesAndScholling.html:62
+msgid ""
+" Students who pass the contest enter the first year of the second cycle."
+msgstr ""
+"الطلاب الذين يجتازون المسابقة يدخلون السنة الأولى من الطور الثاني."
+
+#: EnnseaSite/templates/studiesAndScholling.html:64
+msgid "TWO YEARS OF SPECIALTY (4TH + 5TH YEAR)"
+msgstr "سنتان من التخصص (السنة الرابعة و الخامسة)"
+
+#: EnnseaSite/templates/studiesAndScholling.html:66
+msgid ""
+"The School offers its students six specialties which are taught for the "
+"engineering cycle (Statistics and Data Science, Applied Statistics, Applied "
+"Economics and Prospective, Statistics and Economic Prospective, Finance and "
+"Actuarial Science, Population Sciences and Statistics Social).\n"
+"                        The choice is made at the end of the 1st year of the "
+"second cycle on the basis of the grades obtained during the first year of "
+"the second cycle and the places open by specialty.\n"
+"                        "
+msgstr ""
+"تقدم المدرسة لطلابها ستة تخصصات يتم تدريسها لطور  الماستر (الإحصاء وعلوم البيانات ، والإحصاءات التطبيقية ، والاقتصاد التطبيقي والمستقبلي ، والإحصاءات والمستقبل الاقتصادي ، والمالية وحساب المخاطرة ، وعلوم السكان والإحصاءات الاجتماعية)."
+"  يتم الاختيار في نهاية السنة الاولى من الطور الثاني على أساس الدرجات التي تم الحصول والأماكن المفتوحة حسب التخصص"
+"                        "
+
+#~ msgid "Scientific Publications"
+#~ msgstr "المنشورات العلمية"
+
+#~ msgid "Quantitative and Prospective Economics"
+#~ msgstr "الاقتصاد الكمي والاستشراف الاقتصادي"

@@ -1,0 +1,317 @@
+{% load static %}{% load tailwind_tags %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+    <title>ENSSEA</title>
+    <link rel="icon" type="image/x-icon" href="/static/photos/logoENSSEA.ico">
+    <link href="{% static '/css/splide.min.css' %}" rel="stylesheet"> 
+
+    {% tailwind_css %}
+
+</head>
+
+<body class="overflow-x-hidden overflow-y-auto ">
+    <!-- sticky top-0 z-50 -->
+    <!-- <div class="bg-fixed w-full h-52 bg-transparent  lg:bg-right-bottom contrast-125 bg-cover bg-[url('/static/photos/enssea.jpg')] bg-no-repeat">
+
+    </div> -->
+    <header id="header" class="sticky top-0 z-50 ">
+
+
+        {% include 'NavbarPrincipal.html' %}
+
+
+
+
+    </header>
+    <section>
+    <section class="font-arabic h-auto">
+        <!-- <div class=" bg-fixed w-auto h-screen bg-transparent  bg-cover bg-[url('/static/photos/enssea.jpg')] bg-no-repeat">
+
+        </div> -->
+        <div id="loading" class="fixed top-0 left-0 w-full h-full z-50 flex justify-center items-center bg-white">
+            <img src="/static/photos/icons8-dot-bricks.gif">
+
+        </div>
+
+        <div class=" pt-0 pb-2 flex   w-full h-auto ">
+            <div class="splide  w-full h-full" aria-label="Slide Container  ">
+                <div class="splide__track bg-transparent ">
+                    <ul class="splide__list w-full h-full">
+                        {% for item in photosplide %}
+                        <li class="splide__slide px-0 ">
+                            <div class="splide__slide__container h-full  w-full bg-blue-700 " style="background-image: url({{item.photo.url}}); background-size: cover; background-position: center; background-repeat: no-repeat;" >
+
+                            </div>
+                        </li>
+                        {% endfor %}
+                        
+                    </ul>
+                </div>
+                <div class="splide__progress w-full mt-1 mb-2 ">
+                    <div class="splide__progress__bar h-2 rounded-r-md bg-blue-700">
+                       
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------- -->
+
+        <div id="sectionNews" class=" bg-slate-200  h-auto w-full py-1 font-arabic ">
+            <div id="div_News1" class="relative  flex text-lg w-auto  text-blue-900  top-4 h-auto justify-center    py-2 border-b-2 rounded-md bg-yellow-500 shadow-[0_8px_9px_-1px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
+                {% trans 'Latest News' %}
+            </div>
+           
+            <div div="sectionNews" class="relative grid grid-cols-1 grid-flow-row md:grid-cols-2 md:grid-flow-row md:gap-x-1 top-3 mb-3 h-auto w-full md:mx-2 overflow-x-hidden overflow-y-hidden ">
+                {% for item in event %}
+                <div id="announcement" style=" background-image: url({{item.image.url}});background-position:center; background-size: cover; background-repeat: no-repeat;" class="relative rounded-md top-4 mb-2 h-[35vh] w-full  transition duration-1000 ease-in-out border overflow-hidden">
+                    <div id="card-front1" class="   bottom-4 w-auto left-0 text-start duration-1000 ">
+                        <div class=" w-full h-full  ">
+                            <div class="  flex text-3xl bg-opacity-50 text-white bg-blue-500  top-32 h-auto  w-auto justify-center items-center   py-2 border-b-1 rounded-md shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">{{item.title}}</div>
+                            
+                        </div>
+    
+                    </div>
+    
+                    <div id="card-back1" class="bg-yellow-50 bg-opacity-60  rounded-md w-auto translate-x-full transform duration-1000 ease-mycustom truncate">
+                        <p class="  "> 
+                            {{item.comment}}
+                        </p>
+    
+
+                        <button onclick="location.href='{% url 'actuality' item.id %}'" class="relative content-center border left-1/3 hover:bg-blue-500 rounded-lg bg-slate-100 bg-opacity-70 px-4 py-2  hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ">{% trans 'Learne More' %}</button>
+                    </div>
+                </div>
+                {% endfor %}
+    
+    
+            </div>
+
+
+
+            {% include 'pagination.html' with page=event %}
+
+  
+
+           </div>
+    
+
+        <!-- ------------------------------------------------------------------------ -->
+        <div id="ensseaNumber" class="relative h-60 w-full top-5 bg-blue-800 font-arabic">
+            <div  class="text-md  md:text-3xl text-white pt-2 flex justify-center  ">
+                <h1 class="fade-in ">{% trans 'ENSSEA in numbres' %} </h4>
+            </div>
+            <div class=" pb-2 pt-2 px-0 flex justify-center ">
+
+                <div id="Inumbres" class="grid grid-rows-1 grid-cols-4 md:ml-4 gap-3 md:gap-8  w-fit ">
+                    <div class="left-1 md:left-4 flex flex-col w-auto md:w-52 h-auto rounded-md  text-sm md:text-xl text-white   opacity-100 " id="grid1">
+
+                        <div id="panel" class="  hidden pt-5 md:pt-10  h-24 md:h-36 text-center text-white rounded-md bg-transparent border-2 border-white  ">
+                            <i class="fas fa-chalkboard-teacher "></i>{% trans 'proffessors' %}
+
+                            <h1 id="profAcount" class="text-2xl md:text-4xl"></h1>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="flex flex-col w-auto md:w-52 h-auto  rounded-md text-sm md:text-xl opacity-100" id="grid2">
+                        <!-- <div id="flip1" class="  border-b rounded-t-md bg-blue-500 h-auto w-full  text-white text-center ">preparatory students <i class="fa-solid fa-user-graduate"></i></div> -->
+
+                        <div id="panel1" class="  hidden pt-5 md:pt-10  h-24 md:h-36 rounded-md text-white text-center w-auto  bg-transparent border-2 border-white">
+                            <i class="fas fa-university"></i>  {% trans 'preparatory students' %}
+                            
+                            <h1 id="prepStdAcount" class="text-2xl md:text-4xl"></h1>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="flex flex-col w-auto md:w-52 h-auto  rounded-md text-sm md:text-xl text-white   opacity-100" id="grid3">
+
+                        <div id="panel2" class="hidden pt-5 md:pt-10  h-24 md:h-36 rounded-md text-white  text-center  bg-transparent border-2 border-white ">
+                            <i class="fas fa-graduation-cap"></i>{% trans 'Master students' %}
+                            
+
+                            <h1 id="mastreAcount" class="text-2xl md:text-4xl"></h1>
+
+
+                        </div>
+                        <!-- opacity-0 transition-opacity duration-1000 -->
+
+                    </div>
+
+                    <div class="flex flex-col w-auto md:w-52 h-auto rounded-md text-sm md:text-xl text-white   opacity-100" id="grid4">
+
+                        <div id="panel3" class="  hidden pt-5 md:pt-10  h-24 md:h-36  rounded-md text-white text-center bg-transparent border-2 border-white ">
+                            <i class="fa-solid fa-user-graduate"></i>
+                            {% trans 'doctoral students' %}   
+                            <h1 id="doctrAcount" class="text-2xl md:text-4xl"></h1>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+                    <!-- ------------------------------------------------------------------ -->
+
+
+        <div class=" h-[200vh] md:h-[250vh]  bg-cover bg-bottom bg-fixed bg-white bg-opacity-10 bg-[url('/static/photos/PhotosENSSEA/photo2.png')]  bg-no-repeat ml-0   mb-0 mt-1">
+
+            <div class="relative text-lg  bg-yellow-500 pt-0 flex justify-center z-20 borfer  shadow-[0_8px_9px_-1px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
+                <h4 class="fade-in border-r-2 border-blue-900   p-2 text-blue-900   ">{% trans 'DEPARTEMENTS' %}</h4>
+                <h4 class="fade-in m p-2  text-blue-900   ">{% trans 'FORMATIONS' %}</h4>
+
+            </div>
+            <div  class="relative  w-auto flex   z-0 ">
+                <div class="flex-col w-full  ">
+                       <div class="  flex flex-col items-center   h-fit w-full ">
+
+                              <h4 id="prepaCycle" class="flex  z-10 p-0 left-6 border-b-2 border-blue-500 text-lg text-black bg-white bg-opacity-50 content-center w-fit   ">{% trans 'First cycle: Preparatory Classes' %}
+                                 
+                              </h4>                   
+                        
+                                <div id="gridPrepa" class="relative z-0 group cursor-pointer w-32 h-32 md:w-52 md:h-52 mdl:w-72 mdl:h-56 mb-2 rounded-md -top-14  bg-cover bg-[url('/static/photos/formations/prepa1.webp')] hover:shadow-[0_7px_8px_4px_#3b71ca] hover:duration-500">
+                                <h2 class="rounded-t-md text-sm mdl:text-lg text-white  bg-blue-600  text-center"> {% trans 'Preparatory Classes' %}</h2>
+                                <a href="{% url 'preparatory' %}"  class="block h-56  w-full "></a>
+                                </div>
+
+                       </div>
+                
+                    <div div="SecondCycle" class="relative mt-3 flex justify-center pt-0 left-1/4 w-1/2 h-auto  bg-white bg-opacity-50 border-b-2 border-blue-500">
+                       <h4 class="  p-0 mt-2  w-fit text-lg text-black content-center   ">{% trans 'Second cycle:master’s degree' %}</h4>
+                   </div>
+                   <div class="flex items-center justify-center" >
+
+                        <div id="grid2ndcycle" class="relative group cursor-pointer  w-32 h-32 md:w-52 md:h-52 mdl:w-72 mdl:h-60 rounded-md   top-0 bg-cover bg-[url('/static/photos/formations/communTech.jpeg')] hover:shadow-[0_7px_8px_4px_#3b71ca] hover:duration-500">
+                            <h2 class="rounded-t-md text-sm mdl:text-lg text-white  bg-blue-600  text-center">{% trans 'Common teaching' %} </h2>
+                            <a href="{% url 'commonTeaching' %}"  class="block h-56  w-full "></a>
+                        
+
+                        </div>
+                    </div>
+
+                </div>
+                
+
+            </div>
+               
+            <div class="relative py-60 md:py-72 mt-6 grid grid-rows-3 grid-cols-2 ">
+
+                <div id="gridg_1" class=" group cursor-pointer w-32 h-32 md:w-52 md:h-52 mdl:w-72 mdl:h-60 rounded-md absolute  top-5 right-1 bg-cover bg-[url('/static/photos/picture8.jpg')] hover:shadow-[0_7px_8px_4px_#3b71ca] hover:duration-500">
+                    <h2 class="rounded-t-md text-sm mdl:text-lg text-white  bg-blue-600  text-center">{% trans 'Applied Statistics' %}</h2>
+                    <a href="{% url 'AppliedStatistics' %}"  class="block h-56  w-full "></a>
+                   
+
+                </div>
+
+                <div id="gridg_2" class=" group cursor-pointer w-32 h-32 md:w-52 md:h-52 mdl:w-72 mdl:h-60 rounded-md  absolute top-40 md:top-60 mdl:top-72  right-1 bg-cover bg-[url('/static/photos/picture3.jpg')] hover:shadow-[0_7px_8px_4px_#3b71ca] hover:duration-500">
+                    <h1 class=" rounded-t-md text-sm mdl:text-xl text-white   bg-blue-600 text-center ">{% trans 'Finance and Actuarial' %}</h4>
+                        <a href="{% url 'Finance_actuariat' %}" class="block h-28 md:h-44 w-full "></a>
+                    </div>
+                <div id="gridg_3" class="group cursor-pointer w-32 h-32 md:w-52 md:h-52 mdl:w-72 mdl:h-60 rounded-md bg-blue-300 absolute  top-5 bg-cover bg-[url('/static/photos/picture2.jpg')] hover:shadow-[0_7px_8px_4px_#3b71ca] hover:duration-500">
+                    <h2 class="rounded-t-md  text-sm mdl:text-lg  text-white  bg-blue-600 text-center">{% trans 'Applied Economics and Prospective' %}</h2>
+                    <a href="{% url 'prospectiveEconomic' %}" class="block h-28 md:h-44 w-full "></a>
+                </div>
+
+                <div id="gridg_4" class="group cursor-pointer w-32 h-32 md:w-52 md:h-52 mdl:w-72 mdl:h-60 rounded-md absolute top-40 md:top-60 mdl:top-72  bg-cover bg-[url('/static/photos/picture7.jpg')] bg-no-repeat hover:shadow-[0_7px_8px_4px_#3b71ca] hover:duration-500">
+                    <h1 class="rounded-t-md text-sm mdl:text-xl text-white   bg-blue-600 text-center">{% trans 'Statistics and Data Science' %}</h4>
+                        <a href="{% url 'AppliedStatistics' %}" class="block h-28 md:h-44 w-full "></a>
+                </div>
+                <div id="gridg_5" class="group cursor-pointer w-32 h-32 md:w-52 md:h-52 mdl:w-72 mdl:h-60 rounded-md absolute top-80 md:top-96 mdl:top-100 bg-cover bg-center bg-[url('/static/photos/formations/population.jpg')] bg-no-repeat hover:shadow-[0_7px_8px_4px_#3b71ca] hover:duration-500">
+                    <h1 class="rounded-t-md text-sm mdl:text-xl text-white   bg-blue-600 text-center">{% trans 'Population Science and Social Statistics' %}</h4>
+                        <a href="{% url 'AppliedStatistics' %}" class="block h-28 md:h-44 w-full "></a>
+                </div>
+                <div id="gridg_6" class="group cursor-pointer w-32 h-32 md:w-52 md:h-52 mdl:w-72 mdl:h-60  rounded-md absolute   top-80 md:top-96 mdl:top-100 right-1 bg-cover bg-[url('/static/photos/formations/economiepros.webp')] bg-no-repeat hover:shadow-[0_7px_8px_4px_#3b71ca] hover:duration-500">
+                    <h1 class="rounded-t-md text-sm mdl:text-xl text-white   bg-blue-600 text-center">{% trans 'Statistics and Economic Prospective' %}</h4>
+                        <a href="{% url 'prospectiveEconomic' %}" class="block h-28 md:h-44 w-full "></a>
+                </div>
+            </div>
+              
+     
+        </div>
+        <div class="relative   h-[60vh] w-full bg-fixed bg-top  bg-cover bg-[url('/static/photos/formations/doctorat1.jpg')]">
+            <div class="flex flex-col space-y-8  items-center">
+                <h5 class=" z-10 p-0  border-b-2 border-blue-500 text-xl  text-black bg-white bg-opacity-50  content-center w-fit   ">{% trans 'Third cycle:  Doctoral training' %}
+                    </h5>
+                    <p class="bg-slate-100 bg-opacity-50 p-10">
+                        {% blocktrans %}
+                        For more than a decade, National Higher School of Statistics and Applied Economics has been training doctoral students to meet the needs of higher education training and to implement national research plan focused on human competence. The school’s doctoral training is adapting with the various legal reforms endorsed by the Minister of Higher Education and Scientific Research.
+                        {% endblocktrans %}
+                    </p>
+            </div>
+        </div>
+       
+        
+        <!--  -->
+    </section>
+    
+
+
+
+    <div id="sectioDifitalPlatfrm" class=" h-full w-full pt-1 font-arabic">
+        <div class=" relative  w-full h-auto  bg-slate-200 top-1 ">
+            <div class="content-center flex justify-center ">
+                <h4 class="fade-in   underline text-sm md:text-2xl text-blue-700  ">{% trans 'DIGITAL PLATEFORMS' %}</h4>
+            </div>
+            <div class="flex flex-row  md:top-20 md:left-0 justify-center md:justify-around  gap-x-3  ">
+                <div id="divmoodle" class=" h-12 w-12  md:h-44 md:w-44 hover:-translate-y-1 duration-1000 ">
+                    <img class="fade-in rounded-lg  md:h-full w-auto" src="/static/photos/moodle.png" alt="moodle" />
+                </div>
+                <div id="divsndl" class=" h-12 w-12 md:h-44 md:w-44 hover:-translate-y-1 duration-1000 ">
+                    <a href="https://www.sndl.cerist.dz/" target="_blank"> <img class="fade-in rounded-lg h-full w-auto" src="/static/photos/sndl.png" alt="moodle" /> </a>
+                </div>
+                <div id="divprogres" class=" h-12 w-12 md:h-44 md:w-44 hover:-translate-y-1 duration-1000 ">
+                    <a href="https://progres.mesrs.dz/webetu/login.xhtml " target="_blank"><img class="fade-in rounded-lg h-full w-auto" src="/static/photos/progress.jpg" alt="progres/webetu" /></a>
+                </div>
+                <div id="divscolarvox" class="h-12 w-12 md:h-44 md:w-44 hover:-translate-y-1 duration-1000 ">
+                    <a href="https://www.scholarvox.com/" target="_blank"> <img class="fade-in rounded-lg h-full w-auto" src="/static/photos/scholravox.jpeg" alt="scholarvox" /></a>
+                </div>
+                <div id="divlearning" class="h-12 w-12 md:h-44 md:w-44 hover:-translate-y-1 duration-1000 ">
+                    <a href="https://learning.enssea.edu.dz/" target="_blank"> <img class="fade-in rounded-lg  h-full w-auto" src="/static/photos/enssealearning.jpg" alt="learning" /></a>
+                </div>
+            </div>
+        </div>
+       
+       
+        
+    </div>
+    
+
+    <div class="relative mt-4">
+        {% include 'footer.html' %}
+    </div>
+    </section>
+
+    
+    {% block js_block %}
+    <script type="text/javascript" src="{% static 'js/jquery-3.6.4.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/splide.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/main.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/navbarprincipal.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/HomeFormations.js'%}">   </script>
+    <script type="text/javascript" src="{% static 'js/home.js'%}"> </script>
+    <script type="text/javascript" src="{% static 'js/homeNews.js'%}">   </script>
+    <script type="text/javascript" src="{% static 'js/laoding.js'%}"> </script>
+    <script type="text/javascript" src="{% static 'js/detectLanguageNavBr.js'%}">   
+    </script>
+    
+    {% endblock %}
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,70 @@
+{% load static %} {% load tailwind_tags %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'splide-4.1.3/dist/css/splide-core.min.css'%}" rel="stylesheet" type="text/css">
+
+    <title>{% trans 'Data Science' %}</title>
+    <link rel="icon" type="image/x-icon" href="/static/photos/logoENSSEA.ico">
+
+    {% tailwind_css %}
+
+</head>
+
+<body>
+    <header class="sticky top-0 z-50">
+        {% include 'NavbarPrincipal.html' %}
+
+    </header>
+    <section class="splide w-auto  " aria-label="Slide Container Example">
+        <div class="splide__track border-2 w-auto mx-8 my-4 bg-slate-300">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="splide__slide__container ">
+                <img class="w-full h-full" src="/static/photos/enssealearning.jpg">
+              </div>
+              Lorem Ipsum Dolor Sit Amet111
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container ">
+                <img src="/static/photos/result1.jpg">
+              </div>
+              Lorem Ipsum Dolor Sit Amet222
+            </li>
+            <li class="splide__slide">
+                <div class="splide__slide__container ">
+                  <img src="/static/photos/recrutement1.jpg">
+
+                </div>
+                Lorem Ipsum Dolor Sit Amet333
+              </li>
+          </ul>
+        </div>
+        <div class="splide__progress">
+          <div class="splide__progress__bar">
+          </div>
+        </div>
+      </section>
+    <footer>
+        {% include 'footer.html' %}
+    </footer>
+    {% block js_block %}
+
+    <script type="text/javascript" src="{% static 'js/jquery-3.6.4.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/splide.min.js'%}"></script>
+
+    <script type="text/javascript" src="{% static 'js/slideNews.js'%}">    </script>
+
+    <script type="text/javascript" src="{%static 'js/sideNav.js'%}"></script>
+
+    {% endblock %}
+</body>
+
+</html>

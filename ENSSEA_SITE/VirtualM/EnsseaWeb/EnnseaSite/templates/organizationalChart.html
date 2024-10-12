@@ -1,0 +1,62 @@
+{% load static %} {% load tailwind_tags %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% tailwind_css %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+    <link href="{% static '/css/splide.min.css' %}" rel="stylesheet">
+    <title>{% trans 'Organizational chart' %}</title>
+    <link rel="icon" type="image/x-icon" href="/static/photos/logoENSSEA.ico">
+
+
+</head>
+<body>
+    <header class="sticky top-0 z-30 ">
+
+
+        {% include 'NavbarPrincipal.html' %}
+
+
+
+    </header>
+    <section class="flex flex-row w-full h-full">
+        <div class="w-3/4 h-auto  bg-slate-100 flex items-center   justify-center ">
+            <image class="my-2 " src="/static/photos/infrastructure/OrganigramENSSEA.png"></image>
+
+        </div>
+        
+        <div class="w-1/4 h-full flex flex-col">
+                <ul  class=" bg-white text-center h-auto  px-0  text-blue-950  text-vsm md:text-sm ">
+                    <li class="border-b-2">
+                        <a id="idHistory" href="{% url 'history' %}" class="block  py-2  hover:bg-blue-600 hover:text-white active:bg-blue-600 ">{% trans 'History' %} </a>
+                    </li>
+                    
+                    <li class="border-b-2">
+                        <a id="idInfra" href="{% url 'infrastructure' %}" class="block  py-2  hover:bg-blue-600 hover:text-white ">{% trans 'Infrastructure' %} </a>
+                    </li>
+                    <li class="border-b-2">
+                        <a id="idOrganis" href="{% url 'organizationalChart' %}" class="block py-2   hover:bg-blue-600 hover:text-white">{% trans 'organizational chart' %} </a>
+                    </li>
+                </ul>
+
+        </div>
+    
+    </section>
+    <footer>
+        {% include 'footer.html' %}
+    </footer>
+    {% block js_block %}
+
+        <script type="text/javascript" src="{% static 'js/sidNavAbout.js'%}"></script>
+
+
+    {% endblock %} 
+</body>
+</html>

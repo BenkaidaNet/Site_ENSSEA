@@ -1,0 +1,50 @@
+{% load static %} {% load tailwind_tags %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    
+        <title>{% trans 'internship service' %}</title>
+        <link rel="icon" type="image/x-icon" href="/static/photos/logoENSSEA.ico">
+    
+        {% tailwind_css %}
+    </head>
+    <body>
+        <header class="sticky top-0 z-50">
+            {% include 'NavbarPrincipal.html' %}
+    
+        </header>
+        <section>
+            <div class=" w-auto h-auto flex flex-row  ">
+            <div class="flex flex-col  md:ml-4 w-3/4">
+            <div class=" m-4 mt-6  bg-slate-200  rounded-sm">
+                <p class="mx-2  font-arabic text-vsm md:text-sm whitespace-pre-line ">
+
+{% blocktrans %}
+Registration for the Doctorate is open to students holding a Master's degree or equivalent (or state engineer) in the field of statistics and applied economics, according to the conditions set by the various doctoral training offers of the School. The candidates participate in a national competition according to the conditions of the School and those, selected at the end of this competition, will have the choice between several specialties.
+{% endblocktrans %}
+ 
+                                 </p>
+            </div>
+        </div>
+            <div class=" w-1/4  h-auto border-l-2 ">
+                {% include 'sideNavDeanship.html' %}
+
+            </div>
+        </div>
+        </section>
+        <footer>
+            {% include 'footer.html' %}
+        </footer>
+        {% block js_block %}
+        <script type="text/javascript" src="{%static 'js/sideNavDeanship.js'%}"></script>
+
+        {% endblock %}
+    </body>
+</html>

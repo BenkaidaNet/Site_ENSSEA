@@ -1,0 +1,157 @@
+{% load static %} {% load tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+    <link href="{% static '/css/splide.min.css' %}" rel="stylesheet"> {% tailwind_css %}
+
+
+
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script type="text/javascript" src="{% static 'js/jquery-3.6.4.min.js'%}"></script> -->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+
+</head>
+
+</head>
+
+<body class="font-sans m-0">
+
+    <div class=" bg-fixed w-auto h-screen bg-transparent  bg-cover bg-[url('/static/photos/enssea.jpg')] bg-no-repeat">
+
+    </div>
+    <div class="navbar sticky top-0 z-50  overflow-hidden transition-all  bg-blue-50 h-auto w-full shadow-xl flex  md:items-center mx-auto">
+
+        <img class="h-20 w-20 rounded-2xl " src="/static/photos/logo.jpeg " alt="logo " />
+        <div class="container  mb-0 mx-auto px-2  flex justify-between flex-wrap  ">
+            <div class="MenuList group hidden  md:flex text-center mb-0  md:w-auto w-auto  md:min-h-fit rounded-xl px-4 md:items-start ">
+
+                <a class="  text-blue-950 py-1 md:py-0 justify-center text-sm font-extralight" href="#home">Home</a>
+                <div class="absolute bg-blue-500 h-1 left-0 bottom-0 w-full transform scale-x-0 transition-transform duration-200 origin-left group-hover:scale-x-100 "></div>
+
+                <div class="subnav  float-left   overflow-hidden">
+                    <button class="subnavbtn hover:bg-red-700 font-medium border-none outline-none text-green-600 p-3 bg-inherit text-inherit m-0 ">About <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content flex-col  space-x-2 hidden absolute  left-0 bg-red-900 w-full z-10">
+                        <a class=" float-left text-blue-800 decoration-clone hover:bg-slate-300" href="#company">Company</a>
+                        <a class=" float-left text-blue-800 decoration-clone hover:bg-slate-300" href="#team">Team</a>
+                        <a class=" float-left text-blue-800 decoration-clone hover:bg-slate-300" href="#careers">Careers</a>
+                    </div>
+                </div>
+                <div class="subnav float-left  overflow-hidden">
+                    <button class="subnavbtn hover:bg-red-700 font-medium border-none outline-none text-green-600 p-3 bg-inherit text-inherit m-0">Services <i class="fa fa-caret-down"></i></button>
+                    <div class="absolute bg-blue-500 h-1 left-0 bottom-0 w-full transform scale-x-0 transition-transform duration-200 origin-left group-hover:scale-x-100 "></div>
+
+                    <div class="subnav-content flex-col hidden md:absolute absolute z-[1000]  bg-blue-50 text-blue-950 shadow-[0_4px_9px_-4px_#3b71ca] px-2  py-2 text-xl rounded ">
+                        <a class=" float-left text-blue-800 decoration-clone hover:bg-slate-300" href="#bring">Bring</a>
+                        <a class=" float-left text-blue-800 decoration-clone hover:bg-slate-300" href="#deliver">Deliver</a>
+                        <a class=" float-left text-blue-800 decoration-clone hover:bg-slate-300" href="#package">Package</a>
+                        <a class=" float-left text-blue-800 decoration-clone hover:bg-slate-300" href="#express">Express</a>
+                    </div>
+                </div>
+                <div class="subnav  justify-center items-center float-left overflow-hidden">
+                    <button class="subnavbtn hover:bg-red-700 font-medium border-none outline-none text-green-600 p-3 bg-inherit text-inherit m-0">Partners <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content flex-col hidden absolute left-0 bg-red-900 w-full z-10">
+                        <a class=" float-left text-blue-800 decoration-clone hover:bg-slate-300" href="#link1">Link 1</a>
+                        <a class=" float-left text-blue-800 decoration-clone hover:bg-slate-300" href="#link2">Link 2</a>
+                        <a class=" float-left text-blue-800 decoration-clone hover:bg-slate-300" href="#link3">Link 3</a>
+                        <a class=" float-left text-blue-800 decoration-clone hover:bg-slate-300" href="#link4">Link 4</a>
+                    </div>
+                </div>
+                <a href="#" class="text-blue-950 text-sm py-4 md:py-0 font-extralight">library </a>
+                <div class="absolute bg-blue-500 h-1 left-0 bottom-0 w-full transform scale-x-0 transition-transform duration-200 origin-left group-hover:scale-x-100"></div>
+                <a class="float-left text-blue-900 text-center p-5 font-md" href="#contact">Contact</a>
+                <div class="absolute bg-blue-500 h-1 left-0 bottom-0 w-full transform scale-x-0 transition-transform duration-200 origin-left group-hover:scale-x-100 "></div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div style="padding:0 16px">
+        <h3>Subnav/dropdown menu inside a Navigation Bar</h3>
+        <p>Hover over the "about", "services" or "partners" link to see the sub navigation menu.</p>
+    </div>
+
+
+    <p>By default, all HTML elements have a static position, and cannot be moved.</br> To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+    <section id="section2">
+        <section>
+            <div id="div1" class="w-44 h-44 bg-violet-900 absolute mt-8"></div>
+            <div id="div2" class="w-44 h-44 bg-red-600 absolute mt-44"></div>
+
+        </section>
+    </section>
+
+    <button class="py-2 px-1 bg-slate-600 rounded-md ">Start Animation</button> {% block js_block %}
+    <script type="text/javascript" src="{% static 'js/main.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/navbar.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-3.6.4.min.js'%}"></script>
+
+    <script>
+        // $(document).ready(function() {
+        //     $(window).scrollTop(function() {
+
+        //         $("#div1").animate({
+        //             left: '550px',
+
+        //         }, '3s');
+        //         $("#div2").animate({
+        //             left: '250px'
+        //         });
+
+
+        //     });
+        // });
+
+
+
+        $(document).ready(function() {
+            // Create a new IntersectionObserver
+            var observer = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(entry) {
+                    // Your code here for each observed entry
+                    if (entry.isIntersecting) {
+                        // The element is currently in the viewport
+                        $("#div1").animate({
+                            left: '550px'
+                        });
+                        $("#div2").animate({
+                            left: '250px'
+                        });
+                    }
+                });
+            });
+
+            // Select the element you want to observe
+            var target = document.querySelector('#div1');
+            var target1 = document.querySelector('#div1');
+
+
+            // Start observing the target element
+            observer.observe(target);
+            observer.observe(target1);
+
+        });
+    </script>
+
+    <script type="text/javascript" src="{% static 'js/home.js'%}">
+    </script>
+    {% endblock %}
+</body>
+
+</html>

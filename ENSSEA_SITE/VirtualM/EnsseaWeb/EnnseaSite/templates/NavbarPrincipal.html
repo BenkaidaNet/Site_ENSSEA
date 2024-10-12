@@ -1,0 +1,228 @@
+ {% load static %} {% load tailwind_tags %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+    {% tailwind_css %}
+</head> 
+
+<nav id="navbar"  class="sticky top-0  w-full bg-white h-auto shadow-xl flex  md:items-center mx-auto ">
+    <img class="h-24 w-24 " src="/static/photos/logo.jpeg " alt="logo " />
+    <div id="container" class="container  text-sm mdlg:flex  w-screen mdlg:justify-around " style="flex-direction: row; " >
+
+            <ul id="navbarUL"  class="MenuList absolute hidden mdlg:relative bg-white z-50  space-y-3 mdlg:flex mdlg:flex-row  mt-14 mdlg:mt-0 right-0 mdlg:mx-0 w-2/3 sm:w-1/2 md:w-1/3 h-screen mdlg:h-auto mdlg:w-auto mdlg:items-start font-mono gap-x-0  capitaliz" style="flex-direction: row;">
+                <li id="itemH" class="group relative  w-auto flex items-center p-3 ml-6 pl-0 mb-0 pb-0 h-auto" >
+                    <a id="idHome" href="{% url 'home' %}" class=" text-blue-950 justify-center group-focus:scale-x-100 pb-2 pt-0 "><i class="fas fa-home-lg-alt fa-sm pr-1"></i>{% trans 'Home' %} </a>
+                    
+                    <div id="itemHome" class="absolute bg-blue-500 h-1 left-0 bottom-0 w-4/5 transform scale-x-0 transition-transform duration-200 origin-center group-hover:scale-x-100    "></div>
+
+                </li>
+
+                <li id="item1" class="group relative flex items-center lg:px-4 pl-2 mdlg:pl-0 pb-0" >
+                    
+                    <svg class="flex mdlg:hidden w-4 h-4 ml-2 text-black" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <a id="idAbout" href="" class=" text-blue-950 justify-center group-focus:scale-x-100 pb-2 pt-0 "></i>{% trans 'About' %} </a>
+
+                    <svg class="hidden mdlg:flex w-4 h-4 pt-0 mb-2  ml-2 text-black" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div id="itemAbout" class="absolute bg-blue-500 h-1  left-0 bottom-0 w-4/5 transform scale-x-0 transition-transform duration-200 origin-center group-hover:scale-x-100    "></div>
+
+                    <ul id="drop_down1" class="absolute hidden bg-white text-center top-7  px-1 w-max z-[1000] text-blue-950  shadow-[0_4px_9px_-4px_#3b71ca]   py-1 rounded-md  ">
+                        <li class="border-b-2">
+                            <a href="{% url 'history' %}" class="block  py-2  hover:bg-blue-600 hover:text-white active:bg-blue-600 ">{% trans 'History' %} </a>
+                        </li>
+                        
+                        <li class="border-b-2">
+                            <a href="{% url 'infrastructure' %}" class="block  py-2  hover:bg-blue-600 hover:text-white">{% trans 'Infrastructure' %} </a>
+                        </li>
+                        <li class="border-b-2">
+                            <a href="{% url 'organizationalChart' %}" class="block py-2   hover:bg-blue-600 hover:text-white">{% trans 'organizational chart' %} </a>
+                        </li>
+                    </ul>
+
+
+                </li>
+
+
+                <li id="item2" class=" group relative  flex items-center mdlg:px-2 lg:px-4 pl-2 mdlg:pl-0 ">
+                    <svg class="flex mdlg:hidden w-4 h-4 ml-2 text-black" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    <a href="#" class="text-blue-950 group-focus:scale-x-100  py-2 mdlg:pb-2 pt-0">{% trans 'Studies' %}</a>
+                    <svg class="hidden mdlg:flex w-4 h-4 ml-2 mb-2 text-black" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div id="itemStudies" class="absolute bg-blue-500 h-1 left-0 bottom-0 w-4/5 transform scale-x-0 transition-transform duration-200 origin-center group-hover:scale-x-100"></div>
+
+                    <ul id="drop_down2" class="absolute hidden text-center top-5 mdlg:top-7 px-1 w-max z-[1000] shadow-[0_4px_9px_-4px_#3b71ca]  py-1 rounded text-blue-950 bg-white    ">
+                        <li class="border-b-2">
+                            <a  href="{% url 'studiesAndScholling' %} " class="  block py-2  hover:bg-blue-600 hover:text-white">{% trans 'Study and schooling' %}</a>
+
+                        </li>
+                        <li class="border-b-2">
+                            <a href="{% url 'OffersAndFormation' %} " class="block py-2  hover:bg-blue-600 hover:text-white ">{% trans 'Offers and formation' %}</a>
+
+                        </li>
+                    </ul>
+                </li>
+                <li id="item3" class=" group relative flex items-center lg:px-4 pl-2 mdlg:pl-0 pb-0">
+                    <svg class="flex mdlg:hidden w-4 h-4 ml-2 text-black" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <a href="#" class="text-blue-950  py-2 mdlg:pb-2  pt-0  "> {% trans 'Departements' %}</a>
+                    <svg class="hidden mdlg:flex w-4 h-4 ml-2 mb-2 text-black" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    <div id="itemDepartmt" class="absolute bg-blue-500 h-1 left-0 bottom-0 w-3/4 transform scale-x-0 transition-transform duration-200 origin-left group-hover:scale-x-100"></div>
+
+                    <ul id="drop_down3" class=" absolute hidden text-center top-5 mdlg:top-7 z-[1000] px-1 w-max shadow-[0_4px_9px_-4px_#3b71ca]  py-1  rounded text-blue-950 bg-white">
+
+                        <li class="border-b-2">
+                            <a href="{% url 'preparatory' %}" class=" block  py-2   hover:bg-blue-600 hover:text-white">{% trans 'Preparatory Classes' %}</a>
+
+                        </li>
+                        <li class="border-b-2">
+                            <a href="{% url 'commonTeaching' %} " class="block   py-2 hover:bg-blue-600 hover:text-white ">{% trans 'Master Common Teaching' %}</a>
+
+                        </li>
+                        <li class="border-b-2">
+                            <a href="{% url 'AppliedStatistics' %}"  class="block  py-2 hover:bg-blue-600 hover:text-white ">{% trans 'applied Statistics and Econometrics' %}</a>
+
+                        </li>
+                        <li class="border-b-2">
+                            <a href="{% url 'Finance_actuariat' %}" class="block  py-2 hover:bg-blue-600 hover:text-white ">{% trans 'finance and Actuarial' %}</a>
+
+                        </li>
+                        <li class="border-b-2" >
+                            <a href="{% url 'prospectiveEconomic' %}" class="block  py-2  hover:bg-blue-600 hover:text-white ">{% trans 'quantitative and prospective economics' %}</a>
+
+                        </li>
+                        
+
+                    </ul>
+
+
+                </li>
+
+                <li id="item6" class=" group relative flex items-center lg:px-4 pl-2 mdlg:pl-0 pb-0">
+                    <svg class="flex mdlg:hidden w-4 h-4 ml-2 text-black" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <a href="#" class="text-blue-950  py-2 mdlg:pb-2  pt-0 ">{% trans 'Deanship' %} </a>
+                    <svg  class="hidden mdlg:flex w-4 h-4 ml-2 mb-2 text-black" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div id="itemDeanship" class="absolute bg-blue-500 h-1 left-0 bottom-0 w-3/4 transform scale-x-0 transition-transform duration-200 origin-center group-hover:scale-x-100"></div>
+
+
+                    <ul id="drop_down6" class=" absolute text-center z-[1000] top-5 mdlg:top-7 px-1 py-1 w-max shadow-[0_4px_9px_-4px_#3b71ca] hidden rounded text-blue-950 bg-white">
+                        
+                        <li class="border-b-2">
+                            <a href="{% url 'formationDoctoral' %}" class="block  py-2   hover:bg-blue-600 hover:text-white ">{% trans 'Postgraduate training department' %} </a>
+
+                        </li>
+                        <li class="border-b-2">
+                            <a href="{% url 'Entrepreneurship' %} " class="block  py-2   hover:bg-blue-600 hover:text-white ">{% trans 'Entrepreneurship development center' %}</a>
+
+                        </li>
+                        <li class="border-b-2">
+                            <a href="{% url 'ExternalRelations' %} " class="block  py-2  hover:bg-blue-600 hover:text-white ">{% trans 'External relations' %} </a>
+
+                        </li>
+                        <li class="border-b-2">
+                            <a href="{% url 'serviceStage' %} " class="block  py-2  hover:bg-blue-600 hover:text-white ">{% trans 'internship service' %} </a>
+
+                        </li>
+                    </ul>
+                </li>
+
+                <li id="item4" class=" group relative flex items-center lg:px-4 pl-2 mdlg:pl-0 pb-0">
+                    <svg class="flex mdlg:hidden w-4 h-4 ml-2 text-black" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <a href="#" class="text-blue-950  py-2 mdlg:pb-2  pt-0 ">{% trans 'Scientific research' %}  </a>
+                    <svg class="hidden mdlg:flex w-4 h-4 ml-2 mb-2 text-black " aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div id="itemScintfRsch" class="absolute bg-blue-500 h-1 left-0 bottom-0 w-4/5 transform scale-x-0 transition-transform duration-200 origin-center group-hover:scale-x-100"></div>
+
+                    <ul id="drop_down4" class=" absolute hidden text-center z-[1000] top-5 mdlg:top-7 px-1 w-max  shadow-[0_4px_9px_-4px_#3b71ca]  py-1 rounded text-blue-950 bg-white">
+                        <li class="border-b-2">
+                            <a  href="{% url 'ResearchLaboratories' %}" class=" block  py-2  hover:bg-blue-600 hover:text-white">{% trans 'Research laboratories' %}</a>
+
+                        </li>
+                        <li class="border-b-2">
+                            <a href="{% url 'ScientificBodies' %}" class="block py-2  hover:bg-blue-600 hover:text-white ">{% trans 'Scientific Council' %}</a>
+
+                        </li>
+                        <li class="border-b-2">
+                            <a href="{% url 'ScientificActivities' %}" class="block  py-2  hover:bg-blue-600 hover:text-white ">{% trans 'Scientific activities' %}</a>
+
+                        </li>
+                    </ul>
+                </li>
+               
+               
+                <li class=" group relative flex lg:px-4 pl-4 mdlg:pl-0 pb-0">
+
+                    <a href="{% url 'library' %} " class="text-blue-950 ml-2 md:ml-0  mdlg:pb-2  pt-0">{% trans 'library' %} </a>
+                    <div id="itemLibrary" class="absolute bg-blue-500 h-1 left-0 bottom-0 w-4/5 transform scale-x-0 transition-transform duration-200 origin-center group-hover:scale-x-100"></div>
+
+                </li>
+                
+             
+            </ul>
+            <div class=" text-sm w-auto h-auto flex   ">
+                <label><i class="fas fa-globe mdlg:mt-2 text-blue-500"></i></label>
+                    <form id="languageForm" class="rounded-md " action="{% url 'set_language' %}" method="post">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}">
+                        <select id="selectlist" name="language"  class="h-8 py-0 rounded-md text-vsm font-arabic"  onchange="submitForm()">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% get_available_languages as LANGUAGES %}
+                            {% get_language_info_list for LANGUAGES as languages %}
+                            {% for language in languages %}
+                                <option id="opts"  class="text-sm" value="{{ language.code }}"
+                                {% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                                    {{ language.name_local }} 
+                                </option>
+                                
+                            {% endfor %}
+                            
+                        </select>
+                        
+                    </form>
+            </div>
+            
+           
+        </div>
+        
+
+
+    <div class="px-4 py-2 top-2 text-blue-700">
+        <button class="Button11 mdlg:hidden" type="button"><i class="fas fa-bars fa-lg"></i></button>
+    </div>
+
+    
+
+</nav>
+
+{% block js_block %}
+
+<!-- <script src="{% static '/js/splide.min.js' %}"></script> -->
+<script type="text/javascript" src="{% static 'js/jquery-3.6.4.min.js'%}"></script>
+<script type="text/javascript" src="{% static 'js/navbar.js'%}"></script>
+<script type="text/javascript" src="{% static 'js/navBar.js'%}"></script>
+<script type="text/javascript" src="{%static 'js/navbarprincipal.js'%}">
+
+</script>
+
+<script>
+    function submitForm(){
+        document.getElementById('languageForm').submit();
+    }
+</script>
+<script type="text/javascript" src="{% static 'js/detectLanguageNavBr.js'%}"></script>
+      
+    
+{% endblock %}

@@ -1,0 +1,65 @@
+{% load static %} {% load tailwind_tags %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+    <link href="{% static '/css/splide.min.css' %}" rel="stylesheet"> {% tailwind_css %}
+
+
+
+
+</head>
+
+<nav id="navbar" class=" h-full w-full    ">
+
+
+        <div class="grid grid-cols-1  mt-2 font-arabic text-center  text-sm ">
+            <!-- Left links -->
+            
+            <ul class="capitalize ">
+
+                        <li  class="border-b py-0 my-3">
+                            <a id="RsrchLb" href="{% url 'ResearchLaboratories' %}" class=" block  hover:bg-blue-600 hover:text-white">{% trans 'Research laboratories' %}</a>
+
+                        </li>
+                        <li class="border-b py-0 my-3">
+                            <a id="ScntBod" href="{% url 'ScientificBodies' %} " class="block   hover:bg-blue-600 hover:text-white ">{% trans 'Scientific bodies' %}</a>
+
+                        </li>
+                        
+                        <li class="border-b py-0 my-3">
+                            <a id="scntfcActvt" href="{% url 'ScientificActivities' %}" class="block   hover:bg-blue-600 hover:text-white ">{% trans 'Scientific activities' %}</a>
+
+                        </li>
+                        
+
+                    
+            </ul>
+
+           
+        </div>
+       
+        
+        
+    
+
+
+    
+
+
+
+</nav>
+
+{% block js_block %}
+
+
+{% endblock %}

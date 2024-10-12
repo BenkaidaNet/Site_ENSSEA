@@ -1,0 +1,116 @@
+{% load static %} {% load tailwind_tags %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+    <title>{% trans 'Second cycle Master' %}</title>
+    <link rel="icon" type="image/x-icon" href="/static/photos/logoENSSEA.ico">
+
+    {% tailwind_css %}
+
+</head>
+
+<body>
+    <header class="sticky top-0 z-50">
+        {% include 'NavbarPrincipal.html' %}
+
+    </header>
+    <section class="h-auto">
+        <div class="sticky -top-10 z-0  w-auto h-56 bg-center     bg-cover bg-[url('/static/photos/formations/commonTeaching.webp')] bg-no-repeat">
+                <div id="Title" class="relative group left-0 ml-0 top-40 w-full py-2 text-white text-2xl font-bold  bg-blue-700 bg-opacity-50 text-center ">{% trans 'Common Teaching Department of Master s Cycle' %} 
+                    <!-- <div class="absolute  bg-blue-500 h-1  bottom-0 w-full scale-x-10"></div> -->
+
+
+                </div>
+               
+
+        </div>
+            <!-- <div class="absolute bg-blue-500 h-1 left-0 bottom-0 w-full transform scale-x-0 transition-transform duration-200 origin-center group-hover:scale-x-100"></div> -->
+
+
+            <div class=" w-auto h-auto flex flex-row  ">
+                <div class="flex flex-col w-full h-full">
+
+                   <div id="HeadDeprt" style="direction: ltr;" class="grid grid-cols-1 md:grid-cols-2  md:ml-4 w-3/4">
+                        <div class="w-full mt-8 flex flex-col bg-slate-100 rounded-md text-blue-700">
+                            <span class=" mt-2 ml-2  "><i class="fas fa-user-tie mx-2"></i>{% trans 'Head of department:' %}
+                            {{Departement.Headdepartement}}                      
+                            </span>
+                            <span class=" mt-2 ml-2 "><i class="fas fa-envelope mx-2"></i>{% trans 'Email:' %}
+                            
+                                {{Departement.email}}                      
+
+        
+                            </span>
+                            <span class=" mt-2 ml-2  "><i class="fas fa-phone-square-alt mx-2"></i>{% trans 'Phone:' %}
+                                
+                                {{Departement.phone}}                      
+
+                            </span>
+                        
+
+
+                        </div>
+                    
+                        <div class=" w-1/2 h-fit mt-8 ml-4 rounded-md  ">
+                            <image class="w-full h-auto" src="{{Departement.photo.url}}" alt="HeadDepartement"></image>
+
+                        </div>
+                    </div>
+                    <div class=" w-auto h-full mt-8 mb-4 mx-2  rounded-md bg-slate-100  text-vsm md:text-sm text-base">
+                      <p id="descrptDepartmt" style="direction: ltr;" class="m-2 whitespace-pre-wrap">  {{Departement.discription}}           </p>           
+                    </div>
+
+                    <span class="mx-2 mt-4 text-center">{% trans 'Modules studied during the first year of the common core in the second cycle' %} </span>
+                    
+                        <div class="m-2 border-2">
+                            <table class="w-full border bg-slate-300">
+                                <tr class="text-center text-vsm md:text-sm bg-yellow-300">
+                                   
+
+                                        <th class="border-r">{% trans ' first year of the common trunk' %}</th>
+                                      
+                                       
+
+                                </tr>
+                                <tr id="item" style="direction:ltr" class="border whitespace-pre-wrap text-vsm md:text-sm">
+
+                                    <td class="border px-6 py-2">{{ moduleMasterCommun.modules }}</td>  
+                                    
+               
+                                </tr>
+                            </table>
+
+                        </div>
+    
+                </div>
+
+                <div class=" w-1/4  h-auto border-l-2">
+                    {% include 'sideNav.html' %}
+    
+                </div>
+            </div>
+    </section>
+    <footer>
+        {% include 'footer.html' %}
+    </footer>
+    {% block js_block %}
+
+    <script type="text/javascript" src="{% static 'js/jquery-3.6.4.min.js'%}"></script>
+
+    <script type="text/javascript" src="{%static 'js/sideNav.js'%}"></script>
+    <script type="text/javascript" src="{%static 'js/departchangeDirectText.js'%}"></script>
+
+
+
+    {% endblock %}
+</body>
+
+</html>

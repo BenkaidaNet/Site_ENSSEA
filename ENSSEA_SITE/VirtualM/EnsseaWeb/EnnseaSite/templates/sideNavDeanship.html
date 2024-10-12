@@ -1,0 +1,47 @@
+{% load static %} {% load tailwind_tags %}
+{% load i18n %}
+
+
+
+<nav id="navbar" class=" h-auto w-full    ">
+
+
+        <div class="grid grid-cols-1  mt-0 text-center text-vsm md:text-sm   ">
+            <!-- Left links -->
+            
+            <ul class="capitalize ">
+                <li class="border-b-2 border-t">
+                    <a id="formationDoctoral" href="{% url 'formationDoctoral' %}" class="block  py-2   hover:bg-blue-600 hover:text-white ">{% trans 'Postgraduate training department' %} </a>
+
+                </li>
+                <li class="border-b-2">
+                    <a id="Entrepreneurship" href="{% url 'Entrepreneurship' %}" class="block  py-2   hover:bg-blue-600 hover:text-white ">{% trans 'Entrepreneurship development center' %}</a>
+
+                </li>
+                <li class="border-b-2">
+                    <a id="ExternalRelations" href="{% url 'ExternalRelations' %} " class="block  py-2  hover:bg-blue-600 hover:text-white ">{% trans 'External relations' %} </a>
+
+                </li>
+                <li class="border-b-2">
+                    <a id="serviceStage"  href="{% url 'serviceStage' %} " class="block  py-2  hover:bg-blue-600 hover:text-white ">{% trans 'internship service' %} </a>
+
+                </li>
+                        
+
+                    
+            </ul>
+
+           
+        </div>
+       
+        
+        
+    
+
+
+    
+
+
+
+</nav>
+

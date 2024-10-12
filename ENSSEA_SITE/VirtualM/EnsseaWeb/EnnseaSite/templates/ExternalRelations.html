@@ -1,0 +1,182 @@
+{% load static %} {% load tailwind_tags %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    
+        <title>{% trans 'External Relations' %}</title>
+        <link rel="icon" type="image/x-icon" href="/static/photos/logoENSSEA.ico">
+    
+        {% tailwind_css %}
+    </head>
+    <body>
+        <header class="sticky top-0 z-50">
+            {% include 'NavbarPrincipal.html' %}
+    
+        </header>
+    <section>
+        <div class=" w-auto h-auto flex flex-row  ">
+            <div class="flex flex-col  w-4/5">
+                <span id="itemTitle" class="font-mono text-lg w-full text-center mt-4 bg-blue-700 text-white font-bold">{% trans 'External Relations' %}</span>
+                <div class=" m-2 mt-6  bg-slate-100  rounded-sm">
+                 <h1 id="itemPrst"  style="direction:ltr" class="p-2 font-bold font-mono text-sm md:text-xl">{% trans 'Presentation :' %}</h1>
+
+                    <p id="prgphPrest"  style="direction:ltr" class="mx-2 text-sm md:text-lg pb-2  border-t-white border-t-2 font-mono   ">
+                      {{relExt.presentation}}
+
+                     </p>
+                
+                 
+                
+               
+                </div>
+
+                <ul id="itemUl"  style="direction:ltr" class="m-2 p-2 font-mono bg-slate-100">
+                    <h1   class=" text-blue-900  text-sm md:text-lg border-b-2 w-fit border-b-blue-900 ">{% trans 'National conventions :' %}</h1>
+
+                    {% for item in convention %}
+                        {% if item.typeConv == 'national convention' %}
+
+                            <li class="list-disc list-inside text-vms md:text-sm ">
+                           <span class="text-blue-950 font-bold"> {{item.title}}</span>
+                                {% if item.discription %}
+                                <p class="px-2 border-b-2 border-white"> {{item.discription}}</p>
+                                {% endif %}
+                                
+                            </li>
+                        
+                         
+                        {% endif %}
+                    {% endfor %}
+                   
+
+                    <h1   class="text-blue-900 pt-2 text-sm md:text-lg border-b-2 w-fit border-b-blue-900 ">{% trans 'International conventions :' %}</h1>
+
+                    {% for item1 in convention %}
+
+                        {% if item1.typeConv == 'international conventions' %}
+
+                         <li class="text-vms md:text-sm list-disc list-inside ">
+                            <span class="text-blue-950 font-bold"> {{item1.title}}</span>
+
+                         {% if item1.discription %}
+                            <p class=" border-b-2 border-white"> {{item1.discription}}</p>
+                         {% endif %}
+                         
+                         </li>
+                        {% endif %}
+                    {% endfor %}
+
+                </ul>
+            
+                
+                <div id="sectionNews" class=" bg-white  h-auto w-full py-1 font-arabic ">
+                    <div id="div_News1" class="relative  flex text-lg w-auto  text-blue-900  top-4 h-auto justify-center    py-2 border-b-2 rounded-md  shadow-[0_8px_9px_-1px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
+                        {% trans 'Related news' %}
+                    </div>
+                   
+                    <div  class="relative grid grid-cols-1 grid-flow-row md:grid-cols-2 md:grid-flow-row md:gap-x-1 top-3 mb-3 h-auto w-full md:mx-1 overflow-x-hidden overflow-y-hidden ">
+                        {% for item in events %}
+                        <div id="announcement" style=" background-image: url({{item.image.url}});background-position:center; background-size: cover; background-repeat: no-repeat;" class="relative rounded-md top-4 mb-2 h-[35vh] w-full  transition duration-1000 ease-in-out border overflow-hidden">
+                            <div id="card-front1" class="   bottom-4 w-auto left-0 text-start duration-1000 ">
+                                <div class=" w-auto h-auto  ">
+                                    <div class="  flex text-3xl bg-opacity-50 text-white bg-blue-500  top-32 h-auto  w-auto justify-center items-center   py-2 border-b-1 rounded-md shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">{{item.title}}</div>
+                                    
+                                </div>
+            
+                            </div>
+            
+                            <div id="card-back1" class="bg-yellow-50 bg-opacity-60  rounded-md w-auto translate-x-full transform duration-1000 ease-mycustom truncate">
+                                <p class="  "> 
+                                    {{item.comment}}
+                                </p>
+            
+        
+                                <button onclick="location.href='{% url 'actuality' item.id %}'" class="relative content-center border left-1/3 hover:bg-blue-500 rounded-lg bg-slate-100 bg-opacity-70 px-4 py-2  hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ">{% trans 'Learne More' %}</button>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+            
+                    </div>
+
+                   </div>     
+                   {% include 'pagination.html'  %}
+ 
+                
+                
+            </div>
+            
+            <div  class=" w-1/5  h-auto border-l-2 ">
+                {% include 'sideNavDeanship.html' %}
+                <h1 class="text-center w-auto mb-2 font-mono bg-slate-300">{% trans 'Head of department' %}</h1>
+
+                <div id="itemRlExt" style="direction:ltr" class="flex flex-col mx-2 font-mono">
+              <h1>  {{relExt.headDepartment}}</h1>
+              <h1> {% trans 'Phone :' %} {{relExt.Phone}}</h1>
+              <h1> {% trans 'Email :' %} {{relExt.email}}</h1>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+        <footer>
+            {% include 'footer.html' %}
+        </footer>
+        {% block js_block %}
+        <script type="text/javascript" src="{%static 'js/sideNavDeanship.js'%}"></script>
+        <script>
+            function DetectLanguage(){
+                var selectElement = document.getElementById('selectlist');
+            
+                var selectedIndex = selectElement.selectedIndex;
+            
+                var selectedOption = selectElement.options[selectedIndex];
+            
+                var selectedValue = selectedOption.value;
+            
+                return (selectedValue);
+                
+            }
+            
+            if (DetectLanguage()=='ar'){ 
+                let ifnoRlExt=document.getElementById('itemRlExt');
+                let prest=document.getElementById('prgphPrest');
+                let ulList=document.getElementById('itemUl');
+
+                let PrstTitl=document.getElementById('itemPrst');
+                let Titl=document.getElementById('itemTitle');
+
+                Titl.classList.remove("font-mono");
+                Titl.classList.add("font-arabic");
+
+                PrstTitl.style.direction='rtl';        
+                PrstTitl.classList.remove("font-mono");
+                PrstTitl.classList.add("font-arabic");
+
+                ulList.style.direction='rtl';        
+                ulList.classList.remove("font-mono");
+                ulList.classList.add("font-arabic");
+
+                ifnoRlExt.style.direction='rtl';        
+                ifnoRlExt.classList.remove("font-mono");
+                ifnoRlExt.classList.add("font-arabic");
+
+                prest.style.direction='rtl';        
+                prest.classList.remove("font-mono");
+                prest.classList.add("font-arabic");
+               
+            
+            }
+        </script>
+        
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,167 @@
+{% load static %} {% load tailwind_tags %}
+
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="/EnsseaWeb/theme/static_src/src/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet"> -->
+  <link href="{% static '/css/splide.min.css' %}" rel="stylesheet"> 
+
+    <title class="font-arabic" >{% trans 'Entrepreneurship development center' %}</title>
+    <link rel="icon" type="image/x-icon" href="/static/photos/logoENSSEA.ico">
+
+
+    {% tailwind_css %}
+
+
+</head>
+
+<body>
+  <header class="sticky top-0 z-50">
+    {% include 'NavbarPrincipal.html' %}
+
+</header>
+    
+    <section>
+        <div class="sticky -top-10 z-30 w-auto h-56 bg-top bg-cover bg-[url('/static/photos/enterprenariat.jpg')] bg-no-repeat">
+            <div class="relative group left-0 ml-0 top-40 w-full py-2 text-white font-arabic font-bold text-2xl  bg-yellow-500 text-center ">{% trans 'Entrepreneurship development center' %} 
+                <!-- <div class="absolute  bg-blue-500 h-1  bottom-0 w-full scale-x-10"></div> -->
+
+
+            </div>
+        </div>
+        <div class="z-10 w-auto h-auto flex flex-row  border-t">
+          
+            <div class="flex flex-col h-auto w-4/5 ">
+              <div class="w-full ">
+                <div class="flex justify-center  bg-slate-200 space-x-8">
+                  <a href="https://www.facebook.com/cde.enssea" target="_blank" class="   text-blue-600 dark:text-neutral-200  hover:text-blue-700">
+                      <i class="fab fa-facebook-square fa-lg  "></i>
+                  </a>
+      
+                  <a href="https://www.facebook.com/messages/t/108128813970946" target="_blank" class="  text-blue-600 dark:text-neutral-200 hover:text-blue-700">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                  </a>
+                  <a href="https://maps.app.goo.gl/Pgc1fMqDJH1aHF397 " target="_blank" class=" text-blue-600 dark:text-neutral-200 hover:text-red-700 ">
+                    <i class="fa-solid fa-location-dot"></i>                                    </a>
+      
+      
+              </div>
+              </div>
+              <div class="mt-8">
+               
+                <div id="entrshipTitlP1" class="flex justify-center w-auto text-vsm md:text-sm font-semibold border-b  text-sky-700"  >{{EventEntrepreneurship1.title}} {{EventEntrepreneurship1.date}}</div>  
+                  <p  id="entrpshipPrgrph1" style="direction: ltr;" class="mx-3 mt-4 w-auto text-vsm md:text-sm whitespace-normal">{{EventEntrepreneurship1.description}}</p>
+                  <div class="splide  mt-10 w-auto  " aria-label="Slide Container Example">
+                    <div class="splide__track  w-auto my-4 mx-2">
+                      <ul class="splide__list z-0">
+                       
+                        <li class="splide__slide mx-1 w-auto ">
+                          <div class="splide__slide__container border">
+                            <img class="w-full h-full rounded-md" src="{{EventEntrepreneurship1.image.url}}">
+                          </div>                          
+                        </li>
+                        <li class="splide__slide mx-1 w-auto ">
+                          <div class="splide__slide__container border">
+                            <img class="w-full h-full rounded-md" src="{{EventEntrepreneurship1.image1.url}}">
+                          </div>
+
+                        </li>
+                        <li class="splide__slide mx-1 w-auto ">
+                          <div class="splide__slide__container border">
+                            <img class="w-full h-full rounded-md" src="{{EventEntrepreneurship1.image2.url}}">
+                          </div>
+                        </li>
+                       
+                      </ul>
+                    </div>
+                    <div class="splide__progress w-full mt-1 ">
+                      <div class="splide__progress__bar h-1 md:h-2 rounded-md bg-blue-600">
+                      </div>
+                    </div>
+                  </div>
+                
+
+              </div>
+             
+                
+                  <div id="sectionNews" class=" bg-slate-200  h-auto w-auto py-1 font-arabic ">
+                    <div id="div_News1" class="relative  flex text-lg w-auto  text-blue-900  top-4 h-auto justify-center    py-2 border-b-2 rounded-md bg-yellow-500 shadow-[0_8px_9px_-1px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
+                        {% trans 'Latest News' %}
+                    </div>
+           </div>        
+                                         
+            <div id="sectionNews"  class="relative grid grid-cols-1 grid-flow-row md:grid-cols-2 md:grid-flow-row md:gap-x-1 top-3 mb-3 h-auto w-auto md:mx-2 overflow-x-hidden overflow-y-hidden ">
+              {% for item in EventEntrepreneurship %}
+              <div id="announcement" style=" background-image: url({{item.image.url}});background-position:center; background-size: cover; background-repeat: no-repeat;" class="relative rounded-md mt-4 mb-2 h-[35vh] w-full  transition duration-1000 ease-in-out border overflow-hidden">
+                  <div id="card-front1" class="   bottom-4 w-auto left-0  duration-1000 ">
+                      <div class=" w-full h-full  ">
+                          <div   class="flex text-xl bg-opacity-50 font-arabic text-white text-center  bg-blue-500  top-32 h-auto  w-auto justify-center items-center   py-2 border-b-1 rounded-md shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
+                            <span>{{item.title}}</span>
+                            
+                          
+                          </div>
+  
+                      </div>
+                  </div>
+  
+                  <div id="card-back1" class="bg-yellow-50 bg-opacity-60  rounded-md w-auto translate-x-full transform duration-1000 ease-mycustom truncate">
+                      <p id="titleItem" style="direction: ltr;"  class="text-vsm md:text-sm  "> 
+                          {{item.description}}
+                      </p>
+  
+
+                      <button onclick="location.href='{% url 'Entrepreneurship1' item.id %}'" class="relative content-center border left-1/3 hover:bg-blue-500 rounded-lg bg-slate-100 bg-opacity-70 px-4 py-2  hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ">{% trans 'Learne More' %}</button>
+                  </div>
+              </div>
+              {% endfor %}
+          </div>          
+          {% include 'pagination.html' with page=EventEntrepreneurship %}
+    
+          <div class="w-full mt-4"> 
+            <span></span>
+                        </div>
+            </div>
+
+                <div class=" w-1/5  h-auto border-l-2">
+                {% include 'sideNavDeanship1.html' %}
+                <div class="flex flex-col justify-center mt-4 " >
+                <span class=" bg-stone-400 w-full text-center ">{% trans 'Archive' %} </span>
+                <ul>
+                  {% for item in EventEntrepreneurship %}
+                  <li  class="text-vsm my-2 hover:text-blue-700"><a href="{% url 'Entrepreneurship1' item.id %}" >{{item.title}} ({{item.date}})</a></li>
+                  {% endfor %}
+                </ul>
+                </div>
+
+                </div>
+        </div>
+</section>
+    <footer>
+        {% include 'footer.html' %}
+    </footer>
+
+
+</body>
+    {% block js_block %}
+
+    <script type="text/javascript" src="{% static 'js/jquery-3.6.4.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/splide.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/slideEntrepShip1.js'%}">    </script>
+    <script type="text/javascript" src="{% static 'js/jquery-3.6.4.min.js'%}"></script>
+    <script type="text/javascript" src="{%static 'js/sideNavDeanship.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/entrshipLanguag.js' %}"></script>
+                            
+                            
+    {% endblock %}
+
+</html>

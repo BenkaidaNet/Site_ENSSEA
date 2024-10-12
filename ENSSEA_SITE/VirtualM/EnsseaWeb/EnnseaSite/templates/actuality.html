@@ -1,0 +1,98 @@
+{% load static %}{% load tailwind_tags %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static '/css/splide.min.css' %}" rel="stylesheet"> 
+
+    <title>{% trans 'actuality' %}</title>
+    <link rel="icon" type="image/x-icon" href="/static/photos/logoENSSEA.ico">
+   
+
+    {% tailwind_css %}
+</head>
+
+<body>
+
+    <header class="sticky top-0 z-50">
+        {% include 'NavbarPrincipal.html' %}
+
+    </header>
+    <section class="flex flex-row">
+        <div class="w-1/4 h-auto mt-6 ml-2  bg-slate-300">
+            <span class="font-bold font-arabic underline text-blue-600 text-sm md:text-lg flex  justify-center ">{% trans ' Latest news' %} </span>
+            <ul id="eventTitl" style="direction: ltr;" class="w-full h-auto px-1">
+                {% for item in AllEvent %}
+                <li class="text-blue-600 py-2 text-vsm md:text-sm hover:underline"><a href="{% url 'actuality' item.id %}"> 
+                  {{item.title}} ({{item.date}})</a></li>
+                {% endfor %}
+            </ul>
+
+        </div>
+        <div class=" w-3/4 h-auto  flex flex-col  ">
+
+            <div class="splide z-0 mt-6 w-auto bg-slate-200 " aria-label="Slide Container Example">
+                <div class="splide__track  w-auto my-4 mx-2">
+                  <ul class="splide__list ">
+                    {% for item in AllEvent %}
+                    <li class="splide__slide mx-1  w-auto h-auto">
+                      <div  class="splide__slide__container border w-auto h-auto" >
+                        <img class="w-full h-full rounded-md" src="{{item.image.url}}">
+                      
+                      </div>         
+                      <a href="{% url 'actuality' item.id %}" >
+                         <span  id="eventTitl" style="direction: rtl;" class=" font-arabic  font-bold text-vsm md:text-sm mdl:text-lg text-blue-400 hover:text-blue-800"> 
+                        {{item.title}}</span>
+                      </a>   
+                 
+                    </li>
+                 
+                    {% endfor %}
+                  </ul>
+                </div>
+                <div class="splide__progress w-full mt-1 ">
+                  <div class="splide__progress__bar h-1 md:h-2 rounded-sm bg-blue-600">
+                  </div>
+                </div>
+              </div>
+
+            <div class=" my-6 flex flex-col h-auto justify-center border-t-2" >
+                <span class="ml-6 font-bold font-arabic text-vsm md:text-sm mdl:text-lg  text-center text-blue-800">{{eventActuality.title}}</span>
+
+            <p id="eventCmnt" style="direction: ltr;" class="p-2 bg-slate-100 mx-6 rounded-md text-vsm md:text-sm">
+                
+                {{eventActuality.comment}}
+    
+            </p> 
+                    <div class="flex justify-items-center px-7 py-4 h-auto w-auto">
+                        <image src="{{eventActuality.image.url}}" class="rounded-md  "></image>
+                    </div>
+            </div>    
+            
+           
+        </div>
+        
+      
+        
+    </section>
+
+    <footer>
+        {% include 'footer.html' %}
+
+    </footer>
+    {% block js_block %}
+    <script type="text/javascript" src="{% static 'js/splide.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/actualityLang.js'%}"></script>
+
+    <script type="text/javascript" src="{%static 'js/slideActulity.js'%}"></script>
+
+    {% endblock %}
+
+</body>
+
+</html>

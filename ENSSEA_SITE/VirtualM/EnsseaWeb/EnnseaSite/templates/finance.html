@@ -1,0 +1,119 @@
+{% load static %} {% load tailwind_tags %}
+
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'fontawesome-free-6.3.0-web/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="/EnsseaWeb/theme/static_src/src/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet"> -->
+
+    <title class="font-arabic" >{% trans 'Departement of Finance and Acturial' %}</title>
+    <link rel="icon" type="image/x-icon" href="/static/photos/logoENSSEA.ico">
+
+
+    {% tailwind_css %}
+
+</head>
+
+<body>
+    <header class="sticky top-0 z-50">
+        {% include 'NavbarPrincipal.html' %}
+
+    </header>
+    <section>
+        <div class="sticky -top-10 z-0  w-auto h-60  bg-center   bg-cover bg-[url('/static/photos/formations/is-Financial.jpg')] bg-no-repeat">
+            <div id="Title" class="relative group left-0 ml-0 top-40 w-full py-2 text-white font-bold  text-2xl  bg-blue-700 bg-opacity-50 text-center ">{% trans 'Departement of Finance and Acturial' %} 
+                <!-- <div class="absolute  bg-blue-500 h-1  bottom-0 w-full scale-x-10"></div> -->
+
+
+            </div>
+        </div>
+        <div class=" w-auto h-auto flex flex-row  ">
+            <div class="flex flex-col w-full h-full">
+
+               <div id="HeadDeprt" style="direction: ltr;" class="grid grid-cols-1 md:grid-cols-2  md:ml-4 w-3/4">
+                    <div class="w-full mt-8 flex flex-col bg-slate-100 rounded-md  text-blue-700">
+                        <span class=" mt-2 ml-2  "><i class="fas fa-user-tie mx-2"></i>{% trans 'Head of department:' %}
+                        {{Departement.Headdepartement}}                      
+                        </span>
+                        <span class=" mt-2 ml-2 "><i class="fas fa-envelope mx-2"></i>{% trans 'Email:' %}
+                        
+                            {{Departement.email}}                      
+
+    
+                        </span>
+                        <span class=" mt-2 ml-2  "><i class="fas fa-phone-square-alt mx-2"></i>{% trans 'Phone:' %}
+                            
+                            {{Departement.phone}}                      
+
+                        </span>
+                    </div>
+                    <div class=" w-1/2 h-fit mt-8 mx-4 rounded-md ">
+                        <image class="w-full h-auto" src="{{Departement.photo.url}}" alt="HeadDepartement"></image>
+
+                    </div>
+                </div>
+                <div class=" w-auto h-full mt-8 mb-4 mx-2  rounded-md bg-slate-100  text-vsm md:text-sm text-base">
+                  <p id="descrptDepartmt" style="direction: ltr;" class="m-2 whitespace-pre-wrap">  {{Departement.discription}}           </p>           
+                </div>
+                <span class="mx-2 mt-4 text-center">{% blocktrans %}
+                    The modules studied during the master's cycle are divided as follows:
+                    {% endblocktrans %}</span>
+                <div class="m-2 border-2">
+                    <table class="w-full border bg-slate-300 ">
+                        <thead>
+                      
+                            <tr class="text-center text-vsm md:text-sm bg-yellow-300">
+                            
+                                <th class="border-r">{% trans 'Finance and Actuarial'%}</th>
+                                    
+
+                            </tr>
+                       
+                         </thead>
+                        <tbody>
+                            <tr id="item" style="direction:ltr" class="border whitespace-pre-wrap  text-vsm md:text-sm">
+                                {% if ModuleFinace  %}
+                                <td class="px-2">{{ ModuleFinace.modules }}</td>     
+                                {% else %}
+                                <td></td>     
+                                {% endif %}
+
+        
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+        <div class=" w-1/4  h-screen border-l-2">
+                {% include 'sideNav.html' %}
+
+            </div>
+        </div>
+</section>
+    <footer>
+        {% include 'footer.html' %}
+    </footer>
+    {% block js_block %}
+
+    <script type="text/javascript" src="{% static 'js/jquery-3.6.4.min.js'%}"></script>
+
+    <script type="text/javascript" src="{% static 'js/sideNav.js'%}"></script>
+    <script type="text/javascript" src="{%static 'js/departchangeDirectText.js'%}"></script>
+
+
+
+    {% endblock %}
+</body>
+
+</html>
